@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14313.18"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="LinkOutItemCell" customModule="enrollment" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="989-ap-CRv" id="GWR-3e-Q3P"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="71k-pv-fZP" customClass="LinkOutItemCell" customModule="enrollment" customModuleProvider="target">
+            <connections>
+                <outlet property="linkoutItemDescriptionLabel" destination="ycg-JT-bwZ" id="PCT-NA-HEp"/>
+                <outlet property="linkoutItemHeaderLabel" destination="j67-jO-vXR" id="E1o-V1-rPM"/>
+                <outlet property="linkoutItemImage" destination="klJ-Ys-MuH" id="wJq-NQ-UzB"/>
+                <outlet property="view" destination="989-ap-CRv" id="3Wu-hh-CHS"/>
+            </connections>
+        </customObject>
+        <customView id="989-ap-CRv">
+            <rect key="frame" x="0.0" y="0.0" width="460" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="klJ-Ys-MuH">
+                    <rect key="frame" x="0.0" y="19" width="43" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="41" id="5qG-Fh-bRT"/>
+                        <constraint firstAttribute="width" constant="43" id="NJM-cl-qpP"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="hDB-sc-EZJ"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="j67-jO-vXR" customClass="Hyperlink" customModule="enrollment" customModuleProvider="target">
+                    <rect key="frame" x="51" y="41" width="120" height="19"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" placeholderString="Hyperlink title text" id="lRG-Gk-Tlz">
+                        <font key="font" size="13" name="SFUIText-Medium"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ycg-JT-bwZ">
+                    <rect key="frame" x="51" y="19" width="89" height="17"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" placeholderString="Description Text" id="oHb-pe-Ad5">
+                        <font key="font" size="11" name="SFUIText-Regular"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="ycg-JT-bwZ" firstAttribute="top" secondItem="j67-jO-vXR" secondAttribute="bottom" constant="5" id="2fB-o3-43b"/>
+                <constraint firstItem="klJ-Ys-MuH" firstAttribute="leading" secondItem="989-ap-CRv" secondAttribute="leading" id="LB5-kE-xV7"/>
+                <constraint firstItem="ycg-JT-bwZ" firstAttribute="leading" secondItem="j67-jO-vXR" secondAttribute="leading" id="Xti-wo-Z1v"/>
+                <constraint firstItem="j67-jO-vXR" firstAttribute="leading" secondItem="klJ-Ys-MuH" secondAttribute="trailing" constant="10" id="ecH-jB-LKa"/>
+                <constraint firstItem="j67-jO-vXR" firstAttribute="top" secondItem="klJ-Ys-MuH" secondAttribute="top" id="nX4-IX-KI5"/>
+                <constraint firstItem="klJ-Ys-MuH" firstAttribute="top" secondItem="989-ap-CRv" secondAttribute="top" id="xhn-h6-cEr"/>
+            </constraints>
+        </customView>
+    </objects>
+</document>

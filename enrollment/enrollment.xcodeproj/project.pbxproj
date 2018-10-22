@@ -1,0 +1,1057 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6901E575210A52F300EACAF1 /* TermDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6901E574210A52F300EACAF1 /* TermDefinition.swift */; };
+		6901E579210A54BD00EACAF1 /* SecurityDescriptionPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6901E578210A54BD00EACAF1 /* SecurityDescriptionPopover.swift */; };
+		6901E57B210A5CFC00EACAF1 /* InfoPopOverConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6901E57A210A5CFC00EACAF1 /* InfoPopOverConstants.swift */; };
+		690ACB33213884DF00F8B1F0 /* DefineBundleInfoPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690ACB32213884DF00F8B1F0 /* DefineBundleInfoPopover.swift */; };
+		690ACB37213C5F1900F8B1F0 /* NSView+Rotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690ACB36213C5F1900F8B1F0 /* NSView+Rotation.swift */; };
+		690ACB39213C6BF900F8B1F0 /* Indicators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690ACB38213C6BF900F8B1F0 /* Indicators.swift */; };
+		690ACB3B213C8F2E00F8B1F0 /* BundleInstallationChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690ACB3A213C8F2E00F8B1F0 /* BundleInstallationChildViewController.swift */; };
+		6922610A21415DE9007419A6 /* EnrollmentLoginHelper.app in Copy LoginItem Helper */ = {isa = PBXBuildFile; fileRef = 69A1F5D221022FC2004F461A /* EnrollmentLoginHelper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6922F6AC21273FDD00EB8003 /* BundleItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6922F6AB21273FDD00EB8003 /* BundleItemCell.swift */; };
+		6922F6AF212DB17D00EB8003 /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6922F6AE212DB17D00EB8003 /* StackView.swift */; };
+		6922F6B1212DD0A900EB8003 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6922F6B0212DD0A900EB8003 /* BaseViewController.swift */; };
+		6922F6B3212DD39700EB8003 /* HeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6922F6B2212DD39700EB8003 /* HeaderViewController.swift */; };
+		6933FF82216FA34200417BD3 /* com.ibm.jamf.IntegrationHelper in Copy Helper */ = {isa = PBXBuildFile; fileRef = 69B411E9216FA214005B6332 /* com.ibm.jamf.IntegrationHelper */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		6950CD58210B67EF007C97DF /* Info4Popover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6950CD57210B67EF007C97DF /* Info4Popover.swift */; };
+		6950CD5A210B6F8A007C97DF /* Info2Popover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6950CD59210B6F8A007C97DF /* Info2Popover.swift */; };
+		6950CD5D210B9BBE007C97DF /* RemoteProcessProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6950CD5C210B9BBE007C97DF /* RemoteProcessProtocol.swift */; };
+		6950CD65210F67FE007C97DF /* AlertConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6950CD64210F67FE007C97DF /* AlertConstants.swift */; };
+		6950CD6B2110D583007C97DF /* OptionPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6950CD6A2110D583007C97DF /* OptionPopover.swift */; };
+		6950CD6F211228F1007C97DF /* AnimatedGIFImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6950CD6E211228F1007C97DF /* AnimatedGIFImageView.swift */; };
+		6950CD7121123283007C97DF /* AnimatedGIFProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6950CD7021123283007C97DF /* AnimatedGIFProgressViewController.swift */; };
+		6950CD7321133ED5007C97DF /* RegistrationCompleteChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6950CD7221133ED5007C97DF /* RegistrationCompleteChildViewController.swift */; };
+		6950CD76211375A0007C97DF /* BundleSelectionChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6950CD75211375A0007C97DF /* BundleSelectionChildViewController.swift */; };
+		6950CD7C2114F385007C97DF /* StackItems.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6950CD792114F385007C97DF /* StackItems.storyboard */; };
+		6950CD7D2114F385007C97DF /* BundleItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6950CD7A2114F385007C97DF /* BundleItemCell.xib */; };
+		6950CD7E2114F385007C97DF /* HeaderViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6950CD7B2114F385007C97DF /* HeaderViewController.storyboard */; };
+		6950CD812118C865007C97DF /* SetupCompleteChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6950CD802118C865007C97DF /* SetupCompleteChildViewController.swift */; };
+		6950CD85211A2D89007C97DF /* ProgressStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6950CD84211A2D89007C97DF /* ProgressStates.swift */; };
+		6950CD87211B83CF007C97DF /* BundleInstallButtonVisibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6950CD86211B83CF007C97DF /* BundleInstallButtonVisibility.swift */; };
+		6950CD8B211C8B64007C97DF /* NSTextField+Attributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6950CD8A211C8B64007C97DF /* NSTextField+Attributes.swift */; };
+		6950CD902121E03B007C97DF /* SetupCompleteButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6950CD8F2121E03B007C97DF /* SetupCompleteButtons.swift */; };
+		6958337A2135D29C00D6B606 /* BundleCProgressStackItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695833792135D29C00D6B606 /* BundleCProgressStackItemViewController.swift */; };
+		6958337C2135D2C900D6B606 /* BundleBProgressStackItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6958337B2135D2C800D6B606 /* BundleBProgressStackItemViewController.swift */; };
+		6958337E2135D2F200D6B606 /* BundleAProgressStackItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6958337D2135D2F200D6B606 /* BundleAProgressStackItemViewController.swift */; };
+		69583381213729D700D6B606 /* BundlePopOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6958337F213729D700D6B606 /* BundlePopOverViewController.swift */; };
+		696BBB0D217664A10094BE76 /* JAMFIntegrationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EEA009216F8CAF0032C2E1 /* JAMFIntegrationHelper.swift */; };
+		696BBB76217BAE7B0094BE76 /* PrimaryRegistrationChildVCConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696BBB75217BAE7B0094BE76 /* PrimaryRegistrationChildVCConstants.swift */; };
+		696BBB78217BB6540094BE76 /* SecondaryRegistrationChildVCConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696BBB77217BB6540094BE76 /* SecondaryRegistrationChildVCConstants.swift */; };
+		696BBB7A217BBC190094BE76 /* AnimatedGIFProgressChildVCConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696BBB79217BBC190094BE76 /* AnimatedGIFProgressChildVCConstants.swift */; };
+		696BBB7C217BBDEB0094BE76 /* RegistrationCompleteChildVCConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696BBB7B217BBDEB0094BE76 /* RegistrationCompleteChildVCConstants.swift */; };
+		696BBB84217BC8D40094BE76 /* CircularStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696BBB83217BC8D40094BE76 /* CircularStatus.swift */; };
+		696BBB87217BCA3D0094BE76 /* SetupCompleteChildVCConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696BBB86217BCA3D0094BE76 /* SetupCompleteChildVCConstants.swift */; };
+		696BBB89217BCC4B0094BE76 /* BundleSelectionChildVCConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696BBB88217BCC4B0094BE76 /* BundleSelectionChildVCConstants.swift */; };
+		696BBB8B217BCE090094BE76 /* BundleInstallationChildVCConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696BBB8A217BCE090094BE76 /* BundleInstallationChildVCConstants.swift */; };
+		696BBB8D217CBA9E0094BE76 /* NetworkValidationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696BBB8C217CBA9E0094BE76 /* NetworkValidationService.swift */; };
+		696BBB8F217CD57F0094BE76 /* IssueAlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696BBB8E217CD57F0094BE76 /* IssueAlertService.swift */; };
+		698263402124B9940085647A /* WebLinkButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6982633F2124B9940085647A /* WebLinkButtons.swift */; };
+		698263612125C46E0085647A /* Hyperlink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698263602125C46E0085647A /* Hyperlink.swift */; };
+		6991C19D2171064700BA7C56 /* XPCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6991C19C2171064700BA7C56 /* XPCService.swift */; };
+		69A1F5B42102269B004F461A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A1F5B32102269B004F461A /* AppDelegate.swift */; };
+		69A1F5B82102269C004F461A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69A1F5B72102269C004F461A /* Assets.xcassets */; };
+		69A1F5D521022FC2004F461A /* LoginHelperAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A1F5D421022FC2004F461A /* LoginHelperAppDelegate.swift */; };
+		69A1F5D721022FC2004F461A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69A1F5D621022FC2004F461A /* Assets.xcassets */; };
+		69A1F5DA21022FC2004F461A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69A1F5D821022FC2004F461A /* MainMenu.xib */; };
+		69A1F5E121023006004F461A /* EnrollmentLoginHelper.app in Resources */ = {isa = PBXBuildFile; fileRef = 69A1F5D221022FC2004F461A /* EnrollmentLoginHelper.app */; };
+		69B411F0216FA22D005B6332 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EEA004216F8C050032C2E1 /* main.swift */; };
+		69B411F2216FA22D005B6332 /* JAMFIntegrationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EEA009216F8CAF0032C2E1 /* JAMFIntegrationHelper.swift */; };
+		69B411F3216FA293005B6332 /* RemoteProcessProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6950CD5C210B9BBE007C97DF /* RemoteProcessProtocol.swift */; };
+		69B411F5216FA29A005B6332 /* JAMFHelperConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EE9FF3216D0E780032C2E1 /* JAMFHelperConstants.swift */; };
+		69C292D7213E163B00639383 /* AppBundleConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C292D6213E163B00639383 /* AppBundleConstants.swift */; };
+		69C292D9213EB6C600639383 /* UpdateAppBundleInstallationUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C292D8213EB6C600639383 /* UpdateAppBundleInstallationUI.swift */; };
+		69C56FDB21023BF300766B15 /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C56FDA21023BF300766B15 /* ColorConstants.swift */; };
+		69C56FDD210260C700766B15 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C56FDC210260C700766B15 /* MainViewController.swift */; };
+		69C56FDF2102628E00766B15 /* MainStoryboardConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C56FDE2102628E00766B15 /* MainStoryboardConstants.swift */; };
+		69C56FE121063DBD00766B15 /* EnrollmentWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C56FE021063DBD00766B15 /* EnrollmentWindowController.swift */; };
+		69C56FE32106598700766B15 /* SubViewControllerManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C56FE22106598700766B15 /* SubViewControllerManagerViewController.swift */; };
+		69C56FE82106635B00766B15 /* PrimaryRegistrationChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C56FE72106635B00766B15 /* PrimaryRegistrationChildViewController.swift */; };
+		69C56FEC2107B03500766B15 /* InfoBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C56FEB2107B03500766B15 /* InfoBubble.swift */; };
+		69C56FF12108DEE000766B15 /* JAMFConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C56FF02108DEE000766B15 /* JAMFConstants.swift */; };
+		69C56FF32108F17B00766B15 /* NSButton+TextColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C56FF22108F17B00766B15 /* NSButton+TextColor.swift */; };
+		69C56FF52108F1CE00766B15 /* NSView+FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C56FF42108F1CE00766B15 /* NSView+FadeTransition.swift */; };
+		69C56FF82108F48100766B15 /* SecondaryRegistrationChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C56FF72108F48100766B15 /* SecondaryRegistrationChildViewController.swift */; };
+		69C56FFA2108F5D400766B15 /* CrossfadeStoryBoardSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C56FF92108F5D400766B15 /* CrossfadeStoryBoardSegue.swift */; };
+		69C56FFC2108FA9300766B15 /* DestinationIDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C56FFB2108FA9300766B15 /* DestinationIDConstants.swift */; };
+		69D0DFEC215C1D3A00D0E5B7 /* IncorrectUserPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D0DFEB215C1D3A00D0E5B7 /* IncorrectUserPopover.swift */; };
+		69D0DFF0215D605800D0E5B7 /* BundlePopOverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69D0DFEF215D605800D0E5B7 /* BundlePopOverViewController.xib */; };
+		69D0DFF2215D607500D0E5B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69D0DFF1215D607500D0E5B7 /* Main.storyboard */; };
+		69D0DFFF2162A31500D0E5B7 /* LinkOutItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D0DFFD2162A31500D0E5B7 /* LinkOutItemCell.swift */; };
+		69D0E0002162A31500D0E5B7 /* LinkOutItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69D0DFFE2162A31500D0E5B7 /* LinkOutItemCell.xib */; };
+		69EE9FF4216D0E780032C2E1 /* JAMFHelperConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EE9FF3216D0E780032C2E1 /* JAMFHelperConstants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		69CC617A2170F9F400DC4BA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69A1F5A82102269B004F461A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69B411E8216FA214005B6332;
+			remoteInfo = com.ibm.JAMFIntegrationHelper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6922610921415DC6007419A6 /* Copy LoginItem Helper */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				6922610A21415DE9007419A6 /* EnrollmentLoginHelper.app in Copy LoginItem Helper */,
+			);
+			name = "Copy LoginItem Helper";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6922610B21415DFF007419A6 /* Copy Helper */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LaunchServices;
+			dstSubfolderSpec = 1;
+			files = (
+				6933FF82216FA34200417BD3 /* com.ibm.jamf.IntegrationHelper in Copy Helper */,
+			);
+			name = "Copy Helper";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69B411E7216FA214005B6332 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6901E574210A52F300EACAF1 /* TermDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermDefinition.swift; sourceTree = "<group>"; };
+		6901E578210A54BD00EACAF1 /* SecurityDescriptionPopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityDescriptionPopover.swift; sourceTree = "<group>"; };
+		6901E57A210A5CFC00EACAF1 /* InfoPopOverConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPopOverConstants.swift; sourceTree = "<group>"; };
+		690ACB32213884DF00F8B1F0 /* DefineBundleInfoPopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefineBundleInfoPopover.swift; sourceTree = "<group>"; };
+		690ACB36213C5F1900F8B1F0 /* NSView+Rotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSView+Rotation.swift"; sourceTree = "<group>"; };
+		690ACB38213C6BF900F8B1F0 /* Indicators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Indicators.swift; sourceTree = "<group>"; };
+		690ACB3A213C8F2E00F8B1F0 /* BundleInstallationChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleInstallationChildViewController.swift; sourceTree = "<group>"; };
+		6922F6AB21273FDD00EB8003 /* BundleItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleItemCell.swift; sourceTree = "<group>"; };
+		6922F6AE212DB17D00EB8003 /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
+		6922F6B0212DD0A900EB8003 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		6922F6B2212DD39700EB8003 /* HeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewController.swift; sourceTree = "<group>"; };
+		6950CD57210B67EF007C97DF /* Info4Popover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info4Popover.swift; sourceTree = "<group>"; };
+		6950CD59210B6F8A007C97DF /* Info2Popover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info2Popover.swift; sourceTree = "<group>"; };
+		6950CD5C210B9BBE007C97DF /* RemoteProcessProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteProcessProtocol.swift; sourceTree = "<group>"; };
+		6950CD64210F67FE007C97DF /* AlertConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertConstants.swift; sourceTree = "<group>"; };
+		6950CD6A2110D583007C97DF /* OptionPopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionPopover.swift; sourceTree = "<group>"; };
+		6950CD6E211228F1007C97DF /* AnimatedGIFImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedGIFImageView.swift; sourceTree = "<group>"; };
+		6950CD7021123283007C97DF /* AnimatedGIFProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedGIFProgressViewController.swift; sourceTree = "<group>"; };
+		6950CD7221133ED5007C97DF /* RegistrationCompleteChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCompleteChildViewController.swift; sourceTree = "<group>"; };
+		6950CD75211375A0007C97DF /* BundleSelectionChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleSelectionChildViewController.swift; sourceTree = "<group>"; };
+		6950CD792114F385007C97DF /* StackItems.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StackItems.storyboard; sourceTree = "<group>"; };
+		6950CD7A2114F385007C97DF /* BundleItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BundleItemCell.xib; sourceTree = "<group>"; };
+		6950CD7B2114F385007C97DF /* HeaderViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HeaderViewController.storyboard; sourceTree = "<group>"; };
+		6950CD802118C865007C97DF /* SetupCompleteChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupCompleteChildViewController.swift; sourceTree = "<group>"; };
+		6950CD84211A2D89007C97DF /* ProgressStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressStates.swift; sourceTree = "<group>"; };
+		6950CD86211B83CF007C97DF /* BundleInstallButtonVisibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleInstallButtonVisibility.swift; sourceTree = "<group>"; };
+		6950CD8A211C8B64007C97DF /* NSTextField+Attributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSTextField+Attributes.swift"; sourceTree = "<group>"; };
+		6950CD8F2121E03B007C97DF /* SetupCompleteButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupCompleteButtons.swift; sourceTree = "<group>"; };
+		695833792135D29C00D6B606 /* BundleCProgressStackItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleCProgressStackItemViewController.swift; sourceTree = "<group>"; };
+		6958337B2135D2C800D6B606 /* BundleBProgressStackItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleBProgressStackItemViewController.swift; sourceTree = "<group>"; };
+		6958337D2135D2F200D6B606 /* BundleAProgressStackItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleAProgressStackItemViewController.swift; sourceTree = "<group>"; };
+		6958337F213729D700D6B606 /* BundlePopOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundlePopOverViewController.swift; sourceTree = "<group>"; };
+		696BBB75217BAE7B0094BE76 /* PrimaryRegistrationChildVCConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryRegistrationChildVCConstants.swift; sourceTree = "<group>"; };
+		696BBB77217BB6540094BE76 /* SecondaryRegistrationChildVCConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryRegistrationChildVCConstants.swift; sourceTree = "<group>"; };
+		696BBB79217BBC190094BE76 /* AnimatedGIFProgressChildVCConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedGIFProgressChildVCConstants.swift; sourceTree = "<group>"; };
+		696BBB7B217BBDEB0094BE76 /* RegistrationCompleteChildVCConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCompleteChildVCConstants.swift; sourceTree = "<group>"; };
+		696BBB83217BC8D40094BE76 /* CircularStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CircularStatus.swift; path = enrollment/Controllers/AppBundles/CircularStatus.swift; sourceTree = SOURCE_ROOT; };
+		696BBB86217BCA3D0094BE76 /* SetupCompleteChildVCConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupCompleteChildVCConstants.swift; sourceTree = "<group>"; };
+		696BBB88217BCC4B0094BE76 /* BundleSelectionChildVCConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleSelectionChildVCConstants.swift; sourceTree = "<group>"; };
+		696BBB8A217BCE090094BE76 /* BundleInstallationChildVCConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleInstallationChildVCConstants.swift; sourceTree = "<group>"; };
+		696BBB8C217CBA9E0094BE76 /* NetworkValidationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkValidationService.swift; sourceTree = "<group>"; };
+		696BBB8E217CD57F0094BE76 /* IssueAlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueAlertService.swift; sourceTree = "<group>"; };
+		6982633F2124B9940085647A /* WebLinkButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebLinkButtons.swift; sourceTree = "<group>"; };
+		698263602125C46E0085647A /* Hyperlink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hyperlink.swift; sourceTree = "<group>"; };
+		6991C19C2171064700BA7C56 /* XPCService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPCService.swift; sourceTree = "<group>"; };
+		69A1F5B02102269B004F461A /* enrollment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = enrollment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		69A1F5B32102269B004F461A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		69A1F5B72102269C004F461A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		69A1F5BC2102269C004F461A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69A1F5BD2102269C004F461A /* enrollment.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = enrollment.entitlements; sourceTree = "<group>"; };
+		69A1F5D221022FC2004F461A /* EnrollmentLoginHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnrollmentLoginHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		69A1F5D421022FC2004F461A /* LoginHelperAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHelperAppDelegate.swift; sourceTree = "<group>"; };
+		69A1F5D621022FC2004F461A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		69A1F5D921022FC2004F461A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		69A1F5DB21022FC2004F461A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69A1F5DC21022FC2004F461A /* EnrollmentLoginHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EnrollmentLoginHelper.entitlements; sourceTree = "<group>"; };
+		69B411E9216FA214005B6332 /* com.ibm.jamf.IntegrationHelper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = com.ibm.jamf.IntegrationHelper; sourceTree = BUILT_PRODUCTS_DIR; };
+		69C292D6213E163B00639383 /* AppBundleConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBundleConstants.swift; sourceTree = "<group>"; };
+		69C292D8213EB6C600639383 /* UpdateAppBundleInstallationUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateAppBundleInstallationUI.swift; sourceTree = "<group>"; };
+		69C56FDA21023BF300766B15 /* ColorConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
+		69C56FDC210260C700766B15 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		69C56FDE2102628E00766B15 /* MainStoryboardConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainStoryboardConstants.swift; sourceTree = "<group>"; };
+		69C56FE021063DBD00766B15 /* EnrollmentWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnrollmentWindowController.swift; sourceTree = "<group>"; };
+		69C56FE22106598700766B15 /* SubViewControllerManagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViewControllerManagerViewController.swift; sourceTree = "<group>"; };
+		69C56FE72106635B00766B15 /* PrimaryRegistrationChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryRegistrationChildViewController.swift; sourceTree = "<group>"; };
+		69C56FEB2107B03500766B15 /* InfoBubble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoBubble.swift; sourceTree = "<group>"; };
+		69C56FF02108DEE000766B15 /* JAMFConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JAMFConstants.swift; sourceTree = "<group>"; };
+		69C56FF22108F17B00766B15 /* NSButton+TextColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSButton+TextColor.swift"; sourceTree = "<group>"; };
+		69C56FF42108F1CE00766B15 /* NSView+FadeTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSView+FadeTransition.swift"; sourceTree = "<group>"; };
+		69C56FF72108F48100766B15 /* SecondaryRegistrationChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryRegistrationChildViewController.swift; sourceTree = "<group>"; };
+		69C56FF92108F5D400766B15 /* CrossfadeStoryBoardSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossfadeStoryBoardSegue.swift; sourceTree = "<group>"; };
+		69C56FFB2108FA9300766B15 /* DestinationIDConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationIDConstants.swift; sourceTree = "<group>"; };
+		69D0DFEB215C1D3A00D0E5B7 /* IncorrectUserPopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncorrectUserPopover.swift; sourceTree = "<group>"; };
+		69D0DFEF215D605800D0E5B7 /* BundlePopOverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BundlePopOverViewController.xib; sourceTree = "<group>"; };
+		69D0DFF1215D607500D0E5B7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		69D0DFFD2162A31500D0E5B7 /* LinkOutItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkOutItemCell.swift; sourceTree = "<group>"; };
+		69D0DFFE2162A31500D0E5B7 /* LinkOutItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LinkOutItemCell.xib; sourceTree = "<group>"; };
+		69EE9FF3216D0E780032C2E1 /* JAMFHelperConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JAMFHelperConstants.swift; sourceTree = "<group>"; };
+		69EEA004216F8C050032C2E1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = main.swift; path = ../enrollmentJAMFIntegrationHelper/main.swift; sourceTree = "<group>"; };
+		69EEA009216F8CAF0032C2E1 /* JAMFIntegrationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JAMFIntegrationHelper.swift; sourceTree = "<group>"; };
+		69EEA011216F95FD0032C2E1 /* JAMFIntegrationHelper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JAMFIntegrationHelper-Info.plist"; sourceTree = "<group>"; };
+		69EEA012216F969A0032C2E1 /* JAMFIntegrationHelper-Launchd.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JAMFIntegrationHelper-Launchd.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69A1F5AD2102269B004F461A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69A1F5CF21022FC2004F461A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69B411E6216FA214005B6332 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6901E57C210A61BE00EACAF1 /* PopOvers */ = {
+			isa = PBXGroup;
+			children = (
+				69D0DFEB215C1D3A00D0E5B7 /* IncorrectUserPopover.swift */,
+				6950CD59210B6F8A007C97DF /* Info2Popover.swift */,
+				6950CD57210B67EF007C97DF /* Info4Popover.swift */,
+				6901E578210A54BD00EACAF1 /* SecurityDescriptionPopover.swift */,
+				6950CD6A2110D583007C97DF /* OptionPopover.swift */,
+				6922F6AD21273FED00EB8003 /* Bundles */,
+			);
+			path = PopOvers;
+			sourceTree = "<group>";
+		};
+		6922F6AD21273FED00EB8003 /* Bundles */ = {
+			isa = PBXGroup;
+			children = (
+				6958337F213729D700D6B606 /* BundlePopOverViewController.swift */,
+				6922F6AB21273FDD00EB8003 /* BundleItemCell.swift */,
+			);
+			path = Bundles;
+			sourceTree = "<group>";
+		};
+		6950CD5B210B9B2D007C97DF /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				69EE9FF3216D0E780032C2E1 /* JAMFHelperConstants.swift */,
+				6950CD5C210B9BBE007C97DF /* RemoteProcessProtocol.swift */,
+				69EEA009216F8CAF0032C2E1 /* JAMFIntegrationHelper.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		6950CD8C211CBA50007C97DF /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				6950CD6E211228F1007C97DF /* AnimatedGIFImageView.swift */,
+				69C56FEB2107B03500766B15 /* InfoBubble.swift */,
+				6950CD8F2121E03B007C97DF /* SetupCompleteButtons.swift */,
+				690ACB38213C6BF900F8B1F0 /* Indicators.swift */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		696BBB72217BADFA0094BE76 /* VC Constants */ = {
+			isa = PBXGroup;
+			children = (
+				696BBB7D217BC6FF0094BE76 /* Phase 0 Regisistration */,
+				696BBB7F217BC7490094BE76 /* Phase 1 Bundle Installation */,
+				696BBB80217BC76B0094BE76 /* Phase 2 Education */,
+			);
+			path = "VC Constants";
+			sourceTree = "<group>";
+		};
+		696BBB7D217BC6FF0094BE76 /* Phase 0 Regisistration */ = {
+			isa = PBXGroup;
+			children = (
+				696BBB75217BAE7B0094BE76 /* PrimaryRegistrationChildVCConstants.swift */,
+				696BBB77217BB6540094BE76 /* SecondaryRegistrationChildVCConstants.swift */,
+				6901E57A210A5CFC00EACAF1 /* InfoPopOverConstants.swift */,
+				696BBB79217BBC190094BE76 /* AnimatedGIFProgressChildVCConstants.swift */,
+				696BBB7B217BBDEB0094BE76 /* RegistrationCompleteChildVCConstants.swift */,
+			);
+			path = "Phase 0 Regisistration";
+			sourceTree = "<group>";
+		};
+		696BBB7F217BC7490094BE76 /* Phase 1 Bundle Installation */ = {
+			isa = PBXGroup;
+			children = (
+				696BBB88217BCC4B0094BE76 /* BundleSelectionChildVCConstants.swift */,
+				696BBB8A217BCE090094BE76 /* BundleInstallationChildVCConstants.swift */,
+				69C292D6213E163B00639383 /* AppBundleConstants.swift */,
+			);
+			path = "Phase 1 Bundle Installation";
+			sourceTree = "<group>";
+		};
+		696BBB80217BC76B0094BE76 /* Phase 2 Education */ = {
+			isa = PBXGroup;
+			children = (
+				696BBB86217BCA3D0094BE76 /* SetupCompleteChildVCConstants.swift */,
+				6982633F2124B9940085647A /* WebLinkButtons.swift */,
+			);
+			path = "Phase 2 Education";
+			sourceTree = "<group>";
+		};
+		696BBB81217BC8800094BE76 /* Phase 0 Registration */ = {
+			isa = PBXGroup;
+			children = (
+				69C56FE72106635B00766B15 /* PrimaryRegistrationChildViewController.swift */,
+				69C56FF72108F48100766B15 /* SecondaryRegistrationChildViewController.swift */,
+				6950CD7021123283007C97DF /* AnimatedGIFProgressViewController.swift */,
+				6950CD7221133ED5007C97DF /* RegistrationCompleteChildViewController.swift */,
+			);
+			path = "Phase 0 Registration";
+			sourceTree = "<group>";
+		};
+		696BBB82217BC8B50094BE76 /* Phase 1 Bundle Installation */ = {
+			isa = PBXGroup;
+			children = (
+				696BBB83217BC8D40094BE76 /* CircularStatus.swift */,
+				6950CD75211375A0007C97DF /* BundleSelectionChildViewController.swift */,
+				690ACB3A213C8F2E00F8B1F0 /* BundleInstallationChildViewController.swift */,
+				6958337D2135D2F200D6B606 /* BundleAProgressStackItemViewController.swift */,
+				6958337B2135D2C800D6B606 /* BundleBProgressStackItemViewController.swift */,
+				695833792135D29C00D6B606 /* BundleCProgressStackItemViewController.swift */,
+				6922F6AE212DB17D00EB8003 /* StackView.swift */,
+				6922F6B0212DD0A900EB8003 /* BaseViewController.swift */,
+				6922F6B2212DD39700EB8003 /* HeaderViewController.swift */,
+			);
+			path = "Phase 1 Bundle Installation";
+			sourceTree = "<group>";
+		};
+		696BBB85217BC9090094BE76 /* Phase 2 Education */ = {
+			isa = PBXGroup;
+			children = (
+				6950CD802118C865007C97DF /* SetupCompleteChildViewController.swift */,
+				69D0DFFD2162A31500D0E5B7 /* LinkOutItemCell.swift */,
+			);
+			path = "Phase 2 Education";
+			sourceTree = "<group>";
+		};
+		6991C19B2171061600BA7C56 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6991C19C2171064700BA7C56 /* XPCService.swift */,
+				696BBB8C217CBA9E0094BE76 /* NetworkValidationService.swift */,
+				696BBB8E217CD57F0094BE76 /* IssueAlertService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		69A1F5A72102269B004F461A = {
+			isa = PBXGroup;
+			children = (
+				69A1F5B22102269B004F461A /* enrollment */,
+				69A1F5D321022FC2004F461A /* EnrollmentLoginHelper */,
+				69B411EA216FA214005B6332 /* JAMFIntegrationHelper */,
+				69A1F5B12102269B004F461A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		69A1F5B12102269B004F461A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69A1F5B02102269B004F461A /* enrollment.app */,
+				69A1F5D221022FC2004F461A /* EnrollmentLoginHelper.app */,
+				69B411E9216FA214005B6332 /* com.ibm.jamf.IntegrationHelper */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69A1F5B22102269B004F461A /* enrollment */ = {
+			isa = PBXGroup;
+			children = (
+				6991C19B2171061600BA7C56 /* Services */,
+				69C56FED2108DE1D00766B15 /* Constants */,
+				69C56FEA2107661D00766B15 /* Models */,
+				69C56FE9210765B200766B15 /* Views */,
+				69C56FE4210662D500766B15 /* Controllers */,
+				6950CD5B210B9B2D007C97DF /* Shared */,
+				69A1F5B72102269C004F461A /* Assets.xcassets */,
+				69A1F5BC2102269C004F461A /* Info.plist */,
+				69A1F5BD2102269C004F461A /* enrollment.entitlements */,
+			);
+			path = enrollment;
+			sourceTree = "<group>";
+		};
+		69A1F5D321022FC2004F461A /* EnrollmentLoginHelper */ = {
+			isa = PBXGroup;
+			children = (
+				69A1F5D421022FC2004F461A /* LoginHelperAppDelegate.swift */,
+				69A1F5D621022FC2004F461A /* Assets.xcassets */,
+				69A1F5D821022FC2004F461A /* MainMenu.xib */,
+				69A1F5DB21022FC2004F461A /* Info.plist */,
+				69A1F5DC21022FC2004F461A /* EnrollmentLoginHelper.entitlements */,
+			);
+			path = EnrollmentLoginHelper;
+			sourceTree = "<group>";
+		};
+		69B411EA216FA214005B6332 /* JAMFIntegrationHelper */ = {
+			isa = PBXGroup;
+			children = (
+				69EEA004216F8C050032C2E1 /* main.swift */,
+				69EEA011216F95FD0032C2E1 /* JAMFIntegrationHelper-Info.plist */,
+				69EEA012216F969A0032C2E1 /* JAMFIntegrationHelper-Launchd.plist */,
+			);
+			path = JAMFIntegrationHelper;
+			sourceTree = "<group>";
+		};
+		69C56FE4210662D500766B15 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				69A1F5B32102269B004F461A /* AppDelegate.swift */,
+				69C56FF92108F5D400766B15 /* CrossfadeStoryBoardSegue.swift */,
+				69C56FE52106631100766B15 /* MainWindow */,
+				696BBB81217BC8800094BE76 /* Phase 0 Registration */,
+				696BBB82217BC8B50094BE76 /* Phase 1 Bundle Installation */,
+				696BBB85217BC9090094BE76 /* Phase 2 Education */,
+				6901E57C210A61BE00EACAF1 /* PopOvers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		69C56FE52106631100766B15 /* MainWindow */ = {
+			isa = PBXGroup;
+			children = (
+				69C56FDC210260C700766B15 /* MainViewController.swift */,
+				69C56FE22106598700766B15 /* SubViewControllerManagerViewController.swift */,
+				69C56FE021063DBD00766B15 /* EnrollmentWindowController.swift */,
+			);
+			path = MainWindow;
+			sourceTree = "<group>";
+		};
+		69C56FE9210765B200766B15 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6950CD7A2114F385007C97DF /* BundleItemCell.xib */,
+				69D0DFFE2162A31500D0E5B7 /* LinkOutItemCell.xib */,
+				6950CD7B2114F385007C97DF /* HeaderViewController.storyboard */,
+				69D0DFEF215D605800D0E5B7 /* BundlePopOverViewController.xib */,
+				69D0DFF1215D607500D0E5B7 /* Main.storyboard */,
+				6950CD792114F385007C97DF /* StackItems.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		69C56FEA2107661D00766B15 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				69C56FDE2102628E00766B15 /* MainStoryboardConstants.swift */,
+				6901E574210A52F300EACAF1 /* TermDefinition.swift */,
+				698263602125C46E0085647A /* Hyperlink.swift */,
+				6950CD84211A2D89007C97DF /* ProgressStates.swift */,
+				6950CD86211B83CF007C97DF /* BundleInstallButtonVisibility.swift */,
+				690ACB32213884DF00F8B1F0 /* DefineBundleInfoPopover.swift */,
+				69C292D8213EB6C600639383 /* UpdateAppBundleInstallationUI.swift */,
+				6950CD8C211CBA50007C97DF /* Images */,
+				69C56FF62108F26C00766B15 /* Extensions */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		69C56FED2108DE1D00766B15 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				696BBB72217BADFA0094BE76 /* VC Constants */,
+				69C56FDA21023BF300766B15 /* ColorConstants.swift */,
+				6950CD64210F67FE007C97DF /* AlertConstants.swift */,
+				69C56FFB2108FA9300766B15 /* DestinationIDConstants.swift */,
+				69C56FF02108DEE000766B15 /* JAMFConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		69C56FF62108F26C00766B15 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				69C56FF22108F17B00766B15 /* NSButton+TextColor.swift */,
+				69C56FF42108F1CE00766B15 /* NSView+FadeTransition.swift */,
+				6950CD8A211C8B64007C97DF /* NSTextField+Attributes.swift */,
+				690ACB36213C5F1900F8B1F0 /* NSView+Rotation.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69A1F5AF2102269B004F461A /* enrollment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69A1F5C02102269C004F461A /* Build configuration list for PBXNativeTarget "enrollment" */;
+			buildPhases = (
+				69A1F5AC2102269B004F461A /* Sources */,
+				69A1F5AD2102269B004F461A /* Frameworks */,
+				69A1F5AE2102269B004F461A /* Resources */,
+				6922610B21415DFF007419A6 /* Copy Helper */,
+				6922610921415DC6007419A6 /* Copy LoginItem Helper */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69CC617B2170F9F400DC4BA1 /* PBXTargetDependency */,
+			);
+			name = enrollment;
+			productName = enrollment;
+			productReference = 69A1F5B02102269B004F461A /* enrollment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		69A1F5D121022FC2004F461A /* EnrollmentLoginHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69A1F5DD21022FC2004F461A /* Build configuration list for PBXNativeTarget "EnrollmentLoginHelper" */;
+			buildPhases = (
+				69A1F5CE21022FC2004F461A /* Sources */,
+				69A1F5CF21022FC2004F461A /* Frameworks */,
+				69A1F5D021022FC2004F461A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EnrollmentLoginHelper;
+			productName = EnrollmentLoginHelper;
+			productReference = 69A1F5D221022FC2004F461A /* EnrollmentLoginHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		69B411E8216FA214005B6332 /* com.ibm.jamf.IntegrationHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69B411ED216FA214005B6332 /* Build configuration list for PBXNativeTarget "com.ibm.jamf.IntegrationHelper" */;
+			buildPhases = (
+				69B411E5216FA214005B6332 /* Sources */,
+				69B411E6216FA214005B6332 /* Frameworks */,
+				69B411E7216FA214005B6332 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = com.ibm.jamf.IntegrationHelper;
+			productName = JAMFIntegrationHelper;
+			productReference = 69B411E9216FA214005B6332 /* com.ibm.jamf.IntegrationHelper */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69A1F5A82102269B004F461A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = IBM;
+				TargetAttributes = {
+					69A1F5AF2102269B004F461A = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 0;
+							};
+							com.apple.HardenedRuntime = {
+								enabled = 0;
+							};
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					69A1F5D121022FC2004F461A = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
+					};
+					69B411E8216FA214005B6332 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 69A1F5AB2102269B004F461A /* Build configuration list for PBXProject "enrollment" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 69A1F5A72102269B004F461A;
+			productRefGroup = 69A1F5B12102269B004F461A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69A1F5AF2102269B004F461A /* enrollment */,
+				69A1F5D121022FC2004F461A /* EnrollmentLoginHelper */,
+				69B411E8216FA214005B6332 /* com.ibm.jamf.IntegrationHelper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69A1F5AE2102269B004F461A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69A1F5E121023006004F461A /* EnrollmentLoginHelper.app in Resources */,
+				69D0E0002162A31500D0E5B7 /* LinkOutItemCell.xib in Resources */,
+				6950CD7E2114F385007C97DF /* HeaderViewController.storyboard in Resources */,
+				69D0DFF0215D605800D0E5B7 /* BundlePopOverViewController.xib in Resources */,
+				6950CD7D2114F385007C97DF /* BundleItemCell.xib in Resources */,
+				69D0DFF2215D607500D0E5B7 /* Main.storyboard in Resources */,
+				6950CD7C2114F385007C97DF /* StackItems.storyboard in Resources */,
+				69A1F5B82102269C004F461A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69A1F5D021022FC2004F461A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69A1F5D721022FC2004F461A /* Assets.xcassets in Resources */,
+				69A1F5DA21022FC2004F461A /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69A1F5AC2102269B004F461A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6950CD902121E03B007C97DF /* SetupCompleteButtons.swift in Sources */,
+				690ACB33213884DF00F8B1F0 /* DefineBundleInfoPopover.swift in Sources */,
+				696BBB89217BCC4B0094BE76 /* BundleSelectionChildVCConstants.swift in Sources */,
+				698263612125C46E0085647A /* Hyperlink.swift in Sources */,
+				6901E575210A52F300EACAF1 /* TermDefinition.swift in Sources */,
+				6922F6B1212DD0A900EB8003 /* BaseViewController.swift in Sources */,
+				6950CD87211B83CF007C97DF /* BundleInstallButtonVisibility.swift in Sources */,
+				6991C19D2171064700BA7C56 /* XPCService.swift in Sources */,
+				6922F6B3212DD39700EB8003 /* HeaderViewController.swift in Sources */,
+				69D0DFEC215C1D3A00D0E5B7 /* IncorrectUserPopover.swift in Sources */,
+				6922F6AC21273FDD00EB8003 /* BundleItemCell.swift in Sources */,
+				69583381213729D700D6B606 /* BundlePopOverViewController.swift in Sources */,
+				690ACB37213C5F1900F8B1F0 /* NSView+Rotation.swift in Sources */,
+				69C292D9213EB6C600639383 /* UpdateAppBundleInstallationUI.swift in Sources */,
+				69C56FE82106635B00766B15 /* PrimaryRegistrationChildViewController.swift in Sources */,
+				696BBB7C217BBDEB0094BE76 /* RegistrationCompleteChildVCConstants.swift in Sources */,
+				69C56FDF2102628E00766B15 /* MainStoryboardConstants.swift in Sources */,
+				69C56FFC2108FA9300766B15 /* DestinationIDConstants.swift in Sources */,
+				6950CD5D210B9BBE007C97DF /* RemoteProcessProtocol.swift in Sources */,
+				69A1F5B42102269B004F461A /* AppDelegate.swift in Sources */,
+				6950CD65210F67FE007C97DF /* AlertConstants.swift in Sources */,
+				69C56FF52108F1CE00766B15 /* NSView+FadeTransition.swift in Sources */,
+				6950CD76211375A0007C97DF /* BundleSelectionChildViewController.swift in Sources */,
+				6958337C2135D2C900D6B606 /* BundleBProgressStackItemViewController.swift in Sources */,
+				6950CD6F211228F1007C97DF /* AnimatedGIFImageView.swift in Sources */,
+				69C56FEC2107B03500766B15 /* InfoBubble.swift in Sources */,
+				69C56FF32108F17B00766B15 /* NSButton+TextColor.swift in Sources */,
+				690ACB39213C6BF900F8B1F0 /* Indicators.swift in Sources */,
+				6958337E2135D2F200D6B606 /* BundleAProgressStackItemViewController.swift in Sources */,
+				69C56FE121063DBD00766B15 /* EnrollmentWindowController.swift in Sources */,
+				690ACB3B213C8F2E00F8B1F0 /* BundleInstallationChildViewController.swift in Sources */,
+				69C56FDB21023BF300766B15 /* ColorConstants.swift in Sources */,
+				696BBB87217BCA3D0094BE76 /* SetupCompleteChildVCConstants.swift in Sources */,
+				6922F6AF212DB17D00EB8003 /* StackView.swift in Sources */,
+				696BBB78217BB6540094BE76 /* SecondaryRegistrationChildVCConstants.swift in Sources */,
+				6950CD58210B67EF007C97DF /* Info4Popover.swift in Sources */,
+				696BBB84217BC8D40094BE76 /* CircularStatus.swift in Sources */,
+				6950CD6B2110D583007C97DF /* OptionPopover.swift in Sources */,
+				6901E57B210A5CFC00EACAF1 /* InfoPopOverConstants.swift in Sources */,
+				696BBB8F217CD57F0094BE76 /* IssueAlertService.swift in Sources */,
+				69C56FFA2108F5D400766B15 /* CrossfadeStoryBoardSegue.swift in Sources */,
+				69EE9FF4216D0E780032C2E1 /* JAMFHelperConstants.swift in Sources */,
+				69C56FF12108DEE000766B15 /* JAMFConstants.swift in Sources */,
+				698263402124B9940085647A /* WebLinkButtons.swift in Sources */,
+				6950CD85211A2D89007C97DF /* ProgressStates.swift in Sources */,
+				69C292D7213E163B00639383 /* AppBundleConstants.swift in Sources */,
+				69D0DFFF2162A31500D0E5B7 /* LinkOutItemCell.swift in Sources */,
+				69C56FF82108F48100766B15 /* SecondaryRegistrationChildViewController.swift in Sources */,
+				69C56FE32106598700766B15 /* SubViewControllerManagerViewController.swift in Sources */,
+				6950CD8B211C8B64007C97DF /* NSTextField+Attributes.swift in Sources */,
+				696BBB8B217BCE090094BE76 /* BundleInstallationChildVCConstants.swift in Sources */,
+				6950CD812118C865007C97DF /* SetupCompleteChildViewController.swift in Sources */,
+				696BBB7A217BBC190094BE76 /* AnimatedGIFProgressChildVCConstants.swift in Sources */,
+				696BBB76217BAE7B0094BE76 /* PrimaryRegistrationChildVCConstants.swift in Sources */,
+				6950CD7321133ED5007C97DF /* RegistrationCompleteChildViewController.swift in Sources */,
+				6901E579210A54BD00EACAF1 /* SecurityDescriptionPopover.swift in Sources */,
+				6950CD5A210B6F8A007C97DF /* Info2Popover.swift in Sources */,
+				6958337A2135D29C00D6B606 /* BundleCProgressStackItemViewController.swift in Sources */,
+				696BBB8D217CBA9E0094BE76 /* NetworkValidationService.swift in Sources */,
+				696BBB0D217664A10094BE76 /* JAMFIntegrationHelper.swift in Sources */,
+				6950CD7121123283007C97DF /* AnimatedGIFProgressViewController.swift in Sources */,
+				69C56FDD210260C700766B15 /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69A1F5CE21022FC2004F461A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69A1F5D521022FC2004F461A /* LoginHelperAppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69B411E5216FA214005B6332 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69B411F2216FA22D005B6332 /* JAMFIntegrationHelper.swift in Sources */,
+				69B411F3216FA293005B6332 /* RemoteProcessProtocol.swift in Sources */,
+				69B411F0216FA22D005B6332 /* main.swift in Sources */,
+				69B411F5216FA29A005B6332 /* JAMFHelperConstants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		69CC617B2170F9F400DC4BA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69B411E8216FA214005B6332 /* com.ibm.jamf.IntegrationHelper */;
+			targetProxy = 69CC617A2170F9F400DC4BA1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		69A1F5D821022FC2004F461A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69A1F5D921022FC2004F461A /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		69A1F5BE2102269C004F461A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		69A1F5BF2102269C004F461A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		69A1F5C12102269C004F461A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = enrollment/enrollment.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = X6G5Z8UDX5;
+				INFOPLIST_FILE = enrollment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.enrollment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		69A1F5C22102269C004F461A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = enrollment/enrollment.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = X6G5Z8UDX5;
+				INFOPLIST_FILE = enrollment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.enrollment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		69A1F5DE21022FC2004F461A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EnrollmentLoginHelper/EnrollmentLoginHelper.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = X6G5Z8UDX5;
+				INFOPLIST_FILE = EnrollmentLoginHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.EnrollmentLoginHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		69A1F5DF21022FC2004F461A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EnrollmentLoginHelper/EnrollmentLoginHelper.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = X6G5Z8UDX5;
+				INFOPLIST_FILE = EnrollmentLoginHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.EnrollmentLoginHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		69B411EE216FA214005B6332 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X6G5Z8UDX5;
+				INFOPLIST_FILE = "$(SRCROOT)/JAMFIntegrationHelper/JAMFIntegrationHelper-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"\"$(SRCROOT)/JAMFIntegrationHelper/JAMFIntegrationHelper-Info.plist\"",
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"\"$(SRCROOT)/JAMFIntegrationHelper/JAMFIntegrationHelper-Launchd.plist\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.jamf.IntegrationHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		69B411EF216FA214005B6332 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X6G5Z8UDX5;
+				INFOPLIST_FILE = "$(SRCROOT)/JAMFIntegrationHelper/JAMFIntegrationHelper-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"\"$(SRCROOT)/JAMFIntegrationHelper/JAMFIntegrationHelper-Info.plist\"",
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"\"$(SRCROOT)/JAMFIntegrationHelper/JAMFIntegrationHelper-Launchd.plist\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.jamf.IntegrationHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69A1F5AB2102269B004F461A /* Build configuration list for PBXProject "enrollment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69A1F5BE2102269C004F461A /* Debug */,
+				69A1F5BF2102269C004F461A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69A1F5C02102269C004F461A /* Build configuration list for PBXNativeTarget "enrollment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69A1F5C12102269C004F461A /* Debug */,
+				69A1F5C22102269C004F461A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69A1F5DD21022FC2004F461A /* Build configuration list for PBXNativeTarget "EnrollmentLoginHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69A1F5DE21022FC2004F461A /* Debug */,
+				69A1F5DF21022FC2004F461A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69B411ED216FA214005B6332 /* Build configuration list for PBXNativeTarget "com.ibm.jamf.IntegrationHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69B411EE216FA214005B6332 /* Debug */,
+				69B411EF216FA214005B6332 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 69A1F5A82102269B004F461A /* Project object */;
+}
