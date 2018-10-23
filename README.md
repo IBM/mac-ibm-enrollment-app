@@ -24,7 +24,7 @@ A blank return means success. You can also see the anchor keys present in Xcode 
 ### Constant files to configure behavior and UI elements.
 Stored Properties can be found in constants files located in the Constants directory of the project. 
 
-__Note: you will need to configure the JAMFConstants.swift file with the policy event ID's for removing framework and bundle installation as well as JAMF URL's (primarily the production URL)__.
+__Note: you will need to configure the JAMFConstants.swift file with the policy event ID's for removing framework and bundle installation as well as Jamf URL's (primarily the production URL)__.
 
 
 ## Experience
@@ -33,9 +33,9 @@ The application experience flows through three phases:
 2. Installing software bundles to get you up and running.
 3. Education / URL link actions for next steps and help. 
 
-The application provided is a UI that takes input from both the customer as well as a jamf event policy script. 
+The application provided is a UI that takes input from both the customer as well as a Jamf event policy script. 
 
-### JAMF Workflow
+### Jamf Workflow
 1.  The application and it's corresponding JAMFIntegrationHelper binary / daemon are deployed on enrollment to the system. 
 2.  Additionally a script can be run to retrieve / provide information to the app's plist that lives in the customer's Library/Preferences.
 	1. The hrFirstName populated through the LDAP connector, retrieved via API request from the client and written. 
@@ -47,7 +47,7 @@ The application provided is a UI that takes input from both the customer as well
 ![phase1-Welcome](https://github.com/ibm/mac-ibm-enrollment-app/blob/master/images/phase1.png)
 
 3.  The customer is greeted by the welcome screen and can move through the steps of answering questions. The data is recorded to keys specified for later retrieval by extension attribute if needed. 
-    Should there be a desire to opt-out of management, the cancel button can initiate a jamf event policy for a decommission workflow provided by the JAMF admin.
+    Should there be a desire to opt-out of management, the cancel button can initiate a Jamf event policy for a decommission workflow provided by the Jamf admin.
 
 4.  Once through the registration phase, the app can reboot the system allowing for disc encryption and any security policies to be applied ahead of software installation.
 
@@ -55,7 +55,7 @@ The application provided is a UI that takes input from both the customer as well
 
 5.  The customer is returned to the application bundle install screen after logging in from the reboot.  
 
-6.  When they have made their selection and choose to move forward, a jamf event request is made to begin the bundle installation. The script behind this event will examine an array of bundle choices
+6.  When they have made their selection and choose to move forward, a Jamf event request is made to begin the bundle installation. The script behind this event will examine an array of bundle choices
     the customer has made and process accordingly, being sure to update the UI with the corresponding property list keys each step of the way.
 
 ![phase3-Further reading](https://github.com/ibm/mac-ibm-enrollment-app/blob/master/images/phase3.png)
