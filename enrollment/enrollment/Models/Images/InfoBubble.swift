@@ -4,9 +4,9 @@
 //
 //  Created by Jay Latman on 7/24/18.
 //  Copyright © 2018 IBM. All rights reserved.
+//  SPDX-License-Identifier: GPL-3.0-only
 //
-// 
-//
+
 
 import Cocoa
 
