@@ -36,7 +36,7 @@ The application experience flows through three phases:
 The application provided is a UI that takes input from both the customer as well as a Jamf event policy script. 
 
 ### Jamf Workflow
-1.  The application and it's corresponding JAMFIntegrationHelper binary / daemon are deployed on enrollment to the system. 
+1.  The application and its corresponding JAMFIntegrationHelper binary / daemon are deployed on enrollment to the system. 
 2.  Additionally a script can be run to retrieve / provide information to the app's plist that lives in the customer's Library/Preferences.
 	1. The hrFirstName populated through the LDAP connector, retrieved via API request from the client and written. 
 	2. A speed test package to run the background to populate the plist with a download rate value.
