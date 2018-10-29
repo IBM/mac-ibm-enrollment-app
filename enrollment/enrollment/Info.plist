@@ -28,5 +28,10 @@
 	<string>Main</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
+	<key>SMPrivilegedExecutables</key>
+	<dict>
+		<key>com.ibm.jamf.IntegrationHelper</key>
+		<string>identifier "com.ibm.jamf.IntegrationHelper" and anchor apple generic and certificate leaf[subject.CN] = "Mac Developer: Interlaced Developer (QY53FV933Y)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+	</dict>
 </dict>
 </plist>
