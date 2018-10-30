@@ -14,19 +14,23 @@ The Mac@IBM enrollment app makes setting up macOS with Jamf Pro more intuitive f
 4.  Copy the python tool to the root of your project folder.
 5.  From the terminal navigate to the root of your project folder and run the following : 
 
-``` ./SMJobBlessUtil.py setreq /the/path/to/a/buildCopyOfYourApp enrollment/enrollment/Info.plist enrollment/JAMFIntegrationHelper/JAMFIntegrationHelper-Info.plist ```
+``` 
+./SMJobBlessUtil.py setreq /the/path/to/a/buildCopyOfYourApp enrollment/enrollment/Info.plist enrollment/JAMFIntegrationHelper/JAMFIntegrationHelper-Info.plist 
+```
 
-This should create anchor keys in both the Info.plist for the app and -Info.plist of the helper. You can validate that the certificates are properly matching using the check option of the Utility: 
+This should create anchor keys in both the `Info.plist` for the app and `-Info.plist` of the helper. You can validate that the certificates are properly matching using the check option of the Utility: 
 
-``` ./SMJobBlessUtil.py check /the/path/to/a/buildCopyOfYourApp```
+``` 
+./SMJobBlessUtil.py check /the/path/to/a/buildCopyOfYourApp
+```
 
-A blank return means success. You can also see the anchor keys present in Xcode by looking at the corresponding  property lists.
+A blank return means success. You can also see the anchor keys present in Xcode by looking at the corresponding property lists.
 
 ![Main Application Info.plist](https://github.com/ibm/mac-ibm-enrollment-app/blob/master/images/appPlistAnchors.png)
 ![Helper-Info.plist](https://github.com/ibm/mac-ibm-enrollment-app/blob/master/images/helperPlistAnchor.png)
 
 ### Constant files to configure behavior and UI elements.
-Stored Properties can be found in constants files located in the Constants directory of the project. 
+Stored Properties can be found in constants files located in the `Constants` directory of the project. 
 
 __Note: you will need to configure the JAMFConstants.swift file with the policy event ID's for removing framework and bundle installation as well as Jamf URL's (primarily the production URL)__.
 
