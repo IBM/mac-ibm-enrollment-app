@@ -1,5 +1,5 @@
-![](https://img.shields.io/badge/xcode-10.0_(10A256)-2d74da.svg)
-![](https://img.shields.io/badge/swift-4.2-2d74da.svg)
+![](https://img.shields.io/badge/xcode-10.1_(10B61)-2d74da.svg)
+![](https://img.shields.io/badge/swift-4.2.1-2d74da.svg)
 ![](https://img.shields.io/badge/os-macOS_Mojave-2d74da.svg)
 
 # mac-ibm-enrollment-app
