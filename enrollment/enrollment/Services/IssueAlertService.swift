@@ -9,12 +9,26 @@
 
 import Cocoa
 
+/**
+ Shared service class for extending the displaying of NSAlerts to the enrollment app.
+ */
 class IssueAlertService: NSObject {
     static let sharedInstance: IssueAlertService = {
         let instance = IssueAlertService()
         return instance
     }()
     
+    /**
+     Method for displaying an alert sheet with the option to initiate a jamf policy by event trigger via the Jamf Integration Helper binary
+     
+     - Parameter messageText : string value for the header of the alert
+     - Parameter informativeText : string value for the central part of the alert
+     - Parameter style : NSAlert.style (critical, informational, warning)
+     - Parameter button1 : string value for the cancel button label
+     - Parameter button2 : string value for the proceed / action button label
+     - Parameter jamfEvent : string value for the jamf event trigger
+     - Parameter button1LogText : string value for the logging of the cancel button being used
+     */
     func displaySheetWithJAMFAction(header messageText: String?, message informativeText: String?, style: NSAlert.Style, cancelButtonLabel button1: String?, actionButtonLabel button2: String?, jamfPolicyEvent jamfEvent: String?, button1LogText: String?) {
         
         let alert = NSAlert()
@@ -48,6 +62,14 @@ class IssueAlertService: NSObject {
         }
     }
     
+    /**
+     Method for displaying an alert modal in the event the app can not be launched
+     
+     - Parameter messageText : string value for the header of the alert
+     - Parameter informativeText : string value for the central part of the alert
+     - Parameter style : NSAlert.style (critical, informational, warning)
+     - Parameter button1 : string value for the cancel button label
+    */
     func displayModalFailureToLaunch(header messageText: String?, message informativeText: String?, style: NSAlert.Style, cancelButtonLabel button1: String?) {
         let appLaunchFailure = NSAlert()
         
@@ -69,6 +91,11 @@ class IssueAlertService: NSObject {
         NSApp.terminate(self)
     }
     
+    /**
+     Method for displaying an alert sheet in the event the network is unreachable
+     
+     - Parameter message : string value for the alert text to be displayed
+    */
     func displaySheetNetworkUnreachable(message: String?) {
         let alert = NSAlert()
         if let message = message {
