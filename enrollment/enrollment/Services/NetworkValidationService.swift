@@ -11,6 +11,9 @@ import Foundation
 import AppKit
 import SystemConfiguration
 
+/**
+ Shared service class for extending network validation to the enrollment app
+*/
 class NetworkValidationService: NSObject {
     
     static let sharedInstance: NetworkValidationService = {
@@ -18,7 +21,9 @@ class NetworkValidationService: NSObject {
         return instance
     }()
     
-    
+    /**
+     Method for validating if the system is connected to the internet
+    */
     func isConnectedToNetwork() -> Bool {
         
         var zeroAddress = sockaddr_in(sin_len: 0, sin_family: 0, sin_port: 0, sin_addr: in_addr(s_addr: 0), sin_zero: (0, 0, 0, 0, 0, 0, 0, 0))
@@ -42,6 +47,11 @@ class NetworkValidationService: NSObject {
         return isReachable && !needsConnection
     }
     
+    /**
+     Method for validating if the system is able to reach an internal url / intranet
+     
+     - Parameter urlPath : string value containing the internal testing url
+    */
     func verifyInternalURL(urlPath: String, completion: @escaping (_ isValid: Bool)->()) {
         if let url = NSURL(string: urlPath) {
             let request = NSMutableURLRequest(url: url as URL)
@@ -60,6 +70,11 @@ class NetworkValidationService: NSObject {
         }
     }
     
+    /**
+     Method for validating if the system is able to reach the Jamf Pro Server
+     
+     - Parameter jpsURL : string value containing the health check url for the Jamf Pro Server
+    */
     func checkForJPSAvailability(jpsURL: String, completion: @escaping (_ result: Int) -> Void) {
         let url = URL(string: jpsURL)!
         let request = URLRequest(url: url)
@@ -75,6 +90,9 @@ class NetworkValidationService: NSObject {
         task.resume()
     }
     
+    /**
+     Private method for displaying an alert sheet in the event the network validation returns a false state
+    */
     private func displayInternalNetworkValidationWarning() {
         DispatchQueue.main.async {
             let alert = NSAlert()
