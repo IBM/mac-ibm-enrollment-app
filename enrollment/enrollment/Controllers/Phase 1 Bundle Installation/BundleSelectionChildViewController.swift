@@ -363,7 +363,7 @@ class BundleSelectionChildViewController: NSViewController {
                 }
             }
             dispatchGroup.enter()
-            NetworkValidationService.sharedInstance.checkForJSSAvailability(jssURL: jpsHealthCheckServiceURL) { (result) -> () in
+            NetworkValidationService.sharedInstance.checkForJPSAvailability(jpsURL: jpsHealthCheckServiceURL) { (result) -> () in
                 self.jpsCheckResult = result
                 dispatchGroup.leave()
             }

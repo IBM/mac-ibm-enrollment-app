@@ -60,8 +60,8 @@ class NetworkValidationService: NSObject {
         }
     }
     
-    func checkForJSSAvailability(jssURL: String, completion: @escaping (_ result: Int) -> Void) {
-        let url = URL(string: jssURL)!
+    func checkForJPSAvailability(jpsURL: String, completion: @escaping (_ result: Int) -> Void) {
+        let url = URL(string: jpsURL)!
         let request = URLRequest(url: url)
         
         let task = URLSession.shared.dataTask(with: request) {data, response, error in
