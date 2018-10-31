@@ -14,9 +14,9 @@ struct AnimatedGIFProgressChildVC_Constants {
      Structure definition containing reference assignments of stored values or property list key names for retrieving values.
      - Note: these are text string values to be displayed while the AnimatedGIFProgressView is active.
      
-     • `stateOne`: first text string to be displayed
+     • `stateOne`: first text string to be displayed in timed sequence
      
-     • `stateTwo`: second text string to be displayed
+     • `stateTwo`: second text string to be displayed in timed sequence
      */
     struct RegistrationProgress {
         static let stateOne = "Testing network speed"
