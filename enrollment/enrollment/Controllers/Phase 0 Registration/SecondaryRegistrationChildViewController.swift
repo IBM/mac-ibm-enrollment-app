@@ -37,7 +37,7 @@ class SecondaryRegistrationChildViewController: NSViewController {
         super.viewDidLoad()
         layoutSetup()
         setTextFields()
-        if (UserDefaults.standard.array(forKey: SecondaryRegistrationChildVC_Constants.Keys.Options.optionArray)) != nil {
+        if (UserDefaults.standard.array(forKey: SecondaryRegistrationChildVC_Constants.Keys.optionArray)) != nil {
             loadOnOffStateFromPlist()
         } else { return }
         setStateForContinueToNextStepButton()
@@ -64,7 +64,7 @@ class SecondaryRegistrationChildViewController: NSViewController {
     private func loadOnOffStateFromPlist() {
         var optionCheckboxToggleArray: [String] = []
         
-        if let optionCheckboxSelection = (UserDefaults.standard.array(forKey: SecondaryRegistrationChildVC_Constants.Keys.Options.optionArray)) as? [String] {
+        if let optionCheckboxSelection = (UserDefaults.standard.array(forKey: SecondaryRegistrationChildVC_Constants.Keys.optionArray)) as? [String] {
             for optionCheckboxToggles in optionCheckboxSelection {
                 optionCheckboxToggleArray.append(optionCheckboxToggles)
                 
@@ -94,13 +94,13 @@ class SecondaryRegistrationChildViewController: NSViewController {
             optionCheckboxSelected.remove(SecondaryRegistrationChildVC_Constants.Keys.Options.PersistenceStoredSelectedOption.none)
             if sender.state == .on {
                 optionCheckboxSelected.insert(sender.identifier!.rawValue as String)
-                UserDefaults.standard.set(Array(optionCheckboxSelected), forKey: SecondaryRegistrationChildVC_Constants.Keys.Options.optionArray)
+                UserDefaults.standard.set(Array(optionCheckboxSelected), forKey: SecondaryRegistrationChildVC_Constants.Keys.optionArray)
             } else {
                 optionCheckboxSelected.remove(sender.identifier!.rawValue as String)
             }
             setStateForContinueToNextStepButton()
         }
-        UserDefaults.standard.set(Array(optionCheckboxSelected), forKey: SecondaryRegistrationChildVC_Constants.Keys.Options.optionArray)
+        UserDefaults.standard.set(Array(optionCheckboxSelected), forKey: SecondaryRegistrationChildVC_Constants.Keys.optionArray)
         UserDefaults.standard.synchronize()
     }
     
@@ -114,7 +114,7 @@ class SecondaryRegistrationChildViewController: NSViewController {
             self.setStateForContinueToNextStepButton()
             optionCheckboxSelected.remove(SecondaryRegistrationChildVC_Constants.Keys.Options.PersistenceStoredSelectedOption.none)
         }
-        UserDefaults.standard.set(Array(optionCheckboxSelected), forKey: SecondaryRegistrationChildVC_Constants.Keys.Options.optionArray)
+        UserDefaults.standard.set(Array(optionCheckboxSelected), forKey: SecondaryRegistrationChildVC_Constants.Keys.optionArray)
         UserDefaults.standard.synchronize()
     }
     

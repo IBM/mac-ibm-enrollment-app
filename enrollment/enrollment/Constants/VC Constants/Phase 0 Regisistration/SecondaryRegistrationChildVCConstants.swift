@@ -17,14 +17,13 @@ struct SecondaryRegistrationChildVC_Constants {
     /**
      Structure definition containing the key name assignments for storing the Option checkbox values
      
-     • `optionArray` : key name for the array to store the options
+     • [Keys] `optionArray` : key name for the array to store the options
+     
      • `PersistenceStoredSelectedOption` : array values corresponding to the option choices that a user has selected
     */
     struct Keys {
-        /**
-        */
+        static let optionArray = "Options"
         struct Options {
-            static let optionArray = "Options"
             struct PersistenceStoredSelectedOption {
                 static let one = "1"
                 static let two = "2"
