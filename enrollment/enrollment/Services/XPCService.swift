@@ -10,6 +10,9 @@
 import Cocoa
 import ServiceManagement
 
+/**
+ Shared service class for extending XPC operations to the enrollment app.
+ */
 class XPCService: NSObject, NSXPCListenerDelegate {
     
     private var xpcHelperConnection: NSXPCConnection?
@@ -53,6 +56,9 @@ class XPCService: NSObject, NSXPCListenerDelegate {
         return helper
     }
     
+    /**
+     Method for initializing authorization
+    */
     func initAuthorizationRef() {
         let status = AuthorizationCreate(nil, nil, AuthorizationFlags(), &authRef)
         if (status != OSStatus(errAuthorizationSuccess)) {
@@ -61,10 +67,16 @@ class XPCService: NSObject, NSXPCListenerDelegate {
         }
     }
     
+    /**
+     Method for releasing authorization
+    */
     func releaseAuthorizationRef() {
         AuthorizationFree(authRef!, AuthorizationFlags.destroyRights)
     }
     
+    /**
+     Method for installing the Jamf Integration Helper / daemon from teh app bundle. The customer will be prompted for authorization.
+    */
     func installHelperDaemon() {
         NSLog("Enrollment: Privileged Helper daemon not found, installing a new one......")
         
@@ -98,7 +110,9 @@ class XPCService: NSObject, NSXPCListenerDelegate {
         AuthorizationFree(authRef!, [])
     }
     
-    // Check if JAMF Integration Helper daemon exists
+    /**
+     Method for validating if Jamf Integration Helper daemon exists
+    */
     func checkIfHelperDaemonExists() -> Bool {
         let fileManager = FileManager.default
         
@@ -109,7 +123,9 @@ class XPCService: NSObject, NSXPCListenerDelegate {
         }
     }
     
-    // Compare app's helper binary version to installed daemon's version and update if not equal
+    /**
+     Method for comparing the app's helper binary version to installed daemon's version and update if not equal
+    */
     func checkHelperVersionAndUpdateIfNecessary() {
         let helperURL = Bundle.main.bundleURL.appendingPathComponent("Contents/Library/LaunchServices/\(JAMFHelperConstants.machServiceName)")
         let helperBundleInfo = CFBundleCopyInfoDictionaryForURL(helperURL as CFURL)
@@ -151,6 +167,11 @@ class XPCService: NSObject, NSXPCListenerDelegate {
         return self.xpcHelperConnection
     }
     
+    /**
+     Method for executing a Jamf policy event trigger
+     
+     - Parameter event : string value for event trigger
+    */
     func processJAMFAction(event: String) {
         let xpcConnection = prepareXPC()?.remoteObjectProxyWithErrorHandler() { error -> Void in
             print("XPCService error: ", error) } as? RemoteProcessProtocol
