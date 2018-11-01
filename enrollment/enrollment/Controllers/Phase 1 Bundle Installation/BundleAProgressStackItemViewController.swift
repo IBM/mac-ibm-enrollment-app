@@ -78,11 +78,11 @@ class BundleAProgressStackItemViewController: BaseViewController {
                 }
                 else if avgArrayValue == 0.0 {
                     headerVC.updateWithProgressIndicator(progressIndicator: .failure)
-                    UserDefaults.standard.set(1, forKey: AppBundles.Bundle.AppInstallScreen.warning)
+                    UserDefaults.standard.set(1, forKey: AppBundles.Keys.AppInstallScreen.warning)
                 }
                 else {
                     headerVC.updateWithProgressIndicator(progressIndicator: .partial)
-                    UserDefaults.standard.set(1, forKey: AppBundles.Bundle.AppInstallScreen.warning)
+                    UserDefaults.standard.set(1, forKey: AppBundles.Keys.AppInstallScreen.warning)
                 }
             default:
                 return
