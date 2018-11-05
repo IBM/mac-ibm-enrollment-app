@@ -9,20 +9,34 @@
 
 import Cocoa
 
+/**
+ Structure definition for the setup complete / education view
+ 
+ • header : string value for the text label at the top of the view
+ 
+ • showOnRestartToggleLabel : string value for the text applied adjacent to the check box toggle used for adding or removing the login helper
+ 
+ • helperBundleIdentifier : string value for the bundle id associated with the login helper
+ 
+ child structs : LinkOuts
+ */
 struct SetupCompleteChildVC_Constants {
     static let header = "Get started with your Mac"
     static let showOnRestartToggleLabel = " Remind me the next time I restart my Mac."
     static let helperBundleIdentifier = "com.ibm.EnrollmentLoginHelper"
+    
     /**
      Structure definition containing reference assignments of stored values or property list key names for retrieving values.
      
-     `icons`: Array of images. These could be code driven or referenced from the asset catalog
+     LinkOuts are of the URL tied connection entries to be displayed in the scroll view. Each entry is paired based on index value per array.
      
-     `headerLabels`: Array of header strings used in conjuction with a url to create a link
+     • icons : Array of images. These could be code driven or referenced from the asset catalog
      
-     `urls`: Array of URLs
+     • headerLabels : Array of header strings used in conjuction with a url to create a link
      
-     `descriptionLabels`: Array of strings providing descriptions for each linkout
+     • urls : Array of URLs
+     
+     • descriptionLabels : Array of strings providing descriptions for each linkout
      */
     struct LinkOuts {
         static let icons: [NSImage] = [
