@@ -11,14 +11,16 @@ import Cocoa
 
 /**
  Structure definition containing reference assignments of stored constants mapped to color swatches in the asset catalog
- - Note: Child structs:
+ 
+ child structs:
  
  Indicators, LinkButton, AppBundle, Registration, BackgroundColor, SetupComplete
  */
 struct ColorConstants {
     /**
      Indicator color definitions from the asset catalog assigned in Indicators.swift
-     - Note: Child structs:
+     
+     child structs:
      
      Success, Failure, Partial, Queued, Active
      */
@@ -30,6 +32,7 @@ struct ColorConstants {
             static let checkStroke = NSColor(named: "success_check_stroke")
             static let checkFill = NSColor(named: "success_check_fill")
         }
+        
         /// Failure to install indicator for app or bundle complete indicator color assignments for each part of the drawn shape
         struct Failure {
             static let fill = NSColor(named: "failure")
@@ -69,7 +72,6 @@ struct ColorConstants {
     /// General background color assignment for backing layers
     struct BackgroundColor {
         static let standard = ([NSColor(named: "standard_bg_color")] as! [NSColor])
-        //static let standard = NSColor(named: NSColor.Name("standard_bg_color"))
         static let popover = ([NSColor(named: "popover_bg_color")] as! [NSColor])
     }
     
@@ -87,17 +89,19 @@ struct ColorConstants {
     
     /**
      Stored color assignments for interface elements used in the Setup Completion phase of the application
-     - Note: Color references for drawn objects used in the SetupComplete view:
      
-     • `appleLogo`: color for apple logo displayed in `MigrationButton`
+     Color references for drawn objects used in the SetupComplete view:
      
-     • `outerRing`: universal outer ring color
+     • appleLogo : color for apple logo displayed in `MigrationButton`
      
-     • `weblinkTextColor`: color applied to `Hyperlink` text buttons
+     • outerRing : universal outer ring color
      
-     • `descriptionTextColor`: color applied to description text for each web link
+     • weblinkTextColor : color applied to `Hyperlink` text buttons for LinkOuts
      
-     Child structs -
+     • descriptionTextColor : color applied to description text for each web link
+     
+     child structs -
+     
      WebURLButton, MigrationButton, SelfServiceButton, HelpButton, BackupButton
      */
     struct SetupComplete {
