@@ -163,7 +163,7 @@ class BundleInstallationChildViewController: NSViewController, StackItemHost {
     }
     
     @IBAction func nextButtonClicked(_ sender: NSButton) {
-        UserDefaults.standard.set("2", forKey: StartingPointID.UserDefaultsKey.phase)
+        UserDefaults.standard.set("2", forKey: StartingPointID.Keys.phase)
         performSegue(withIdentifier: SegueDestinationID.ForwardTo.setupCompleteChildViewController, sender: self)
     }
 }

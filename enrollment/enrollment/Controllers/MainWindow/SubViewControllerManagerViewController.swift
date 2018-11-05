@@ -32,7 +32,7 @@ class SubViewControllerManagerViewController: NSViewController {
     }
     
     func layoutSetup() {
-        if let startPoint = (UserDefaults.standard.string(forKey: StartingPointID.UserDefaultsKey.phase)) {
+        if let startPoint = (UserDefaults.standard.string(forKey: StartingPointID.Keys.phase)) {
             switch String(describing: startPoint) {
             case "0" :
                 storyboardID = StartingPointID.primaryRegistrationChildViewController

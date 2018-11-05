@@ -65,14 +65,14 @@ class RegistrationCompleteChildViewController: NSViewController {
             countdownMessageLabel.stringValue = "Your Mac will be restarted automatically in \(count) minutes to continue the setup process."
             count -= 1
         } else {
-            UserDefaults.standard.set("1", forKey: StartingPointID.UserDefaultsKey.phase)
+            UserDefaults.standard.set("1", forKey: StartingPointID.Keys.phase)
             self.restartComputer()
         }
     }
     
     
     @IBAction func restartButtonClicked(_ sender: NSButton) {
-        UserDefaults.standard.set("1", forKey: StartingPointID.UserDefaultsKey.phase)
+        UserDefaults.standard.set("1", forKey: StartingPointID.Keys.phase)
         UserDefaults.standard.synchronize()
         self.restartComputer()
     }
