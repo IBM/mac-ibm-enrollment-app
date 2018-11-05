@@ -8,8 +8,10 @@
 //
 
 import Foundation
-import Cocoa
 
+/**
+ Structure definition containing the stored properties for constructing the LinkOuts and directly referenced in SetupCompleteChildVCConstants.swift
+ */
 struct WebLinkButtons {
     struct SelfService {
         static let header = "Install apps with Self Service"
