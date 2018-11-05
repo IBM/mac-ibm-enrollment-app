@@ -13,11 +13,12 @@ struct BundleInstallationChildVC_Constants {
     static let header = "Installing selected app bundles…"
     /**
      Structure definition containing reference assignments of stored values or property list key names for retrieving values.
-     - Note: The following references map to string values to be applied to buttons per bundle header instance displayed on the bundle installation view.
      
-     • `open`: string value for when a button is on
+     The following references map to string values to be applied to buttons per bundle header instance displayed on the bundle installation view.
      
-     • `closed`: string value for when a button is off
+     • open : string value for when a button is on
+     
+     • closed : string value for when a button is off
      */
     struct DisclosureButtonLabelText {
         static let open = "Hide Apps"
