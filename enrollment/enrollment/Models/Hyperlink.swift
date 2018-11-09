@@ -9,6 +9,11 @@
 
 import Cocoa
 
+/**
+ Class definition for converting a NSTextField to accept mount input to open a url
+ 
+ href : string value of a url to be appled to the textfield for openning in a web browser
+ */
 class Hyperlink: NSTextField {
 
     @IBInspectable var href: String = ""
