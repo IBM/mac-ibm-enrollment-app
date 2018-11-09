@@ -9,6 +9,9 @@
 
 import Cocoa
 
+/**
+ Class definition for updating the UI with the app installation progress used on the Bundle Installation Child View Controller
+ */
 class UpdateUIForAppStatus{
     var appStatusKey = String()
     var appIndicator = CircularStatus()
@@ -16,6 +19,15 @@ class UpdateUIForAppStatus{
     var totalBundleResult = [Double]()
     var index = Int()
     
+    /**
+     Class initializer for updating the installation progress UI
+     
+     - Parameter appStatusKey : string value for referencing the app bundle status property list key and value
+     - Parameter appIndicator : `CircularStatus` indicator
+     - Parameter anchorStop : integer value for anchoring the indicator to keep it positioned properly
+     - Parameter totalBundleResult : [Array] of doubles containing the values of 0.0 or 1.0 for each item in the bundle (0.0 = failure and 1.0  success)
+     - Parameter index : integer value pertaining to the index value for the paricular app in the bundle array
+    */
     init(appStatusKey: String, appIndicator: CircularStatus, anchorStop: inout Int, totalBundleResult: inout [Double], index: Int) {
         self.appStatusKey = appStatusKey
         self.appIndicator = appIndicator
