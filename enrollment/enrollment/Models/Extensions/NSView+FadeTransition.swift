@@ -10,6 +10,12 @@
 import AppKit
 
 extension NSView {
+    
+    /**
+     Extension method for NSView to fade out over a configurable period of time
+     
+     - Parameter duration : CFTimeInterval (double value in seconds)
+    */
     func fadeTransition(_ duration: CFTimeInterval) {
         let animation = CATransition()
         animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
