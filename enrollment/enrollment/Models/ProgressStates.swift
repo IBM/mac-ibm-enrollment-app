@@ -10,7 +10,7 @@
 import Foundation
 
 /**
- Enumeration of progress states
+ Enumeration of progress states for bund and app installations
  
  - waiting:    Waiting, not running
  - inProgress: In Progress
