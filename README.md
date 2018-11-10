@@ -12,7 +12,7 @@ The Mac@IBM enrollment app makes setting up macOS with Jamf Pro more intuitive f
 2.  Build and run a copy of the app. You will need this build path for step 5.
 3.  Download a copy of the [SMJobBlessUtil](https://developer.apple.com/library/archive/samplecode/SMJobBless/Listings/SMJobBlessUtil_py.html#//apple_ref/doc/uid/DTS40010071-SMJobBlessUtil_py-DontLinkElementID_8) from Apple.  
 4.  Copy the python tool to the root of your project folder.
-5.  From the terminal navigate to the root of your project folder and run the following : 
+5.  From the terminal navigate to the root of your project folder and run the following: 
 
 ``` 
 ./SMJobBlessUtil.py setreq /the/path/to/a/buildCopyOfYourApp enrollment/enrollment/Info.plist enrollment/JAMFIntegrationHelper/JAMFIntegrationHelper-Info.plist 
@@ -45,7 +45,7 @@ The application provided is a UI that takes input from both the customer as well
 
 ### Jamf Workflow
 1.  The application and corresponding JAMFIntegrationHelper binary / daemon are deployed on enrollment to the system. 
-2.  Additionally a script can be run to retrieve / provide information to the app's plist that lives in the customer's Library/Preferences.
+2.  Additionally a script can be run to retrieve / provide information to the app's plist that lives in the customer's `Library/Preferences`.
 	1. The hrFirstName populated through the LDAP connector, retrieved via API request from the client and written. 
 	2. A speed test package to run the background to populate the plist with a download rate value.
 	3. The bundle sizes as well as a calculated rate in seconds per bundle for bundle selection screen.
@@ -63,8 +63,7 @@ The application provided is a UI that takes input from both the customer as well
 
 5.  The customer is returned to the application bundle install screen after logging in from the reboot.  
 
-6.  When they have made their selection and choose to move forward, a Jamf event request is made to begin the bundle installation. The script behind this event will examine an array of bundle choices
-    the customer has made and process accordingly, being sure to update the UI with the corresponding property list keys each step of the way.
+6.  When they have made their selection and choose to move forward, a Jamf event request is made to begin the bundle installation. The script behind this event will examine an array of bundle choices the customer has made and process accordingly, being sure to update the UI with the corresponding property list keys each step of the way.
 
 ![phase3-Further reading](https://github.com/ibm/mac-ibm-enrollment-app/blob/master/images/phase3.png)
 
