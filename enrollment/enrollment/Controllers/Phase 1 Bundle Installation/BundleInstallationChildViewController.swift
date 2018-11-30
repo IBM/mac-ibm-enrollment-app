@@ -26,13 +26,13 @@ class BundleInstallationChildViewController: NSViewController, StackItemHost {
         willSet {
             guard let oldProgress = installProgress else { return }
             oldProgress.removeObserver(self,
-                                       forKeyPath: AppBundles.Keys.AppInstallScreen.status,
+                                       forKeyPath: AppBundlesConstants.Keys.AppInstallScreen.status,
                                        context: &myContext)
         }
         didSet {
             guard let newProgress = installProgress else { return }
             newProgress.addObserver(self,
-                                    forKeyPath: AppBundles.Keys.AppInstallScreen.status,
+                                    forKeyPath: AppBundlesConstants.Keys.AppInstallScreen.status,
                                     options: .new,
                                     context: &myContext)
         }
@@ -40,7 +40,7 @@ class BundleInstallationChildViewController: NSViewController, StackItemHost {
     
     deinit {
         installProgress?.removeObserver(self,
-                                        forKeyPath: AppBundles.Keys.AppInstallScreen.status,
+                                        forKeyPath: AppBundlesConstants.Keys.AppInstallScreen.status,
                                         context: &myContext)
     }
     
@@ -64,9 +64,9 @@ class BundleInstallationChildViewController: NSViewController, StackItemHost {
     }
     
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-        if keyPath == AppBundles.Keys.AppInstallScreen.status {
+        if keyPath == AppBundlesConstants.Keys.AppInstallScreen.status {
             if context == &myContext {
-                if UserDefaults.standard.integer(forKey: AppBundles.Keys.AppInstallScreen.warning) == 1 {
+                if UserDefaults.standard.integer(forKey: AppBundlesConstants.Keys.AppInstallScreen.warning) == 1 {
                     errorMessageTextLabel.fadeTransition(0.25)
                     errorMessageTextLabel.isHidden = false
                 }
@@ -79,8 +79,8 @@ class BundleInstallationChildViewController: NSViewController, StackItemHost {
     }
     
     private func createInstallTimeClockFromBundleSelectionController() {
-        if UserDefaults.standard.string(forKey: AppBundles.Keys.installClockTotal) != nil {
-            let clockStartTimeInSeconds = Double(UserDefaults.standard.string(forKey: AppBundles.Keys.installClockTotal)!)
+        if UserDefaults.standard.string(forKey: AppBundlesConstants.Keys.installClockTotal) != nil {
+            let clockStartTimeInSeconds = Double(UserDefaults.standard.string(forKey: AppBundlesConstants.Keys.installClockTotal)!)
             estimatedTimeRemainingLabel.stringValue = clockFormatter(totalTimeInSeconds: clockStartTimeInSeconds!)
             installClock = clockStartTimeInSeconds!
         }
@@ -90,19 +90,19 @@ class BundleInstallationChildViewController: NSViewController, StackItemHost {
         bundleStack.setHuggingPriority(NSLayoutConstraint.Priority.defaultHigh, for: .horizontal)
         var bundleChoiceArray = [String]()
         
-        if let bundleChoiceSelection = (UserDefaults.standard.array(forKey: AppBundles.Keys.bundleArrayKey)!) as? [String] {
+        if let bundleChoiceSelection = (UserDefaults.standard.array(forKey: AppBundlesConstants.Keys.bundleArrayKey)!) as? [String] {
             for bundleChoice in bundleChoiceSelection {
                 bundleChoiceArray.append(bundleChoice)
             }
         }
         
-        if bundleChoiceArray.contains(AppBundles.PersistanceArrayMember.a) {
+        if bundleChoiceArray.contains(AppBundlesConstants.PersistanceArrayMember.a) {
             addViewController(withIdentifier: "BundleAProgressStackItemViewController")
         }
-        if bundleChoiceArray.contains(AppBundles.PersistanceArrayMember.b) {
+        if bundleChoiceArray.contains(AppBundlesConstants.PersistanceArrayMember.b) {
             addViewController(withIdentifier: "BundleBProgressStackItemViewController")
         }
-        if bundleChoiceArray.contains(AppBundles.PersistanceArrayMember.c) {
+        if bundleChoiceArray.contains(AppBundlesConstants.PersistanceArrayMember.c) {
             addViewController(withIdentifier: "BundleCProgressStackItemViewController")
         }
     }
@@ -138,7 +138,7 @@ class BundleInstallationChildViewController: NSViewController, StackItemHost {
     }
     
     private func addObservers() {
-        UserDefaults.standard.addObserver(self, forKeyPath: AppBundles.Keys.AppInstallScreen.status, options: .new, context: &myContext)
+        UserDefaults.standard.addObserver(self, forKeyPath: AppBundlesConstants.Keys.AppInstallScreen.status, options: .new, context: &myContext)
     }
     
     private func updateCounter() {

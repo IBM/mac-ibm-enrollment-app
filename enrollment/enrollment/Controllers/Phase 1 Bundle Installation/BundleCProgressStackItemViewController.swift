@@ -24,10 +24,10 @@ class BundleCProgressStackItemViewController: BaseViewController {
     private var anchorStopApp3 = 0
     private var anchorStopHeader = 0
     
-    private var totalBundleResult: Array<Double> = [Double](repeating: 0.0, count: AppBundles.Bundle.C.InfoPopover.titles.count)
+    private var totalBundleResult: Array<Double> = [Double](repeating: 0.0, count: AppBundlesConstants.Bundle.C.InfoPopover.titles.count)
     
     override func headerTitle() -> String {
-        return NSLocalizedString(AppBundles.Bundle.C.InfoPopover.header.capitalized, comment: "")
+        return NSLocalizedString(AppBundlesConstants.Bundle.C.InfoPopover.header.capitalized, comment: "")
     }
     
     override func viewDidLoad() {
@@ -52,34 +52,34 @@ class BundleCProgressStackItemViewController: BaseViewController {
     }
     
     private func setTextFields() {
-        app1NameTextLabel.set(label: AppBundles.Bundle.C.InfoPopover.titles[0], color: .controlTextColor)
-        app2NameTextLabel.set(label: AppBundles.Bundle.C.InfoPopover.titles[1], color: .controlTextColor)
-        app3NameTextLabel.set(label: AppBundles.Bundle.C.InfoPopover.titles[2], color: .controlTextColor)
+        app1NameTextLabel.set(label: AppBundlesConstants.Bundle.C.InfoPopover.titles[0], color: .controlTextColor)
+        app2NameTextLabel.set(label: AppBundlesConstants.Bundle.C.InfoPopover.titles[1], color: .controlTextColor)
+        app3NameTextLabel.set(label: AppBundlesConstants.Bundle.C.InfoPopover.titles[2], color: .controlTextColor)
     }
     
     private func updateUI() {
-        _ = UpdateUIForAppStatus(appStatusKey: AppBundles.Bundle.C.Keys.Bundle.AppStatus.app1,
+        _ = UpdateUIForAppStatus(appStatusKey: AppBundlesConstants.Bundle.C.Keys.Bundle.AppStatus.app1,
                                  appIndicator: progressIndicatorApp1,
                                  anchorStop: &anchorStopApp1,
                                  totalBundleResult: &totalBundleResult,
                                  index: 0)
-        _ = UpdateUIForAppStatus(appStatusKey: AppBundles.Bundle.C.Keys.Bundle.AppStatus.app2,
+        _ = UpdateUIForAppStatus(appStatusKey: AppBundlesConstants.Bundle.C.Keys.Bundle.AppStatus.app2,
                                  appIndicator: progressIndicatorApp2,
                                  anchorStop: &anchorStopApp2,
                                  totalBundleResult: &totalBundleResult,
                                  index: 1)
-        _ = UpdateUIForAppStatus(appStatusKey: AppBundles.Bundle.C.Keys.Bundle.AppStatus.app3,
+        _ = UpdateUIForAppStatus(appStatusKey: AppBundlesConstants.Bundle.C.Keys.Bundle.AppStatus.app3,
                                  appIndicator: progressIndicatorApp3,
                                  anchorStop: &anchorStopApp3,
                                  totalBundleResult: &totalBundleResult,
                                  index: 2)
         
-        if let valueConnectivityBundleMessaging = UserDefaults.standard.value(forKey: AppBundles.Bundle.C.Keys.Bundle.messaging) {
+        if let valueConnectivityBundleMessaging = UserDefaults.standard.value(forKey: AppBundlesConstants.Bundle.C.Keys.Bundle.messaging) {
             let headerVC = self.stackItemContainer?.header as! HeaderViewController
             headerVC.updateWithProgressMessage(statusText: valueConnectivityBundleMessaging as! String)
         }
         
-        if let valueConnectivityBundleIndicator = UserDefaults.standard.value(forKey: AppBundles.Bundle.C.Keys.Bundle.status) {
+        if let valueConnectivityBundleIndicator = UserDefaults.standard.value(forKey: AppBundlesConstants.Bundle.C.Keys.Bundle.status) {
             let headerVC = self.stackItemContainer?.header as! HeaderViewController
             switch String(describing: valueConnectivityBundleIndicator) {
             case "0" :
@@ -100,11 +100,11 @@ class BundleCProgressStackItemViewController: BaseViewController {
                 }
                 else if avgArrayValue == 0.0 {
                     headerVC.updateWithProgressIndicator(progressIndicator: .failure)
-                    UserDefaults.standard.set(1, forKey: AppBundles.Keys.AppInstallScreen.warning)
+                    UserDefaults.standard.set(1, forKey: AppBundlesConstants.Keys.AppInstallScreen.warning)
                 }
                 else {
                     headerVC.updateWithProgressIndicator(progressIndicator: .partial)
-                    UserDefaults.standard.set(1, forKey: AppBundles.Keys.AppInstallScreen.warning)
+                    UserDefaults.standard.set(1, forKey: AppBundlesConstants.Keys.AppInstallScreen.warning)
                 }
             default:
                 return

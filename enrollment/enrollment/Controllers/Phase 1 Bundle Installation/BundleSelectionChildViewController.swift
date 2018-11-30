@@ -69,7 +69,7 @@ class BundleSelectionChildViewController: NSViewController {
         checkForEmptyChoiceArrayAndSetButtonDisplay()
         displayIndividualDownloadTimes()
         
-        if let speedTestResult = UserDefaults.standard.string(forKey: AppBundles.Keys.speedRate) {
+        if let speedTestResult = UserDefaults.standard.string(forKey: AppBundlesConstants.Keys.speedRate) {
             let totalDownloadTime = displayTotalDownloadtime(speedTestRate: Double(speedTestResult)!)
             totalDownloadTimeLabel.stringValue = "+ \(totalDownloadTime)"
         }
@@ -90,28 +90,28 @@ class BundleSelectionChildViewController: NSViewController {
     }
     
     private func setKeysToFactoryDefaults() {
-        UserDefaults.standard.set(false, forKey: AppBundles.Keys.AppInstallScreen.status)
-        UserDefaults.standard.set(false, forKey: AppBundles.Keys.AppInstallScreen.warning)
-        UserDefaults.standard.set(0, forKey: AppBundles.Bundle.A.Keys.Bundle.status)
-        UserDefaults.standard.set(0, forKey: AppBundles.Bundle.B.Keys.Bundle.status)
-        UserDefaults.standard.set(0, forKey: AppBundles.Bundle.C.Keys.Bundle.status)
-        UserDefaults.standard.set("", forKey: AppBundles.Bundle.A.Keys.Bundle.messaging)
-        UserDefaults.standard.set("", forKey: AppBundles.Bundle.B.Keys.Bundle.messaging)
-        UserDefaults.standard.set("", forKey: AppBundles.Bundle.C.Keys.Bundle.messaging)
-        UserDefaults.standard.set(0, forKey: AppBundles.Bundle.A.Keys.Bundle.AppStatus.app1)
-        UserDefaults.standard.set(0, forKey: AppBundles.Bundle.B.Keys.Bundle.AppStatus.app1)
-        UserDefaults.standard.set(0, forKey: AppBundles.Bundle.B.Keys.Bundle.AppStatus.app2)
-        UserDefaults.standard.set(0, forKey: AppBundles.Bundle.B.Keys.Bundle.AppStatus.app3)
-        UserDefaults.standard.set(0, forKey: AppBundles.Bundle.B.Keys.Bundle.AppStatus.app4)
-        UserDefaults.standard.set(0, forKey: AppBundles.Bundle.C.Keys.Bundle.AppStatus.app1)
-        UserDefaults.standard.set(0, forKey: AppBundles.Bundle.C.Keys.Bundle.AppStatus.app2)
-        UserDefaults.standard.set(0, forKey: AppBundles.Bundle.C.Keys.Bundle.AppStatus.app3)
-        UserDefaults.standard.set(Array(bundleChoiceSelected), forKey: AppBundles.Keys.bundleArrayKey)
+        UserDefaults.standard.set(false, forKey: AppBundlesConstants.Keys.AppInstallScreen.status)
+        UserDefaults.standard.set(false, forKey: AppBundlesConstants.Keys.AppInstallScreen.warning)
+        UserDefaults.standard.set(0, forKey: AppBundlesConstants.Bundle.A.Keys.Bundle.status)
+        UserDefaults.standard.set(0, forKey: AppBundlesConstants.Bundle.B.Keys.Bundle.status)
+        UserDefaults.standard.set(0, forKey: AppBundlesConstants.Bundle.C.Keys.Bundle.status)
+        UserDefaults.standard.set("", forKey: AppBundlesConstants.Bundle.A.Keys.Bundle.messaging)
+        UserDefaults.standard.set("", forKey: AppBundlesConstants.Bundle.B.Keys.Bundle.messaging)
+        UserDefaults.standard.set("", forKey: AppBundlesConstants.Bundle.C.Keys.Bundle.messaging)
+        UserDefaults.standard.set(0, forKey: AppBundlesConstants.Bundle.A.Keys.Bundle.AppStatus.app1)
+        UserDefaults.standard.set(0, forKey: AppBundlesConstants.Bundle.B.Keys.Bundle.AppStatus.app1)
+        UserDefaults.standard.set(0, forKey: AppBundlesConstants.Bundle.B.Keys.Bundle.AppStatus.app2)
+        UserDefaults.standard.set(0, forKey: AppBundlesConstants.Bundle.B.Keys.Bundle.AppStatus.app3)
+        UserDefaults.standard.set(0, forKey: AppBundlesConstants.Bundle.B.Keys.Bundle.AppStatus.app4)
+        UserDefaults.standard.set(0, forKey: AppBundlesConstants.Bundle.C.Keys.Bundle.AppStatus.app1)
+        UserDefaults.standard.set(0, forKey: AppBundlesConstants.Bundle.C.Keys.Bundle.AppStatus.app2)
+        UserDefaults.standard.set(0, forKey: AppBundlesConstants.Bundle.C.Keys.Bundle.AppStatus.app3)
+        UserDefaults.standard.set(Array(bundleChoiceSelected), forKey: AppBundlesConstants.Keys.bundleArrayKey)
         UserDefaults.standard.synchronize()
     }
     
     private func checkForEmptyChoiceArrayAndSetButtonDisplay() {
-        if let bundleArray = UserDefaults.standard.array(forKey: AppBundles.Keys.bundleArrayKey) {
+        if let bundleArray = UserDefaults.standard.array(forKey: AppBundlesConstants.Keys.bundleArrayKey) {
             skipButton.fadeTransition(0.25)
             installSelectedBundlesButton.fadeTransition(0.25)
             if (bundleArray.count ) > 0 {
@@ -148,7 +148,7 @@ class BundleSelectionChildViewController: NSViewController {
         let bundleSizes = totalBundleSize
         let bundleInstallTimeTotal = totalInstallTime
         
-        guard let jamfBufferTime = UserDefaults.standard.string(forKey: AppBundles.Keys.jamfBufferTime) else {
+        guard let jamfBufferTime = UserDefaults.standard.string(forKey: AppBundlesConstants.Keys.jamfBufferTime) else {
             return 1
         }
         
@@ -166,7 +166,7 @@ class BundleSelectionChildViewController: NSViewController {
         let bundleSizes = totalBundleSize
         let bundleInstallTimeTotal = totalInstallTime
         
-        guard let jamfBuffer = UserDefaults.standard.string(forKey: AppBundles.Keys.jamfBufferTime) else {
+        guard let jamfBuffer = UserDefaults.standard.string(forKey: AppBundlesConstants.Keys.jamfBufferTime) else {
             return String(60)
         }
         let jamfBufferTimeTotal = Double(bundleChoiceSelected.count) * Double(jamfBuffer)!
@@ -203,9 +203,9 @@ class BundleSelectionChildViewController: NSViewController {
             totalBundleSize[index] = 0.0
             totalInstallTime[index] = 0.0
         }
-        UserDefaults.standard.set(Array(bundleChoiceSelected), forKey: AppBundles.Keys.bundleArrayKey)
+        UserDefaults.standard.set(Array(bundleChoiceSelected), forKey: AppBundlesConstants.Keys.bundleArrayKey)
         UserDefaults.standard.synchronize()
-        if let speedTestResult = UserDefaults.standard.string(forKey: AppBundles.Keys.speedRate) {
+        if let speedTestResult = UserDefaults.standard.string(forKey: AppBundlesConstants.Keys.speedRate) {
             
             let totalDownloadTime = displayTotalDownloadtime(speedTestRate: Double(speedTestResult)!)
             totalDownloadTimeLabel.fadeTransition(0.25)
@@ -228,25 +228,25 @@ class BundleSelectionChildViewController: NSViewController {
     }
     
     private func displayIndividualDownloadTimes() {
-        if let speedTestResult = UserDefaults.standard.string(forKey: AppBundles.Keys.speedRate) {
-            if let jamfBufferTime = UserDefaults.standard.string(forKey: AppBundles.Keys.jamfBufferTime) {
+        if let speedTestResult = UserDefaults.standard.string(forKey: AppBundlesConstants.Keys.speedRate) {
+            if let jamfBufferTime = UserDefaults.standard.string(forKey: AppBundlesConstants.Keys.jamfBufferTime) {
                 factorIndvidualBundleDownloadTime(bundleDownloadTimeLabel: aDownloadTimeLabel,
                                                   speedTestResult: speedTestResult,
                                                   jamfBufferTime: jamfBufferTime,
-                                                  bundleSize: AppBundles.Bundle.A.DownloadTime.size,
-                                                  bundleInstallTimeInSeconds: AppBundles.Bundle.A.DownloadTime.time,
+                                                  bundleSize: AppBundlesConstants.Bundle.A.DownloadTime.size,
+                                                  bundleInstallTimeInSeconds: AppBundlesConstants.Bundle.A.DownloadTime.time,
                                                   bundleArrayIndex: 0)
                 factorIndvidualBundleDownloadTime(bundleDownloadTimeLabel: bDownloadTimeLabel,
                                                   speedTestResult: speedTestResult,
                                                   jamfBufferTime: jamfBufferTime,
-                                                  bundleSize: AppBundles.Bundle.B.DownloadTime.size,
-                                                  bundleInstallTimeInSeconds: AppBundles.Bundle.B.DownloadTime.time,
+                                                  bundleSize: AppBundlesConstants.Bundle.B.DownloadTime.size,
+                                                  bundleInstallTimeInSeconds: AppBundlesConstants.Bundle.B.DownloadTime.time,
                                                   bundleArrayIndex: 1)
                 factorIndvidualBundleDownloadTime(bundleDownloadTimeLabel: cDownloadTimeLabel,
                                                   speedTestResult: speedTestResult,
                                                   jamfBufferTime: jamfBufferTime,
-                                                  bundleSize: AppBundles.Bundle.C.DownloadTime.size,
-                                                  bundleInstallTimeInSeconds: AppBundles.Bundle.C.DownloadTime.time,
+                                                  bundleSize: AppBundlesConstants.Bundle.C.DownloadTime.size,
+                                                  bundleInstallTimeInSeconds: AppBundlesConstants.Bundle.C.DownloadTime.time,
                                                   bundleArrayIndex: 2)
             }
         }
@@ -257,7 +257,7 @@ class BundleSelectionChildViewController: NSViewController {
         alert.messageText = cancelHeader
         alert.informativeText = cancelMessage
         alert.alertStyle = .critical
-        if let speedTestResult = UserDefaults.standard.string(forKey: AppBundles.Keys.speedRate) {
+        if let speedTestResult = UserDefaults.standard.string(forKey: AppBundlesConstants.Keys.speedRate) {
             let totalDownloadTime = displayTotalDownloadtime(speedTestRate: Double(speedTestResult)!)
             alert.informativeText = "\(cancelMessage) \n \n Estimated install time : \(totalDownloadTime)"
         }
@@ -266,9 +266,9 @@ class BundleSelectionChildViewController: NSViewController {
         alert.beginSheetModal(for: NSApp.keyWindow!, completionHandler: { [unowned self] (returnCode) -> Void in
             if returnCode == NSApplication.ModalResponse.alertSecondButtonReturn {
                 self.returnCode = "Yes"
-                if let speedTestResult = UserDefaults.standard.string(forKey: AppBundles.Keys.speedRate) {
+                if let speedTestResult = UserDefaults.standard.string(forKey: AppBundlesConstants.Keys.speedRate) {
                     let totalDownloadTimeInSeconds = self.returnTotalDownloadTimeInSeconds(speedTestRate: Double(speedTestResult)!)
-                    UserDefaults.standard.set(String(totalDownloadTimeInSeconds), forKey: AppBundles.Keys.installClockTotal)
+                    UserDefaults.standard.set(String(totalDownloadTimeInSeconds), forKey: AppBundlesConstants.Keys.installClockTotal)
                 }
                 self.performSegue(withIdentifier: SegueDestinationID.ForwardTo.bundleInstallationChildViewController, sender: self)
             } else {
@@ -282,11 +282,11 @@ class BundleSelectionChildViewController: NSViewController {
         if segue.identifier! == SegueDestinationID.Popover.BundleSelectionChildViewController.essentials {
             let popoverVC: BundlePopOverViewController = segue.destinationController as! BundlePopOverViewController
             let bundleInfo = DefineBundleInfoPopover.init(
-                bundleTitle: AppBundles.Bundle.B.InfoPopover.header,
-                bundleDescription: AppBundles.Bundle.B.InfoPopover.mainDescription,
-                appTitles: AppBundles.Bundle.B.InfoPopover.titles,
-                appDescriptions: AppBundles.Bundle.B.InfoPopover.descriptions,
-                appIcons: AppBundles.Bundle.B.InfoPopover.icons)
+                bundleTitle: AppBundlesConstants.Bundle.B.InfoPopover.header,
+                bundleDescription: AppBundlesConstants.Bundle.B.InfoPopover.mainDescription,
+                appTitles: AppBundlesConstants.Bundle.B.InfoPopover.titles,
+                appDescriptions: AppBundlesConstants.Bundle.B.InfoPopover.descriptions,
+                appIcons: AppBundlesConstants.Bundle.B.InfoPopover.icons)
             
             popoverVC.recievedBundleTitleString = bundleInfo.bundleTitle
             popoverVC.recievedBundleDescriptionString = bundleInfo.descriptionText
@@ -298,11 +298,11 @@ class BundleSelectionChildViewController: NSViewController {
         if segue.identifier! == SegueDestinationID.Popover.BundleSelectionChildViewController.productivity {
             let popoverVC: BundlePopOverViewController = segue.destinationController as! BundlePopOverViewController
             let bundleInfo = DefineBundleInfoPopover.init(
-                bundleTitle: AppBundles.Bundle.C.InfoPopover.header,
-                bundleDescription: AppBundles.Bundle.C.InfoPopover.mainDescription,
-                appTitles: AppBundles.Bundle.C.InfoPopover.titles,
-                appDescriptions: AppBundles.Bundle.C.InfoPopover.descriptions,
-                appIcons: AppBundles.Bundle.C.InfoPopover.icons)
+                bundleTitle: AppBundlesConstants.Bundle.C.InfoPopover.header,
+                bundleDescription: AppBundlesConstants.Bundle.C.InfoPopover.mainDescription,
+                appTitles: AppBundlesConstants.Bundle.C.InfoPopover.titles,
+                appDescriptions: AppBundlesConstants.Bundle.C.InfoPopover.descriptions,
+                appIcons: AppBundlesConstants.Bundle.C.InfoPopover.icons)
             
             popoverVC.recievedBundleTitleString = bundleInfo.bundleTitle
             popoverVC.recievedBundleDescriptionString = bundleInfo.descriptionText
@@ -314,25 +314,25 @@ class BundleSelectionChildViewController: NSViewController {
     
     @IBAction func aToggleClicked(_ sender: NSButton) {
             syncToggleStateWithSelectionArray(bundleToggle: aToggle,
-                                          bundleArrayMemberName: AppBundles.PersistanceArrayMember.a,
-                                          bundleSize: AppBundles.Bundle.A.DownloadTime.size,
-                                          bundleInstallTimeInSeconds: AppBundles.Bundle.A.DownloadTime.time,
+                                          bundleArrayMemberName: AppBundlesConstants.PersistanceArrayMember.a,
+                                          bundleSize: AppBundlesConstants.Bundle.A.DownloadTime.size,
+                                          bundleInstallTimeInSeconds: AppBundlesConstants.Bundle.A.DownloadTime.time,
                                           index: 0)
     }
     
     @IBAction func bToggleClicked(_ sender: NSButton) {
         syncToggleStateWithSelectionArray(bundleToggle: bToggle,
-                                          bundleArrayMemberName: AppBundles.PersistanceArrayMember.b,
-                                          bundleSize: AppBundles.Bundle.B.DownloadTime.size,
-                                          bundleInstallTimeInSeconds: AppBundles.Bundle.B.DownloadTime.time,
+                                          bundleArrayMemberName: AppBundlesConstants.PersistanceArrayMember.b,
+                                          bundleSize: AppBundlesConstants.Bundle.B.DownloadTime.size,
+                                          bundleInstallTimeInSeconds: AppBundlesConstants.Bundle.B.DownloadTime.time,
                                           index: 1)
     }
     
     @IBAction func cToggleClicked(_ sender: NSButton) {
         syncToggleStateWithSelectionArray(bundleToggle: cToggle,
-                                          bundleArrayMemberName: AppBundles.PersistanceArrayMember.c,
-                                          bundleSize: AppBundles.Bundle.C.DownloadTime.size,
-                                          bundleInstallTimeInSeconds: AppBundles.Bundle.C.DownloadTime.time,
+                                          bundleArrayMemberName: AppBundlesConstants.PersistanceArrayMember.c,
+                                          bundleSize: AppBundlesConstants.Bundle.C.DownloadTime.size,
+                                          bundleInstallTimeInSeconds: AppBundlesConstants.Bundle.C.DownloadTime.time,
                                           index: 2)
     }
     
@@ -373,9 +373,9 @@ class BundleSelectionChildViewController: NSViewController {
                     IssueAlertService.sharedInstance.displaySheetNetworkUnreachable(message: AlertText.NetworkValidationMessaging.External.jps)
                 } else {
                     if self.bundleChoiceSelected.count >= 1 {
-                        if let speedTestResult = UserDefaults.standard.string(forKey: AppBundles.Keys.speedRate) {
+                        if let speedTestResult = UserDefaults.standard.string(forKey: AppBundlesConstants.Keys.speedRate) {
                             let totalDownloadTimeInSeconds = self.returnTotalDownloadTimeInSeconds(speedTestRate: Double(speedTestResult)!)
-                            UserDefaults.standard.set(String(totalDownloadTimeInSeconds), forKey: AppBundles.Keys.installClockTotal)
+                            UserDefaults.standard.set(String(totalDownloadTimeInSeconds), forKey: AppBundlesConstants.Keys.installClockTotal)
                             if self.returnTotalDownloadTimeInSeconds(speedTestRate: Double(speedTestResult)!) > CalculationThresholds.estimatedDownloadTimeInSecondsThreshold {
                                 _ = self.dialogOKCancel(question: "Ok?", text: "Choose your answer.")
                             } else {

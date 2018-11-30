@@ -20,7 +20,7 @@ import Cocoa
  
  • Bundle - Keys and values used for display and updating of UI
  */
-struct AppBundles {
+struct AppBundlesConstants {
     /**
      - `bundleArrayKey` - key name used for the array of bundle selections made by the customer
      

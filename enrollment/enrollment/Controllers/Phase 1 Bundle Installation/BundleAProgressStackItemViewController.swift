@@ -18,10 +18,10 @@ class BundleAProgressStackItemViewController: BaseViewController {
     private var anchorStopApp1 = 0
     private var anchorStopHeader = 0
     
-    private var totalBundleResult: Array<Double> = [Double](repeating: 0.0, count: AppBundles.Bundle.A.Infopopover.titles.count)
+    private var totalBundleResult: Array<Double> = [Double](repeating: 0.0, count: AppBundlesConstants.Bundle.A.Infopopover.titles.count)
     
     override func headerTitle() -> String {
-        return NSLocalizedString(AppBundles.Bundle.A.Infopopover.header.capitalized, comment: "")
+        return NSLocalizedString(AppBundlesConstants.Bundle.A.Infopopover.header.capitalized, comment: "")
     }
     
     override func viewDidLoad() {
@@ -42,22 +42,22 @@ class BundleAProgressStackItemViewController: BaseViewController {
     }
     
     private func setTextFields() {
-        app1NameTextLabel.set(label: AppBundles.Bundle.A.Infopopover.titles[0], color: .controlTextColor)
+        app1NameTextLabel.set(label: AppBundlesConstants.Bundle.A.Infopopover.titles[0], color: .controlTextColor)
     }
     
     private func updateUI() {
-        _ = UpdateUIForAppStatus(appStatusKey: AppBundles.Bundle.A.Keys.Bundle.AppStatus.app1,
+        _ = UpdateUIForAppStatus(appStatusKey: AppBundlesConstants.Bundle.A.Keys.Bundle.AppStatus.app1,
                                   appIndicator: progressIndicatorApp1,
                                   anchorStop: &anchorStopApp1,
                                   totalBundleResult: &totalBundleResult,
                                   index: 0)
     
-        if let valueConnectivityBundleMessaging = UserDefaults.standard.value(forKey: AppBundles.Bundle.A.Keys.Bundle.messaging) {
+        if let valueConnectivityBundleMessaging = UserDefaults.standard.value(forKey: AppBundlesConstants.Bundle.A.Keys.Bundle.messaging) {
             let headerVC = self.stackItemContainer?.header as! HeaderViewController
             headerVC.updateWithProgressMessage(statusText: valueConnectivityBundleMessaging as! String)
         }
         
-        if let valueConnectivityBundleIndicator = UserDefaults.standard.value(forKey: AppBundles.Bundle.A.Keys.Bundle.status) {
+        if let valueConnectivityBundleIndicator = UserDefaults.standard.value(forKey: AppBundlesConstants.Bundle.A.Keys.Bundle.status) {
             let headerVC = self.stackItemContainer?.header as! HeaderViewController
             switch String(describing: valueConnectivityBundleIndicator) {
             case "0" :
@@ -78,11 +78,11 @@ class BundleAProgressStackItemViewController: BaseViewController {
                 }
                 else if avgArrayValue == 0.0 {
                     headerVC.updateWithProgressIndicator(progressIndicator: .failure)
-                    UserDefaults.standard.set(1, forKey: AppBundles.Keys.AppInstallScreen.warning)
+                    UserDefaults.standard.set(1, forKey: AppBundlesConstants.Keys.AppInstallScreen.warning)
                 }
                 else {
                     headerVC.updateWithProgressIndicator(progressIndicator: .partial)
-                    UserDefaults.standard.set(1, forKey: AppBundles.Keys.AppInstallScreen.warning)
+                    UserDefaults.standard.set(1, forKey: AppBundlesConstants.Keys.AppInstallScreen.warning)
                 }
             default:
                 return
