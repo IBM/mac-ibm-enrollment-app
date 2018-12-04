@@ -1713,9 +1713,6 @@ DQ
                             <constraint firstItem="eWe-gY-jJU" firstAttribute="centerX" secondItem="uPE-pU-84F" secondAttribute="centerX" constant="-88" id="s8R-Qx-XEx"/>
                             <constraint firstItem="7bM-rK-mlt" firstAttribute="top" secondItem="OXA-Bu-GXX" secondAttribute="bottom" constant="23" id="yC4-K6-r8p"/>
                         </constraints>
-                        <shadow key="shadow">
-                            <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </shadow>
                     </view>
                     <connections>
                         <outlet property="continueToNextStepButton" destination="iFi-JN-FaS" id="yG6-M3-XDg"/>
