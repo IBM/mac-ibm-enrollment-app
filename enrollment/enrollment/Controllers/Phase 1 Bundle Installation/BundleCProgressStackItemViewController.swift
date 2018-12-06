@@ -74,14 +74,14 @@ class BundleCProgressStackItemViewController: BaseViewController {
                                  totalBundleResult: &totalBundleResult,
                                  index: 2)
         
-        if let valueConnectivityBundleMessaging = UserDefaults.standard.value(forKey: AppBundlesConstants.Bundle.C.Keys.Bundle.messaging) {
+        if let valueProductivityBundleMessaging = UserDefaults.standard.value(forKey: AppBundlesConstants.Bundle.C.Keys.Bundle.messaging) {
             let headerVC = self.stackItemContainer?.header as! HeaderViewController
-            headerVC.updateWithProgressMessage(statusText: valueConnectivityBundleMessaging as! String)
+            headerVC.updateWithProgressMessage(statusText: valueProductivityBundleMessaging as! String)
         }
         
-        if let valueConnectivityBundleIndicator = UserDefaults.standard.value(forKey: AppBundlesConstants.Bundle.C.Keys.Bundle.status) {
+        if let valueProductivityBundleIndicator = UserDefaults.standard.value(forKey: AppBundlesConstants.Bundle.C.Keys.Bundle.status) {
             let headerVC = self.stackItemContainer?.header as! HeaderViewController
-            switch String(describing: valueConnectivityBundleIndicator) {
+            switch String(describing: valueProductivityBundleIndicator) {
             case "0" :
                 headerVC.updateWithProgressIndicator(progressIndicator: .inQueue)
             case "1" :
