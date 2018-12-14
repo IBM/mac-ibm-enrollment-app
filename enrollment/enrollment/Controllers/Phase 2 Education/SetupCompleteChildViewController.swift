@@ -42,8 +42,6 @@ class SetupCompleteChildViewController: NSViewController {
         listOfLinkOutHeaders = SetupCompleteChildVC_Constants.LinkOuts.headerLabels
         listOfLinkDescriptions = SetupCompleteChildVC_Constants.LinkOuts.descriptionLabels
         listOfURLs = SetupCompleteChildVC_Constants.LinkOuts.urls
-        
-        linkoutCollectionView.backgroundColors = ColorConstants.BackgroundColor.standard
         linkoutCollectionView.dataSource = self
         linkoutCollectionView.delegate = self
     }

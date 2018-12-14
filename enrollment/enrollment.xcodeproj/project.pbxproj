@@ -14,6 +14,7 @@
 		690ACB37213C5F1900F8B1F0 /* NSView+Rotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690ACB36213C5F1900F8B1F0 /* NSView+Rotation.swift */; };
 		690ACB39213C6BF900F8B1F0 /* Indicators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690ACB38213C6BF900F8B1F0 /* Indicators.swift */; };
 		690ACB3B213C8F2E00F8B1F0 /* BundleInstallationChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690ACB3A213C8F2E00F8B1F0 /* BundleInstallationChildViewController.swift */; };
+		691F680821C4323600700C78 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691F680721C4323600700C78 /* MainView.swift */; };
 		6922610A21415DE9007419A6 /* EnrollmentLoginHelper.app in Copy LoginItem Helper */ = {isa = PBXBuildFile; fileRef = 69A1F5D221022FC2004F461A /* EnrollmentLoginHelper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6922F6AC21273FDD00EB8003 /* BundleItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6922F6AB21273FDD00EB8003 /* BundleItemCell.swift */; };
 		6922F6AF212DB17D00EB8003 /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6922F6AE212DB17D00EB8003 /* StackView.swift */; };
@@ -140,6 +141,7 @@
 		690ACB36213C5F1900F8B1F0 /* NSView+Rotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSView+Rotation.swift"; sourceTree = "<group>"; };
 		690ACB38213C6BF900F8B1F0 /* Indicators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Indicators.swift; sourceTree = "<group>"; };
 		690ACB3A213C8F2E00F8B1F0 /* BundleInstallationChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleInstallationChildViewController.swift; sourceTree = "<group>"; };
+		691F680721C4323600700C78 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		6922F6AB21273FDD00EB8003 /* BundleItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleItemCell.swift; sourceTree = "<group>"; };
 		6922F6AE212DB17D00EB8003 /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
 		6922F6B0212DD0A900EB8003 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -448,6 +450,7 @@
 			isa = PBXGroup;
 			children = (
 				69C56FDC210260C700766B15 /* MainViewController.swift */,
+				691F680721C4323600700C78 /* MainView.swift */,
 				69C56FE22106598700766B15 /* SubViewControllerManagerViewController.swift */,
 				69C56FE021063DBD00766B15 /* EnrollmentWindowController.swift */,
 			);
@@ -653,6 +656,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6950CD902121E03B007C97DF /* SetupCompleteButtons.swift in Sources */,
+				691F680821C4323600700C78 /* MainView.swift in Sources */,
 				690ACB33213884DF00F8B1F0 /* DefineBundleInfoPopover.swift in Sources */,
 				696BBB89217BCC4B0094BE76 /* BundleSelectionChildVCConstants.swift in Sources */,
 				698263612125C46E0085647A /* Hyperlink.swift in Sources */,

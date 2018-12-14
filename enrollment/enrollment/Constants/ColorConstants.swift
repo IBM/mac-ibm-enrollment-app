@@ -71,7 +71,7 @@ struct ColorConstants {
     
     /// General background color assignment for backing layers
     struct BackgroundColor {
-        static let standard = ([NSColor(named: "standard_bg_color")] as! [NSColor])
+        static let standard = "standard_bg_color"
         static let popover = ([NSColor(named: "popover_bg_color")] as! [NSColor])
     }
     

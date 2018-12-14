@@ -116,7 +116,7 @@
         <scene sceneID="dc7-cS-gbQ">
             <objects>
                 <viewController id="lIl-gl-es8" customClass="MainViewController" customModule="enrollment" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" wantsLayer="YES" id="qg9-Oc-HwH">
+                    <view key="view" wantsLayer="YES" id="qg9-Oc-HwH" customClass="MainView" customModule="enrollment" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="940" height="520"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -392,7 +392,7 @@ DQ
                                 <subviews>
                                     <scrollView wantsLayer="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1X-R6-93I">
                                         <rect key="frame" x="0.0" y="0.0" width="480" height="317"/>
-                                        <clipView key="contentView" copiesOnScroll="NO" id="cqI-32-E9e">
+                                        <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="cqI-32-E9e">
                                             <rect key="frame" x="1" y="1" width="478" height="315"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
@@ -1231,7 +1231,7 @@ DQ
                             </box>
                             <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jMZ-zE-SZV">
                                 <rect key="frame" x="80" y="112" width="460" height="301"/>
-                                <clipView key="contentView" id="rqO-MK-Xmr">
+                                <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="rqO-MK-Xmr">
                                     <rect key="frame" x="0.0" y="0.0" width="460" height="301"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>

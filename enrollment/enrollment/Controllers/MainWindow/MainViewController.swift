@@ -55,7 +55,7 @@ class MainViewController: NSViewController {
     }
     
     private func layoutSetup() {
-    self.currentConfigurationViewController?.view.setFrameSize(self.contentContainerView.bounds.size)
+        self.currentConfigurationViewController?.view.setFrameSize(self.contentContainerView.bounds.size)
     }
 }
 
