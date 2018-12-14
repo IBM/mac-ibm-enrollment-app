@@ -9,7 +9,7 @@ The Mac@IBM enrollment app makes setting up macOS with Jamf Pro more intuitive f
 ### Setting up the privileged helper (JAMFIntegrationHelper)
 ##### 
 1.  Make sure your build targets all have proper signing certificates assigned in the Build Settings/General tab.
-2.  Build and run a copy of the app. You will need this build path for step 5.
+2.  Build and a copy of each build target. You will need the build path for the enrollment.app for step 5.
 3.  Download a copy of the [SMJobBlessUtil](https://developer.apple.com/library/archive/samplecode/SMJobBless/Listings/SMJobBlessUtil_py.html#//apple_ref/doc/uid/DTS40010071-SMJobBlessUtil_py-DontLinkElementID_8) from Apple.  
 4.  Copy the python tool to the root of your project folder.
 5.  From the terminal navigate to the root of your project folder and run the following: 
