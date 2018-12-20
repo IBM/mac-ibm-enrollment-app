@@ -12,7 +12,6 @@ import Foundation
 struct SecondaryRegistrationChildVC_Constants {
     static let header = "Lorem Ipsum"
     static let subheader = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-   
     
     /**
      Structure definition containing the key name assignments for storing the Option checkbox values
