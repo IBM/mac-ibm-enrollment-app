@@ -11,6 +11,7 @@ import Foundation
 
 struct BundleInstallationChildVC_Constants {
     static let header = "Installing selected app bundles…"
+    static let estimatedTimeRemainingMessageTextLabel = "Estimated time remaining :"
     /**
      Structure definition containing reference assignments of stored values or property list key names for retrieving values.
      

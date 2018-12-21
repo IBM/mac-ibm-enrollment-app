@@ -59,6 +59,7 @@ class BundleInstallationChildViewController: NSViewController, StackItemHost {
     private func setTextFields() {
         headerMessageTextLabel.set(label: BundleSelectionChildVC_Constants.header, color: .headerTextColor)
         errorMessageTextLabel.set(label: AlertText.BundleInstallationWarning.message, color: .controlTextColor)
+        estimatedTimeRemainingLabel.stringValue = BundleInstallationChildVC_Constants.estimatedTimeRemainingMessageTextLabel
         estimatedTimeRemainingMessageTextLabel.textColor = .headerTextColor
         estimatedTimeRemainingLabel.textColor = .headerTextColor
     }
