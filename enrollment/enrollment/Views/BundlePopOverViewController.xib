@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14313.18"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -20,32 +20,32 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="A81-wL-LJn" userLabel="Header Label">
-                    <rect key="frame" x="98" y="240" width="129" height="36"/>
+                    <rect key="frame" x="96" y="247" width="132" height="29"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" placeholderString="Bundle Title " id="pGo-C4-ASg">
-                        <font key="font" size="24" name="SanFranciscoDisplay-Light"/>
+                        <font key="font" metaFont="system" size="24"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
                 <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="5vI-Dj-S6Q">
-                    <rect key="frame" x="20" y="227" width="284" height="5"/>
+                    <rect key="frame" x="20" y="234" width="284" height="5"/>
                 </box>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="UdS-JQ-inv" userLabel="Description Text Label">
-                    <rect key="frame" x="18" y="202" width="288" height="17"/>
+                    <rect key="frame" x="18" y="212" width="288" height="14"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" placeholderString="description" id="uJ8-dm-8gP">
-                        <font key="font" size="11" name="SFUIText-Regular"/>
+                        <font key="font" metaFont="smallSystem"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
                 <scrollView wantsLayer="YES" borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nzp-BT-XJe">
-                    <rect key="frame" x="20" y="24" width="284" height="158"/>
+                    <rect key="frame" x="20" y="34" width="284" height="158"/>
                     <clipView key="contentView" id="PQs-Dc-ohx">
-                        <rect key="frame" x="0.0" y="0.0" width="269" height="158"/>
+                        <rect key="frame" x="0.0" y="0.0" width="284" height="158"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView id="d4U-OO-TPp">
-                                <rect key="frame" x="0.0" y="0.0" width="269" height="158"/>
+                                <rect key="frame" x="0.0" y="0.0" width="284" height="158"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10" id="2AA-HT-eKR">
                                     <size key="itemSize" width="50" height="50"/>
@@ -62,12 +62,12 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="158" id="qUW-u6-mhl"/>
                     </constraints>
-                    <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="NjK-xi-pF6">
+                    <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="NjK-xi-pF6">
                         <rect key="frame" x="-100" y="-100" width="284" height="16"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </scroller>
-                    <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="MHa-cy-N6f">
-                        <rect key="frame" x="269" y="0.0" width="15" height="158"/>
+                    <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="MHa-cy-N6f">
+                        <rect key="frame" x="268" y="0.0" width="16" height="158"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </scroller>
                 </scrollView>

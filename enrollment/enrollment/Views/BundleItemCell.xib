@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14313.18"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -14,12 +14,12 @@
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
                 <stackView distribution="fill" orientation="vertical" alignment="centerX" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aWb-jE-Tnc">
-                    <rect key="frame" x="3" y="2" width="120" height="75"/>
+                    <rect key="frame" x="3" y="5" width="120" height="72"/>
                     <subviews>
                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9l9-aX-yQP">
-                            <rect key="frame" x="14" y="58" width="92" height="17"/>
+                            <rect key="frame" x="14" y="58" width="91" height="14"/>
                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" placeholderString="Bundle App Title" id="tsM-eY-Owb">
-                                <font key="font" size="11" name="SFUIText-Medium"/>
+                                <font key="font" metaFont="smallSystem"/>
                                 <color key="textColor" red="0.34536803220000001" green="0.34536803220000001" blue="0.34536803220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="backgroundColor" name="windowBackgroundColor" catalog="System" colorSpace="catalog"/>
                             </textFieldCell>
@@ -31,7 +31,7 @@
                                 <constraint firstAttribute="height" constant="50" id="QVy-Xr-8WK"/>
                             </constraints>
                             <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" placeholderString="Short one line app description" id="3bP-wV-S1K">
-                                <font key="font" size="10" name="SFUIText-Regular"/>
+                                <font key="font" metaFont="system" size="10"/>
                                 <color key="textColor" red="0.34536803220000001" green="0.34536803220000001" blue="0.34536803220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="backgroundColor" name="windowBackgroundColor" catalog="System" colorSpace="catalog"/>
                             </textFieldCell>

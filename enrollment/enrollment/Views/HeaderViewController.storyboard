@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,29 +22,29 @@
                                 </constraints>
                             </customView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hrl-to-yr1">
-                                <rect key="frame" x="30" y="25" width="79" height="24"/>
+                                <rect key="frame" x="30" y="32" width="76" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" placeholderString="Bundle Title" id="yGb-wI-dH3">
-                                    <font key="font" size="13" name="SFUIText-Medium"/>
+                                    <font key="font" metaFont="system"/>
                                     <color key="textColor" red="0.28203522759999999" green="0.28203522759999999" blue="0.28203522759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="FQ6-Is-Q7P">
-                                <rect key="frame" x="30" y="2" width="145" height="18"/>
+                                <rect key="frame" x="30" y="2" width="147" height="25"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" placeholderString="Bundle Installation Pending" id="F70-9d-SsY">
-                                    <font key="font" size="11" name="SFUIText-Regular"/>
+                                    <font key="font" metaFont="smallSystem"/>
                                     <color key="textColor" red="0.28203522759999999" green="0.28203522759999999" blue="0.28203522759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rCp-wz-a1H">
-                                <rect key="frame" x="210" y="-4" width="65" height="32"/>
+                                <rect key="frame" x="210" y="3" width="65" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="65" id="qoT-iL-6O7"/>
                                 </constraints>
                                 <buttonCell key="cell" type="bevel" title="Show Apps" bezelStyle="rounded" alignment="center" imageScaling="proportionallyDown" inset="2" id="Mlo-sP-oWE">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" size="11" name="SFUIText-Regular"/>
+                                    <font key="font" metaFont="smallSystem"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="discloseButtonClicked:" target="cL4-b3-KL0" id="F9V-U3-ZWS"/>
