@@ -18,6 +18,9 @@ class SetupCompleteChildViewController: NSViewController {
     
     @IBOutlet weak var showOnRebootToggle: NSButton!
     
+    @IBOutlet weak var borderedScrollView: NSScrollView!
+    
+    
     let urlPath = Bundle.main
     let helperBundleIdentifier = SetupCompleteChildVC_Constants.helperBundleIdentifier
     
@@ -38,6 +41,7 @@ class SetupCompleteChildViewController: NSViewController {
         }
         showOnRebootToggle.state = foundHelper ? .on : .off
         
+        borderedScrollView.contentView.scroll(to: .zero)
         listOfIcons = SetupCompleteChildVC_Constants.LinkOuts.icons
         listOfLinkOutHeaders = SetupCompleteChildVC_Constants.LinkOuts.headerLabels
         listOfLinkDescriptions = SetupCompleteChildVC_Constants.LinkOuts.descriptionLabels

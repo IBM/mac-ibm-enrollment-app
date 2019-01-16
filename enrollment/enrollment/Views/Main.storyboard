@@ -443,6 +443,7 @@ DQ
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="borderedScrollView" destination="B1X-R6-93I" id="py0-he-wX5"/>
                         <outlet property="headerMessageTextLabel" destination="w1Z-mo-yJ7" id="Dv1-TV-I9R"/>
                         <outlet property="linkoutCollectionView" destination="2vT-wf-82Y" id="o7c-XM-Hms"/>
                         <outlet property="showOnRebootToggle" destination="s8J-Kd-Rt2" id="gGn-HH-2M3"/>
