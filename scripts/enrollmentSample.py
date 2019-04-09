@@ -13,13 +13,14 @@ from SystemConfiguration import SCDynamicStoreCopyConsoleUser
 import urllib2
 import base64
 import sys
+import json
 
 # Get the logged in user
 loggedInUser = (SCDynamicStoreCopyConsoleUser(None, None, None) or [None])[0]
 loggedInUser = [loggedInUser,""][loggedInUser in [u"loginwindow", None, u""]]
 
 print "logged in user is: %s" % loggedInUser
-fileUserPath="/Users/%s/Library/Preferences/com.ibm.enrollment.plist." % loggedInUser
+fileUserPath="/Users/%s/Library/Preferences/com.ibm.enrollment.plist" % loggedInUser
 
 # Setup for enrollment
 if os.path.exists(fileUserPath):
@@ -29,6 +30,7 @@ if os.path.exists(fileUserPath):
 # sys arguements are pulled from script parameters in the jss
 '''
 jss_url = sys.argv[4]
+jss_url = jss_url.rstrip('/')
 jss_api_user = sys.argv[5]
 jss_api_passwd = sys.argv[6]
 
@@ -64,7 +66,6 @@ for key, value in enrollmentAppItems.items():
     print(key, value)
     sub_command = ['sudo', '-u', loggedInUser, 'defaults', 'write', fileUserPath, key, value]
     ssUser = subprocess.Popen(sub_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-
 
 # Launch the enrollment application
 os.system("open /Applications/Enrollment.app")
