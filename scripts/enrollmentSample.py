@@ -5,6 +5,7 @@
 # Items used in the UI during enrollment
 #
 # SPDX-License-Identifier: GPL-3.0-only
+from __future__ import print_function
 import os
 import subprocess
 import time
@@ -18,7 +19,7 @@ import sys
 loggedInUser = (SCDynamicStoreCopyConsoleUser(None, None, None) or [None])[0]
 loggedInUser = [loggedInUser,""][loggedInUser in [u"loginwindow", None, u""]]
 
-print "logged in user is: %s" % loggedInUser
+print("logged in user is: %s" % loggedInUser)
 fileUserPath="/Users/%s/Library/Preferences/com.ibm.enrollment.plist." % loggedInUser
 
 # Setup for enrollment
@@ -61,7 +62,7 @@ hrFirstName="%s" % username
 enrollmentAppItems= {"username": hrFirstName, "NameOfBundleSize1": "BundleSize1", "NameOfBundleSize2": "BundleSize2", "NameOfBundleInstallSeconds1": "BundleInstallTime1", "NameOfBundleInstallSeconds2": "BundleInstallTime2","jpsCommSeconds": "60.0",}
 print(enrollmentAppItems)
 for key, value in enrollmentAppItems.items():
-    print(key, value)
+    print((key, value))
     sub_command = ['sudo', '-u', loggedInUser, 'defaults', 'write', fileUserPath, key, value]
     ssUser = subprocess.Popen(sub_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 

@@ -6,6 +6,7 @@
 #
 # SPDX-License-Identifier: GPL-3.0-only
 
+from __future__ import print_function
 import os
 import time
 import subprocess
@@ -36,7 +37,7 @@ bundlename = "connectivity"
 ############### Start of function ###############
 # Function to run the installs.
 def install(section, event, loggedInUser, appText, plistText, appPath):
-    print section, event, loggedInUser, appText, plistText, appPath
+    print(section, event, loggedInUser, appText, plistText, appPath)
     appInstall = plistText + "InstallStatus"
     # Set the status of the spinner 1=ON, 2=OFF
     statusstart = '1'
@@ -49,7 +50,7 @@ def install(section, event, loggedInUser, appText, plistText, appPath):
 
 
     # Set the message for the end user
-    print "%sMessaging %s" % (section, appText)
+    print("%sMessaging %s" % (section, appText))
     Message = "%sMessaging" % (section)
     Text = "%s" % (appText)
     sub_command = ['sudo', '-u', loggedInUser, 'defaults', 'write', filePath, Message, Text]
@@ -59,10 +60,10 @@ def install(section, event, loggedInUser, appText, plistText, appPath):
         os.system("sudo jamf policy -event %s -forceNoRecon" % event)
     else:
         if os.path.exists(appPath):
-            print "App %s already installed" % appPath
+            print("App %s already installed" % appPath)
             time.sleep(2)
         else:
-            print "jamf %s" % event
+            print("jamf %s" % event)
             os.system("sudo jamf policy -event %s -forceNoRecon" % event)
 
 
@@ -72,7 +73,7 @@ def install(section, event, loggedInUser, appText, plistText, appPath):
     else:
         statusstop = '3'
 
-    print statusstop
+    print(statusstop)
     plistbuddy = 'sudo -u %s /usr/libexec/PlistBuddy -c "Set :%sInstallStatus %s" %s' % (loggedInUser, plistText, statusstop, filePath)
     sub_command = [ plistbuddy ]
     ssUser = subprocess.Popen(sub_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
@@ -86,7 +87,7 @@ sub_command = "/bin/ls -la /dev/console | /usr/bin/cut -d ' ' -f 4"
 loggedInUser = subprocess.Popen(sub_command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 loggedInUser = loggedInUser.communicate()[0]
 loggedInUser = loggedInUser.strip()
-print "logged in user is: %s" % loggedInUser
+print("logged in user is: %s" % loggedInUser)
 filePath = "/Users/%s/Library/Preferences/com.ibm.enrollment.plist" % loggedInUser
 
 # Set the status of the spinner 1=ON, 2=OFF
@@ -97,7 +98,7 @@ statusstop = '2'
 sub_command = "sudo -u %s defaults read %s SelectedBundles" % (loggedInUser, filePath)
 bundles = subprocess.Popen(sub_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
 bundles = bundles.communicate()[0]
-print bundles
+print(bundles)
 
 # Example install bundle.
 #For each bundle you will need to create a loop or duplicate the block below.
@@ -106,7 +107,7 @@ print bundles
 # Name of bundles in the application plist shown in the Wiki docs under Bundle Selection View page.
 bundlename = "connectivity"
 if bundlename in bundles:
-    print "Install %s" % bundlename
+    print("Install %s" % bundlename)
     section = bundlename
     sub_command = ['sudo', '-u', loggedInUser, 'defaults', 'write', filePath, '%sBundleStatus', '-int', statusstart] % bundlename
     ssUser = subprocess.Popen(sub_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)

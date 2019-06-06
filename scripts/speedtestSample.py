@@ -4,6 +4,7 @@
 #
 # SPDX-License-Identifier: GPL-3.0-only
 
+from __future__ import print_function
 import sys
 import time
 import urllib
@@ -47,7 +48,7 @@ def save(url, filename):
 # run the save function passing the url and filename.
 result=save(url,filename)
 result = str(round(int(sum(speedtest) / float(len(speedtest))) * float(0.000976562),2))
-print result
+print(result)
 
 # Write the results to the plist file for the enrollment app.
 sub_command = "/bin/ls -la /dev/console | /usr/bin/cut -d ' ' -f 4"
@@ -55,9 +56,9 @@ loggedInUser = subprocess.Popen(sub_command, shell=True, stdout=subprocess.PIPE,
 loggedInUser = loggedInUser.communicate()[0]
 loggedInUser = loggedInUser.strip()
 
-print "logged in user is: %s" % loggedInUser
+print("logged in user is: %s" % loggedInUser)
 filePath = "/Users/%s/Library/Preferences/com.ibm.enrollment.plist" % loggedInUser
-print filePath
+print(filePath)
 
 sub_command = ['sudo', '-u', loggedInUser, 'defaults', 'write', filePath, 'speedTestResult', result]
 ssUser = subprocess.Popen(sub_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
