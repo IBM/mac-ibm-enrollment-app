@@ -62,7 +62,7 @@ hrFirstName="%s" % username
 enrollmentAppItems= {"username": hrFirstName, "NameOfBundleSize1": "BundleSize1", "NameOfBundleSize2": "BundleSize2", "NameOfBundleInstallSeconds1": "BundleInstallTime1", "NameOfBundleInstallSeconds2": "BundleInstallTime2","jpsCommSeconds": "60.0",}
 print(enrollmentAppItems)
 for key, value in enrollmentAppItems.items():
-    print((key, value))
+    print(key, value)
     sub_command = ['sudo', '-u', loggedInUser, 'defaults', 'write', fileUserPath, key, value]
     ssUser = subprocess.Popen(sub_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
