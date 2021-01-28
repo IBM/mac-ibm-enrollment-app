@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17156" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17156"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="CompactRegistrationField" customModule="Mac_IBM_Enrollment" customModuleProvider="target">
+            <connections>
+                <outlet property="fieldLabel" destination="2wu-Ee-KuD" id="Nad-SO-VRX"/>
+                <outlet property="fieldOptionsMenu" destination="nhE-at-Upp" id="Ar6-8a-uUD"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <collectionViewItem nibName="CompactRegistrationField" id="xiM-a1-xI0" customClass="CompactRegistrationField" customModule="Mac_IBM_Enrollment" customModuleProvider="target"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="315" height="61"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nhE-at-Upp">
+                    <rect key="frame" x="-2" y="3" width="320" height="25"/>
+                    <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="14v-6S-CsN">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" id="tRq-3T-V27"/>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="didSelectedOption:" target="-2" id="zPg-x7-EIA"/>
+                    </connections>
+                </popUpButton>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="2wu-Ee-KuD" customClass="InfoLabelView" customModule="Mac_IBM_Enrollment" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="33" width="315" height="22"/>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="nhE-at-Upp" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="P9o-K5-Iiq"/>
+                <constraint firstItem="nhE-at-Upp" firstAttribute="top" secondItem="2wu-Ee-KuD" secondAttribute="bottom" constant="6" id="Pet-Uu-zZ4"/>
+                <constraint firstAttribute="bottom" secondItem="nhE-at-Upp" secondAttribute="bottom" constant="6" id="aaH-8b-uDo"/>
+                <constraint firstAttribute="trailing" secondItem="nhE-at-Upp" secondAttribute="trailing" id="fkk-sA-bpd"/>
+                <constraint firstItem="2wu-Ee-KuD" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="6" id="hRv-kL-oc7"/>
+                <constraint firstItem="2wu-Ee-KuD" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="ls2-jG-ZD2"/>
+                <constraint firstAttribute="trailing" secondItem="2wu-Ee-KuD" secondAttribute="trailing" id="x2e-St-XQg"/>
+            </constraints>
+            <point key="canvasLocation" x="57.5" y="60.5"/>
+        </customView>
+    </objects>
+</document>

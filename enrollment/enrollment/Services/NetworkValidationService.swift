@@ -13,7 +13,7 @@ import SystemConfiguration
 
 /**
  Shared service class for extending network validation to the enrollment app
-*/
+ */
 class NetworkValidationService: NSObject {
     
     static let sharedInstance: NetworkValidationService = {
@@ -51,8 +51,8 @@ class NetworkValidationService: NSObject {
      Method for validating if the system is able to reach an internal url / intranet
      
      - Parameter urlPath : string value containing the internal testing url
-    */
-    func verifyInternalURL(urlPath: String, completion: @escaping (_ isValid: Bool)->()) {
+     */
+    func verifyInternalURL(urlPath: String, completion: @escaping (_ isValid: Bool) -> Void) {
         if let url = NSURL(string: urlPath) {
             let request = NSMutableURLRequest(url: url as URL)
             request.httpMethod = "HEAD"
@@ -74,12 +74,12 @@ class NetworkValidationService: NSObject {
      Method for validating if the system is able to reach the Jamf Pro Server
      
      - Parameter jpsURL : string value containing the health check url for the Jamf Pro Server
-    */
+     */
     func checkForJPSAvailability(jpsURL: String, completion: @escaping (_ result: Int) -> Void) {
         let url = URL(string: jpsURL)!
         let request = URLRequest(url: url)
         
-        let task = URLSession.shared.dataTask(with: request) {data, response, error in
+        let task = URLSession.shared.dataTask(with: request) {_, response, _ in
             
             if let httpResponse = response as? HTTPURLResponse {
                 let responseCode = httpResponse.statusCode
@@ -91,14 +91,14 @@ class NetworkValidationService: NSObject {
     }
     
     /**
-     Private method for displaying an alert sheet in the event the network validation returns a false state
+     Method for displaying a alert sheet to the user in the event that the any network validation has a failure state
     */
     private func displayInternalNetworkValidationWarning() {
         DispatchQueue.main.async {
             let alert = NSAlert()
             alert.alertStyle = .critical
             alert.messageText = AlertText.NetworkValidationMessaging.Internal.warning
-            alert.addButton(withTitle: "OK")
+            alert.addButton(withTitle: "buttonLabelOk".localized)
             alert.beginSheetModal(for: NSApp.keyWindow!)
         }
     }

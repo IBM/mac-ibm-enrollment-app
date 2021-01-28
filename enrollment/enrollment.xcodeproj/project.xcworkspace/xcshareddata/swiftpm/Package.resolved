@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "MoreCodable",
+        "repositoryURL": "https://github.com/tattn/MoreCodable.git",
+        "state": {
+          "branch": null,
+          "revision": "360a8fccc5047e6045d24be5069218187a3c6e3a",
+          "version": "1.2.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

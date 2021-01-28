@@ -11,6 +11,6 @@ import Foundation
 
 @objc(RemoteProcessProtocol)
 protocol RemoteProcessProtocol {
-    func runCommand(event: String, reply: @escaping (NSNumber) -> Void)
-    func getVersion(reply: @escaping (String) -> Void)
+    func runPolicy(event: String, reply: @escaping (String?) -> Void)
+    func getVersion(reply: @escaping (String?) -> Void)
 }

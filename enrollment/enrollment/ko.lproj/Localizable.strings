@@ -1,0 +1,272 @@
+/*
+ Localizable.strings
+ enrollment
+ 
+ Created by Simone Martorelli on 2/5/20.
+ Copyright © 2020 IBM. All rights reserved.
+ SPDX-License-Identifier: GPL-3.0-only
+ */
+
+/// MARK: - Note to the translation
+///
+/// Pay attention to not modify, cancel or move the special characters:
+/// - %d - This special character is substituted with a number at runtime;
+/// - %@ - This special characted is substituted with a string at runtime;
+/// - \n - This special characted works like the "return" key;
+/// - \" - This special characted insert a ";
+
+// MARK: - Registration: page one
+
+// Header
+"registrationPageOneTitleSimple" = "여러분을 환영합니다!";
+"registrationPageOneTitleComposed" = "%@님 환영합니다!";
+"registrationPageOneSubtitleSimple" = "이름이 보이지 않으십니까?";
+"registrationPageOneSubtitleComposed" = "%@님이 아니십니까?";
+
+// Info popovers
+"registrationPageOneSubtitle_info" = "걱정하지 마십시오. 나중에 Mac@IBM App Store를 사용해서 \"사용자 지정\"을 검색하여 업데이트할 수 있습니다. ";
+"registrationPageOneDisclaimerPolicies_infoElementOne" = "방화벽";
+"registrationPageOneDisclaimerPolicies_infoElementTwo" = "스텔스 모드";
+"registrationPageOneDisclaimerPolicies_infoElementThree" = "게스트 사용자 계정";
+"registrationPageOneDisclaimerPolicies_infoElementFour" = "FileVault 디스크 암호화";
+"registrationPageOneDisclaimerPolicies_infoElementFive" = "초기 macOS 비밀번호 변경";
+"registrationPageOneDisclaimerPolicies_infoElementSix" = "화면 보호기 비밀번호";
+"registrationPageOneDisclaimerPolicies_infoElementSeven_title" = "화면 보호기 시작 시간";
+"registrationPageOneDisclaimerPolicies_infoElementSeven_description" = "30분 간 비활성";
+"registrationPageOneDisclaimerPolicies_infoElementEight_title" = "엔드포인트 보호 소프트웨어";
+
+// Field labels
+"registrationPageOneFieldRegion" = "지역";
+"registrationPageOneFieldComputer" = "컴퓨터 유형";
+"registrationPageOneFieldOwner" = "자산 소유자";
+"registrationPageOneFieldUser" = "사용자 유형";
+
+// Region field options
+"registrationPageOneFieldRegionOptionOne" = "미국";
+"registrationPageOneFieldRegionOptionTwo" = "캐나다";
+"registrationPageOneFieldRegionOptionThree" = "EMEA(유럽, 중동, 아프리카)";
+"registrationPageOneFieldRegionOptionFour" = "LA(라틴 아메리카)";
+"registrationPageOneFieldRegionOptionFive" = "AP(아시아 태평양)";
+
+// Computer Type options
+"registrationPageOneFieldComputerOptionOne" = "기본";
+"registrationPageOneFieldComputerOptionOne_info" = "단일 사용자를 위해 일반적인 사무실 생산성 플랫폼(예: 이메일, 웹 브라우징/애플리케이션, 인스턴트 메시징, 문서화 등)을 제공합니다. ";
+"registrationPageOneFieldComputerOptionTwo" = "보조";
+"registrationPageOneFieldComputerOptionTwo_info" = "고객 데모 활동 및 가상 머신을 포함한 사무실 생산성 활동을 제외한 다양한 태스크에 사용할 수 있습니다.";
+"registrationPageOneFieldComputerOptionThree" = "공유";
+"registrationPageOneFieldComputerOptionThree_info" = "여러 사용자가 교육 및 훈련을 위해 사용합니다. ";
+"registrationPageOneFieldComputerOptionFour" = "대여";
+"registrationPageOneFieldComputerOptionFour_info" = "테스트 및/또는 개발을 목적으로 합니다. ";
+"registrationPageOneFieldComputerOptionFive" = "강의실";
+"registrationPageOneFieldComputerOptionFive_info" = "대체 또는 보완용으로 단기적으로 사용됩니다. ";
+"registrationPageOneFieldComputerOptionSix" = "연구실";
+"registrationPageOneFieldComputerOptionSix_info" = "여러 사용자가 사무실 생산성 활동을 포함한 다양한 태스크에 사용할 수 있습니다. ";
+
+// Asset Owner options
+"registrationPageOneFieldOwnerOptionOne" = "IBM 제공";
+"registrationPageOneFieldOwnerOptionTwo" = "개인 소유";
+"registrationPageOneFieldOwnerOptionThree" = "제3자 소유: 공급업체 제공";
+"registrationPageOneFieldOwnerOptionFour" = "제3자 소유: 계약자 대행사 제공";
+"registrationPageOneFieldOwnerOptionFive" = "제3자 소유: 고객 제공";
+
+// User Type options
+"registrationPageOneFieldUserOptionOne" = "표준";
+"registrationPageOneFieldUserOptionOne_info" = "권한 있는 유스 케이스 또는 콜 센터 유스 케이스에서 수행하는 업무 외의 일반적인 사용입니다. ";
+"registrationPageOneFieldUserOptionTwo" = "권한";
+"registrationPageOneFieldUserOptionTwo_info" = "IBM 또는 고객의 보안 관리 권한, 네트워크 디바이스, 컴퓨터 시스템, 미들웨어 구성요소 또는 애플리케이션의 시스템 권한이 지정되어 있습니다. ";
+"registrationPageOneFieldUserOptionThree" = "서비스/콜 센터";
+"registrationPageOneFieldUserOptionThree_info" = "서비스 센터, 콜 센터 또는 헬프 데스크에 지정됩니다. ";
+
+// Policies disclaimer
+"registrationPageOneDisclaimerPolicies" = "IBM 보안 정책이 자동으로 적용됩니다.";
+
+// MARK: - Registration: page two
+
+// Header
+"registrationPageTwoTitle" = "액세스하는 정보";
+"registrationPageTwoSubtitle" = "이 컴퓨터에 저장된 데이터 유형을 선택하십시오. ";
+
+// Information options
+"registrationPageTwoFieldInformationOptionOne_title" = "민감한 개인 정보(SPI)";
+"registrationPageTwoFieldInformationOptionOne_description" = "디바이스에 개인 정보(PI)가 저장됩니다. ";
+"registrationPageTwoFieldInformationOptionTwo_title" = "고객 데이터";
+"registrationPageTwoFieldInformationOptionTwo_description" = "디바이스가 고객이 소유하거나 작성한 데이터를 저장하거나 액세스하는 데 사용됩니다. ";
+"registrationPageTwoFieldInformationOptionThree_title" = "정부 규제 대상 데이터";
+"registrationPageTwoFieldInformationOptionThree_description" = "관리, 데이터 소유자 또는 관리자로부터 디바이스에 저장되거나 액세스되는 데이터가 정부의 제한이나 규제를 받는다는 정보를 받았습니다. 예를 들어, 일부 의료 데이터는 추가 보호의 대상이 됩니다. ";
+"registrationPageTwoFieldInformationOptionFour_title" = "연방 금융기관 심사 위원회(FFIEC) 데이터";
+"registrationPageTwoFieldInformationOptionFour_description" = "고객의 재무 환경을 지원하거나 액세스할 수 있습니다. ";
+"registrationPageTwoFieldInformationOptionFive_title" = "의료보험의 양도 및 책임에 관한 법률(HIPAA) 데이터";
+"registrationPageTwoFieldInformationOptionFive_description" = "HIPAA 규제 대상 고객 계정 또는 멀티테넌트 오퍼링을 지원합니다. ";
+"registrationPageTwoFieldInformationOptionSix_title" = "PCI 데이터";
+"registrationPageTwoFieldInformationOptionSix_description" = "디바이스가 고객이 소유하거나 생성한 중요한 결제 카드(예: 신용카드) 데이터를 저장하거나 액세스합니다. ";
+"registrationPageTwoFieldInformationOptionSeven_title" = "해당 항목 없음";
+"registrationPageTwoFieldInformationOptionSeven_description" = "";
+
+// MARK: - Registration: loading page
+
+// State labels
+"registrationLoadingPageStateOne" = "네트워크 속도 테스트";
+"registrationLoadingPageStateTwo" = "등록 완료";
+"registrationLoadingPageStateForPhaseThree" = "등록 업데이트";
+
+// MARK: - Registration: final page
+
+// Header
+"registrationFinalPageTitle" = "등록 완료";
+"registrationFinalPageTitlePhaseThree" = "등록 세부사항";
+"registrationFinalPageTitlePhaseFour" = "환영합니다!";
+"registrationFinalPageSubtitleStandard" = "Mac을 설정해 주십시오!";
+"registrationFinalPageSubtitlePhaseThree" = "";
+"registrationFinalPageInstructionalMessage" = "다음에 로그인하면 새로운 macOS 로그인 비밀번호를 입력하고 FileVault 디스크 암호화를 활성화하라는 메시지가 표시됩니다. ";
+"registrationFinalPageCountdownMessage" = "설정 과정을 계속하기 위해 Mac이 %d초 안에 자동으로 재시작되거나, \"재시작\"을 선택하여 지금 진행할 수 있습니다. ";
+
+// MARK: - Installation: bundle selection page
+
+// Header
+"installationBundleSelectionPageTitle" = "시작하기 위한 앱 번들";
+"installationBundleSelectionPageSubtitle" = "Mac@IBM App Store에서 언제든지 추가 앱을 설치할 수 있습니다. ";
+
+// Labels
+"installationBundleSelectionPageRecommended" = "(권장)";
+
+// Bundle one
+"installationBundleSelectionPageBundleOneTitle" = "연결";
+"installationBundleSelectionPageBundleOneDescription" = "필요한 소프트웨어 및 인증서를 사용하여 IBM 네트워크에 연결";
+"installationBundleSelectionPageBundleOnePopoverTitle" = "연결 번들";
+"installationBundleSelectionPageBundleOnePopoverDescription" = "인증서 및 소프트웨어로 네트워크에 연결";
+"installationBundleSelectionPageBundleOneAppOneTitle" = "AnyConnect";
+"installationBundleSelectionPageBundleOneAppOneDescription" = "Ipsum lorem 1";
+
+// Bundle two
+"installationBundleSelectionPageBundleTwoTitle" = "필수";
+"installationBundleSelectionPageBundleTwoDescription" = "가장 일반적인 IBM 도구를 사용하여 시작하십시오. ";
+"installationBundleSelectionPageBundleTwoPopoverTitle" = "필수 번들";
+"installationBundleSelectionPageBundleTwoPopoverDescription" = "대부분의 직원이 사용하는 앱";
+"installationBundleSelectionPageBundleTwoAppOneTitle" = "IBM Notes";
+"installationBundleSelectionPageBundleTwoAppOneDescription" = "IBM 메일 송수신 및 데이터베이스와 상호 작용";
+"installationBundleSelectionPageBundleTwoAppTwoTitle" = "Webex Meetings";
+"installationBundleSelectionPageBundleTwoAppTwoDescription" = "화상 및 음성 회의 및 웹 회의 기능 결합";
+"installationBundleSelectionPageBundleTwoAppThreeTitle" = "Code42 CrashPlan";
+"installationBundleSelectionPageBundleTwoAppThreeDescription" = "Mac에서 파일을 안전하게 백업 및 복원";
+"installationBundleSelectionPageBundleTwoAppFourTitle" = "BluePages";
+"installationBundleSelectionPageBundleTwoAppFourDescription" = "빠르고 편리한 직원 디렉토리 검색";
+"installationBundleSelectionPageBundleTwoAppFiveTitle" = "IBM Bookmarks";
+"installationBundleSelectionPageBundleTwoAppFiveDescription" = "일반적으로 사용되는 IBM 웹 사이트에 대한 링크";
+
+// Bundle three
+"installationBundleSelectionPageBundleThreeTitle" = "생산성";
+"installationBundleSelectionPageBundleThreeDescription" = "워드 프로세싱, 스프레드 시트 및 사무 프로그램으로 생산성을 향상시키십시오. ";
+"installationBundleSelectionPageBundleThreePopoverTitle" = "생산성 번들";
+"installationBundleSelectionPageBundleThreePopoverDescription" = "작성 및 협업을 돕는 도구입니다. ";
+"installationBundleSelectionPageBundleThreeAppOneTitle" = "Office 365";
+"installationBundleSelectionPageBundleThreeAppOneDescription" = "Microsoft Word, Excel, PowerPoint, OneNote 및 Outlook";
+"installationBundleSelectionPageBundleThreeAppTwoTitle" = "Slack";
+"installationBundleSelectionPageBundleThreeAppTwoDescription" = "IBM 전체의 팀과 커뮤니케이션 및 협업";
+"installationBundleSelectionPageBundleThreeAppThreeTitle" = "Box Drive";
+"installationBundleSelectionPageBundleThreeAppThreeDescription" = "파일 저장, 공유 및 동기화";
+
+// MARK: - Installation: bundle installation page
+"installationBundleInstallationPageTitle" = "선택한 앱 번들 설치 중…";
+"installationBundleInstallationPageSubtitle" = "남은 예상 시간:";
+"installationBundleInstallationPageHideAppLabel" = "앱 숨기기";
+"installationBundleInstallationPageShowAppLabel" = "앱 표시";
+
+// MARK: - Installation: final page
+
+// Header
+"installationFinalPageTitle" = "Mac 시작하기";
+
+// Elements
+"installationFinalPageElementOneTitle" = "Mac@IBM App Store에서\n앱 가져오기";
+"installationFinalPageElementOneDescription" = "Microsoft Office, Slack, IBM Notes 및 기타!";
+"installationFinalPageElementTwoTitle" = "다른 컴퓨터에서 데이터를\n마이그레이션";
+"installationFinalPageElementTwoDescription" = "중요한 정보를 새로운\nMac으로 전송합니다.";
+"installationFinalPageElementThreeTitle" = "Code42 CrashPlan으로\nMac 백업";
+"installationFinalPageElementThreeDescription" = "계정 설치 및 설정 후\n안심하고 사용하십시오.";
+"installationFinalPageElementThreeDescriptionAlternate" = "계정 설정 후\n안심하고 사용하십시오.";
+"installationFinalPageElementFourTitle" = "Help@IBM에 대한 팁, 학습서 및 \n지원 보기";
+"installationFinalPageElementFourDescription" = "IBM의 전담 Apple 헬프 데스크 전문가에게 문의하십시오. ";
+"installationFinalPageElementFiveTitle" = "Notes를 사용하십니까? \nNotes ID 파일을 설치하십시오. ";
+"installationFinalPageElementFiveDescription" = "Notes를 이메일 클라이언트로 설치하고 설정하십시오. ";
+"installationFinalPAgeElementSixTitle" = "w3 홈 페이지로 이동";
+"installationFinalPageElementSixDescription" = "w3 장소 및 BluePages 검색";
+
+// Footer
+"installationFinalPageFooterLabel" = " 다음에 Mac을 재시작할 때 알리기.";
+
+// MARK: - Installation: Notes wizard page
+
+// Header
+"filePickerPageTitle" = "Notes ID 파일 설치";
+"filePickerPageSubtitle" = "Notes 설정을 완료하려면 Notes ID가 필요합니다. 나중에 추가할 수도 있습니다. ";
+
+// Messages
+"filePickerPageMessageSuccess" = "Notes ID가 성공적으로 설치되었습니다! ";
+"filePickerPageMessageFailure" = "Notes ID 파일을 설치할 수 없습니다. ";
+"filePickerPageMessageAlreadyExist" = "Notes ID 파일이 이미 존재합니다. 새로 설치할 수 있습니다. ";
+
+// Labels
+"filePickerPageButtonBrowse" = "Notes ID 파일 찾아보기";
+"filePickerPageButtonRemove" = "제거";
+"filePickerPageCenterLabel" = "Notes ID 파일 끌어다 놓기";
+"filePickerPageAlertMessage" = "파일이 존재합니다. ";
+"filePickerPageAlertInformativeText" = "파일이 대상에 이미 존재합니다. 기존 파일을 선택한 파일로 바꾸시겠습니까? ";
+"filePickerPageFileSelectionPanelTitle" = "Notes를 구성하는 데 사용할 ID 파일을 선택하십시오. ";
+"filePickerPageButtonInstall" = "Notes ID 파일 설치";
+
+// MARK: - Alert labels
+
+// Un-enrollment
+"unenrollmentAlertTitle" = "등록 절차를 종료하시겠습니까?";
+"unenrollmentAlertMessage" = "지금 취소하면 모든 보안 설정이 취소되고 이 컴퓨터가 관리에서 제거됩니다. ";
+"unenrollmentCancelled" = "프레임워크 제거 조치가 취소되었습니다. ";
+
+// Bundle selection
+"bundleSelectionAlertTitle" = "계속하시겠습니까?";
+"bundleSelectionAlertMessage" = "현재 네트워크 속도가 느린 것 같습니다. 더 적은 수의 번들을 설치하는 것이 좋습니다. ";
+
+// Bundle installation
+"bundleInstallationalertMessage" = "일부 애플리케이션을 설치하는 데 문제가 있었습니다. 나중에 셀프 서비스를 사용하여 설치하십시오. ";
+
+// Launch failure
+"launchFailureAlertTitle" = "이 애플리케이션은 디바이스 관리가 필요합니다. ";
+"launchFailureAlertMessage" = "이 디바이스를 등록하십시오. ";
+
+// External network problem
+"externalNetworkAlertMessage" = "인터넷에 연결되어 있지 않습니다. 계속하기 전에 Mac이 인터넷 연결된 네트워크에 연결되어 있는지 확인하십시오. ";
+"externalNetworkJspMessage" = "현재 셀프 서비스를 이용할 수 없습니다. 나중에 다시 시도하십시오. ";
+
+// Internal network problem
+"internalNetworkProblemAlertMessage" = "\n\n계속 진행하려면 인트라넷에 연결해야 합니다. ";
+
+// Terms and conditions drop down
+"termsAndConditionsTitle" = "개인 디바이스 사용에 대한 IBM 계약";
+"termsAndConditionsBody" = "이 디바이스를 “개인 소유”로 등록하도록 선택했습니다. 개인 소유 디바이스를 사용하여 IBM Business를 수행하는 경우 특정 이용 약관이 적용됩니다.\n\nIBM 이용 약관을 검토하고 동의 여부를 표시하십시오.";
+"termsAndConditionsButtonLink" = "IBM 이용 약관 읽기";
+"termsAndConditionsButtonAccept" = "동의";
+
+// MARK: - Common button labels
+"buttonLabelOk" = "확인";
+"buttonLabelCancel" = "취소";
+"buttonLabelNext" = "다음";
+"buttonLabelRestart" = "다시 시작";
+"buttonLabelClose" = "닫기";
+"buttonLabelBack" = "이전";
+"buttonLabelOkWithQuestionMark" = "확인?";
+"buttonLabelQuit" = "종료";
+"buttonLabelReplace" = "바꾸기";
+"buttonLabelUpdateInfo" = "세부사항 편집";
+"buttonLabelUnenroll" = "등록 취소";
+
+// MARK: - Common labels
+"labelEnabled" = "사용";
+"labelDisabled" = "사용 안함";
+"labelRequired" = "필수";
+"restartFailureMessage" = "컴퓨터를 다시 시작할 수 없습니다. ";
+"restartFailureComment" = "다시 시작 실패 경보";
+"estimatedInstallTimeMessage" = "%@ \n \n 예상 설치 시간: %@";
+"labelChooseAnswer" = "답변을 선택하십시오. ";
+"labelNo" = "아니오";
+"labelYes" = "예";
+"buttonLabelInstall" = "선택된 번들 설치";
+"buttonLabelSkip" = "건너뛰기";

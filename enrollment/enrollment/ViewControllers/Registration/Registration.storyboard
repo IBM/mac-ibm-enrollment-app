@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Multiple Registration Fields View Controller-->
+        <scene sceneID="BNs-aU-tAN">
+            <objects>
+                <viewController storyboardIdentifier="MultipleRegistrationFieldsViewController" id="MOa-TS-gYn" customClass="MultipleRegistrationFieldsViewController" customModule="Mac_IBM_Enrollment" customModuleProvider="target" sceneMemberID="viewController">
+                    <customView key="view" identifier="MultipleRegistrationFieldsViewController" id="ozS-kH-Cm6">
+                        <rect key="frame" x="0.0" y="0.0" width="640" height="520"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="Orr-Ed-E73">
+                                <rect key="frame" x="0.0" y="0.0" width="640" height="520"/>
+                                <subviews>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="s07-aD-dY3" customClass="InfoLabelView" customModule="Mac_IBM_Enrollment" customModuleProvider="target">
+                                        <rect key="frame" x="77" y="433" width="486" height="39"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="39" id="0fr-O4-urS"/>
+                                        </constraints>
+                                    </customView>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="Q34-tR-SWu" customClass="InfoLabelView" customModule="Mac_IBM_Enrollment" customModuleProvider="target">
+                                        <rect key="frame" x="77" y="405" width="486" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="bIw-2y-RXP"/>
+                                        </constraints>
+                                    </customView>
+                                    <scrollView wantsLayer="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGx-Xt-4v3">
+                                        <rect key="frame" x="77" y="134" width="486" height="263"/>
+                                        <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="gfn-Qf-ACx">
+                                            <rect key="frame" x="0.0" y="0.0" width="486" height="263"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <collectionView id="uJk-sD-aX7">
+                                                    <rect key="frame" x="0.0" y="0.0" width="486" height="263"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10" id="yZX-xo-fJK">
+                                                        <size key="itemSize" width="50" height="50"/>
+                                                        <edgeInsets key="sectionInset" left="0.0" right="15" top="0.0" bottom="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <color key="primaryBackgroundColor" name="laptop_screen_background"/>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="MOa-TS-gYn" id="NrZ-84-qBo"/>
+                                                        <outlet property="delegate" destination="MOa-TS-gYn" id="JgW-JG-Ctw"/>
+                                                    </connections>
+                                                </collectionView>
+                                            </subviews>
+                                            <color key="backgroundColor" name="windowBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </clipView>
+                                        <edgeInsets key="contentInsets" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                        <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="oFW-wa-Lpn" customClass="MyScroller" customModule="Mac_IBM_Enrollment" customModuleProvider="target">
+                                            <rect key="frame" x="-100" y="-100" width="471" height="15"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </scroller>
+                                        <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" controlSize="small" horizontal="NO" id="0Lw-PV-0oT" customClass="MyScroller" customModule="Mac_IBM_Enrollment" customModuleProvider="target">
+                                            <rect key="frame" x="-100" y="-100" width="11" height="263"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </scroller>
+                                    </scrollView>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="6xx-s2-h7c" customClass="InfoLabelView" customModule="Mac_IBM_Enrollment" customModuleProvider="target">
+                                        <rect key="frame" x="77" y="102" width="486" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="XaW-Yc-Jrz"/>
+                                        </constraints>
+                                    </customView>
+                                    <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="yzd-vn-C91">
+                                        <rect key="frame" x="77" y="91" width="486" height="5"/>
+                                    </box>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hiv-Tn-x2z">
+                                        <rect key="frame" x="495" y="58" width="75" height="32"/>
+                                        <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Sfe-hK-LiU">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                            <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="didPressedBottomRightButton:" target="MOa-TS-gYn" id="ith-qQ-d2G"/>
+                                        </connections>
+                                    </button>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KGj-wf-E56">
+                                        <rect key="frame" x="70" y="58" width="75" height="32"/>
+                                        <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="05D-6n-CoB">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="didPressedBottomLeftButton:" target="MOa-TS-gYn" id="YMF-eP-Bnn"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MI0-rA-M5Z">
+                                        <rect key="frame" x="280" y="24" width="81" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Lvw-c3-P0k">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <segue destination="MOa-TS-gYn" kind="custom" identifier="goToPage" customClass="CrossfadeStoryBoardSegue" customModule="Mac_IBM_Enrollment" customModuleProvider="target" id="saO-U5-Pwr"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YOe-IM-h3s">
+                                        <rect key="frame" x="280" y="24" width="81" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="K5z-AN-BOl">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <segue destination="MOa-TS-gYn" kind="custom" identifier="backFromPage" customClass="CrossfadeStoryBoardSegue" customModule="Mac_IBM_Enrollment" customModuleProvider="target" id="CNh-uv-idg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="hiv-Tn-x2z" firstAttribute="top" secondItem="yzd-vn-C91" secondAttribute="bottom" constant="8" id="0pK-cu-Ncf"/>
+                                    <constraint firstAttribute="trailing" secondItem="Q34-tR-SWu" secondAttribute="trailing" constant="77" id="2xQ-sB-apB"/>
+                                    <constraint firstItem="6xx-s2-h7c" firstAttribute="top" secondItem="pGx-Xt-4v3" secondAttribute="bottom" constant="8" id="AJ9-Ng-l3x"/>
+                                    <constraint firstAttribute="trailing" secondItem="yzd-vn-C91" secondAttribute="trailing" constant="77" id="Aj4-Px-nkW"/>
+                                    <constraint firstItem="KGj-wf-E56" firstAttribute="top" secondItem="yzd-vn-C91" secondAttribute="bottom" constant="8" id="DfS-lK-GGK"/>
+                                    <constraint firstAttribute="trailing" secondItem="s07-aD-dY3" secondAttribute="trailing" constant="77" id="FPg-xR-GVu"/>
+                                    <constraint firstItem="KGj-wf-E56" firstAttribute="leading" secondItem="Orr-Ed-E73" secondAttribute="leading" constant="77" id="IYW-b3-ZS9"/>
+                                    <constraint firstAttribute="trailing" secondItem="6xx-s2-h7c" secondAttribute="trailing" constant="77" id="JzG-0N-jEh"/>
+                                    <constraint firstItem="s07-aD-dY3" firstAttribute="leading" secondItem="Orr-Ed-E73" secondAttribute="leading" constant="77" id="Md2-ml-iO9"/>
+                                    <constraint firstItem="yzd-vn-C91" firstAttribute="top" secondItem="6xx-s2-h7c" secondAttribute="bottom" constant="8" id="QR6-Uk-m5t"/>
+                                    <constraint firstItem="Q34-tR-SWu" firstAttribute="top" secondItem="s07-aD-dY3" secondAttribute="bottom" constant="4" id="Rkv-Qk-KMf"/>
+                                    <constraint firstItem="6xx-s2-h7c" firstAttribute="leading" secondItem="Orr-Ed-E73" secondAttribute="leading" constant="77" id="ScC-cV-P90"/>
+                                    <constraint firstAttribute="bottom" secondItem="yzd-vn-C91" secondAttribute="bottom" constant="93" id="bJ2-4H-frm"/>
+                                    <constraint firstAttribute="trailing" secondItem="pGx-Xt-4v3" secondAttribute="trailing" constant="77" id="gHp-zc-8NU"/>
+                                    <constraint firstItem="yzd-vn-C91" firstAttribute="leading" secondItem="Orr-Ed-E73" secondAttribute="leading" constant="77" id="hmT-Nw-oB0"/>
+                                    <constraint firstItem="pGx-Xt-4v3" firstAttribute="leading" secondItem="Orr-Ed-E73" secondAttribute="leading" constant="77" id="i5k-KW-UPl"/>
+                                    <constraint firstItem="Q34-tR-SWu" firstAttribute="leading" secondItem="Orr-Ed-E73" secondAttribute="leading" constant="77" id="klF-kB-hWY"/>
+                                    <constraint firstItem="s07-aD-dY3" firstAttribute="top" secondItem="Orr-Ed-E73" secondAttribute="top" constant="48" id="rzW-kv-4L0"/>
+                                    <constraint firstAttribute="trailing" secondItem="hiv-Tn-x2z" secondAttribute="trailing" constant="77" id="sKC-XS-U4R"/>
+                                    <constraint firstItem="pGx-Xt-4v3" firstAttribute="top" secondItem="Q34-tR-SWu" secondAttribute="bottom" constant="8" id="sWn-n0-YzY"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Orr-Ed-E73" firstAttribute="leading" secondItem="ozS-kH-Cm6" secondAttribute="leading" id="5cf-6z-WEE"/>
+                            <constraint firstItem="Orr-Ed-E73" firstAttribute="top" secondItem="ozS-kH-Cm6" secondAttribute="top" id="AQe-sA-Aq7"/>
+                            <constraint firstAttribute="trailing" secondItem="Orr-Ed-E73" secondAttribute="trailing" id="SIz-u6-gKp"/>
+                            <constraint firstAttribute="bottom" secondItem="Orr-Ed-E73" secondAttribute="bottom" id="wW7-Jt-5yt"/>
+                        </constraints>
+                    </customView>
+                    <connections>
+                        <outlet property="bottomLeftButton" destination="KGj-wf-E56" id="lny-p7-zXd"/>
+                        <outlet property="bottomRightButton" destination="hiv-Tn-x2z" id="VNO-d0-0bn"/>
+                        <outlet property="contentView" destination="Orr-Ed-E73" id="fkI-JV-O49"/>
+                        <outlet property="fieldsCollectionView" destination="uJk-sD-aX7" id="oAO-9i-EnD"/>
+                        <outlet property="footerLabel" destination="6xx-s2-h7c" id="Fak-7U-Pln"/>
+                        <outlet property="subtitleLabel" destination="Q34-tR-SWu" id="kpz-YL-uqw"/>
+                        <outlet property="titleLabel" destination="s07-aD-dY3" id="PbS-R1-6Yx"/>
+                        <segue destination="IqE-0V-3J7" kind="custom" identifier="goToLoadingPage" customClass="CrossfadeStoryBoardSegue" customModule="Mac_IBM_Enrollment" customModuleProvider="target" id="rL3-CJ-eT2"/>
+                        <segue destination="GJv-t7-e1Z" kind="custom" identifier="backToRegistrationFinalPage" customClass="CrossfadeStoryBoardSegue" customModule="Mac_IBM_Enrollment" customModuleProvider="target" id="8vj-gk-We9"/>
+                    </connections>
+                </viewController>
+                <customObject id="sMX-hf-wUQ" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="178" y="187"/>
+        </scene>
+        <!--AnimatedGIF Progress View Controller-->
+        <scene sceneID="FVz-lz-p1o">
+            <objects>
+                <viewController id="IqE-0V-3J7" customClass="AnimatedGIFProgressViewController" customModule="Mac_IBM_Enrollment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="5oM-nh-p35">
+                        <rect key="frame" x="0.0" y="0.0" width="640" height="520"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView wantsLayer="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rbi-bG-lI7">
+                                <rect key="frame" x="283" y="256" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="9E7-r6-ulW"/>
+                                    <constraint firstAttribute="height" constant="75" id="GB0-M3-JNl"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="pe4-so-SrK"/>
+                            </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="N5G-Q7-MaE">
+                                <rect key="frame" x="166" y="165" width="309" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="305" id="Y4I-te-QGg"/>
+                                </constraints>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" placeholderString="Status ( Installing, Registering, Success or Error )" id="agJ-YK-q6S">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" red="0.28203522759999999" green="0.28203522759999999" blue="0.28203522759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="N5G-Q7-MaE" secondAttribute="trailing" constant="167" id="8Pi-S6-ZYG"/>
+                            <constraint firstItem="Rbi-bG-lI7" firstAttribute="top" secondItem="5oM-nh-p35" secondAttribute="top" constant="189" id="Jle-GQ-bg0"/>
+                            <constraint firstItem="N5G-Q7-MaE" firstAttribute="leading" secondItem="5oM-nh-p35" secondAttribute="leading" constant="168" id="Va9-cp-uDf"/>
+                            <constraint firstAttribute="trailing" secondItem="Rbi-bG-lI7" secondAttribute="trailing" constant="282" id="lqq-Jo-Oux"/>
+                            <constraint firstItem="Rbi-bG-lI7" firstAttribute="leading" secondItem="5oM-nh-p35" secondAttribute="leading" constant="283" id="x60-f2-cOf"/>
+                            <constraint firstItem="N5G-Q7-MaE" firstAttribute="top" secondItem="Rbi-bG-lI7" secondAttribute="bottom" constant="75" id="ymY-ID-Scn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="animatedGIFView" destination="Rbi-bG-lI7" id="g83-hv-LmP"/>
+                        <outlet property="progressAlertTextLabel" destination="N5G-Q7-MaE" id="LpN-QC-275"/>
+                        <segue destination="GJv-t7-e1Z" kind="custom" identifier="goToPostRegistrationPage" customClass="CrossfadeStoryBoardSegue" customModule="Mac_IBM_Enrollment" id="t32-7a-Eb0"/>
+                    </connections>
+                </viewController>
+                <customObject id="9vQ-pT-mWB" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="178" y="995"/>
+        </scene>
+        <!--Post Registration Page View Controller-->
+        <scene sceneID="Dtc-nU-5dN">
+            <objects>
+                <customObject id="R9H-ff-N79" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="PostRegistrationPageViewController" id="GJv-t7-e1Z" customClass="PostRegistrationPageViewController" customModule="Mac_IBM_Enrollment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" id="cLd-vh-ANh">
+                        <rect key="frame" x="0.0" y="0.0" width="640" height="520"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="nCx-b7-G46">
+                                <rect key="frame" x="77" y="91" width="486" height="5"/>
+                            </box>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hka-q6-sGP">
+                                <rect key="frame" x="75" y="367" width="490" height="16"/>
+                                <textFieldCell key="cell" allowsUndo="NO" sendsActionOnEndEditing="YES" alignment="left" id="jz2-0b-FT6">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" red="0.28203522759999999" green="0.28203522759999999" blue="0.28203522759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button wantsLayer="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="czg-a3-YTd">
+                                <rect key="frame" x="492" y="58" width="78" height="32"/>
+                                <buttonCell key="cell" type="push" title="Restart" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="z4o-hM-Xmm">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="didPressBottomRightButton:" target="GJv-t7-e1Z" id="hST-Vg-OtH"/>
+                                </connections>
+                            </button>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="bLZ-pO-kgv">
+                                <rect key="frame" x="75" y="338" width="490" height="16"/>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" id="XQ2-Kl-HBv">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" red="0.28203522759999999" green="0.28203522759999999" blue="0.28203522759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button wantsLayer="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8cG-eL-cfC" userLabel="Back Button">
+                                <rect key="frame" x="70" y="58" width="105" height="32"/>
+                                <buttonCell key="cell" type="push" title="Update info" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="B2A-LK-2z9">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <accessibility identifier="backButton"/>
+                                <connections>
+                                    <action selector="didPressBottomLeftButton:" target="GJv-t7-e1Z" id="P4v-Ka-LsL"/>
+                                </connections>
+                            </button>
+                            <customView hidden="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NxV-Jl-8yA" customClass="InfoLabelView" customModule="Mac_IBM_Enrollment" customModuleProvider="target">
+                                <rect key="frame" x="77" y="102" width="486" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="xKK-xU-QC4"/>
+                                </constraints>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="8w7-9Q-Hcq" customClass="InfoLabelView" customModule="Mac_IBM_Enrollment" customModuleProvider="target">
+                                <rect key="frame" x="77" y="433" width="486" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="Yiq-7l-Iqj"/>
+                                </constraints>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="rsP-vZ-Ycv" customClass="InfoLabelView" customModule="Mac_IBM_Enrollment" customModuleProvider="target">
+                                <rect key="frame" x="77" y="405" width="486" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="hql-y5-IKI"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="8w7-9Q-Hcq" firstAttribute="top" secondItem="cLd-vh-ANh" secondAttribute="top" constant="48" id="45D-wt-7Im"/>
+                            <constraint firstItem="NxV-Jl-8yA" firstAttribute="top" relation="greaterThanOrEqual" secondItem="bLZ-pO-kgv" secondAttribute="bottom" constant="8" id="5f9-ug-ith"/>
+                            <constraint firstAttribute="trailing" secondItem="8w7-9Q-Hcq" secondAttribute="trailing" constant="77" id="AKW-hj-U7Y"/>
+                            <constraint firstAttribute="trailing" secondItem="nCx-b7-G46" secondAttribute="trailing" constant="77" id="CqY-YR-q5h"/>
+                            <constraint firstItem="hka-q6-sGP" firstAttribute="leading" secondItem="cLd-vh-ANh" secondAttribute="leading" constant="77" id="DsW-gr-SOo"/>
+                            <constraint firstItem="hka-q6-sGP" firstAttribute="top" secondItem="8w7-9Q-Hcq" secondAttribute="bottom" constant="50" id="FsH-F1-uSv"/>
+                            <constraint firstItem="nCx-b7-G46" firstAttribute="top" secondItem="NxV-Jl-8yA" secondAttribute="bottom" constant="8" id="KJy-Bw-tfX"/>
+                            <constraint firstItem="rsP-vZ-Ycv" firstAttribute="top" secondItem="8w7-9Q-Hcq" secondAttribute="bottom" constant="4" id="OOk-vk-mDq"/>
+                            <constraint firstAttribute="bottom" secondItem="nCx-b7-G46" secondAttribute="bottom" constant="93" id="PVF-xD-dJO"/>
+                            <constraint firstItem="bLZ-pO-kgv" firstAttribute="top" secondItem="hka-q6-sGP" secondAttribute="bottom" constant="13" id="Qly-iZ-Ysk"/>
+                            <constraint firstItem="8cG-eL-cfC" firstAttribute="top" secondItem="nCx-b7-G46" secondAttribute="bottom" constant="8" id="TSY-VZ-xLH"/>
+                            <constraint firstItem="8cG-eL-cfC" firstAttribute="leading" secondItem="cLd-vh-ANh" secondAttribute="leading" constant="77" id="a0d-vE-yfd"/>
+                            <constraint firstItem="bLZ-pO-kgv" firstAttribute="leading" secondItem="cLd-vh-ANh" secondAttribute="leading" constant="77" id="a8I-BT-ycb"/>
+                            <constraint firstItem="rsP-vZ-Ycv" firstAttribute="leading" secondItem="cLd-vh-ANh" secondAttribute="leading" constant="77" id="cg6-s6-zjj"/>
+                            <constraint firstAttribute="trailing" secondItem="bLZ-pO-kgv" secondAttribute="trailing" constant="77" id="e85-Qg-cfB"/>
+                            <constraint firstAttribute="trailing" secondItem="czg-a3-YTd" secondAttribute="trailing" constant="77" id="eR7-bI-8ta"/>
+                            <constraint firstItem="8w7-9Q-Hcq" firstAttribute="leading" secondItem="cLd-vh-ANh" secondAttribute="leading" constant="77" id="eXI-se-ldF"/>
+                            <constraint firstItem="NxV-Jl-8yA" firstAttribute="leading" secondItem="cLd-vh-ANh" secondAttribute="leading" constant="77" id="ghy-5E-sVs"/>
+                            <constraint firstAttribute="trailing" secondItem="rsP-vZ-Ycv" secondAttribute="trailing" constant="77" id="hRL-vJ-2hD"/>
+                            <constraint firstItem="czg-a3-YTd" firstAttribute="top" secondItem="nCx-b7-G46" secondAttribute="bottom" constant="8" id="jco-In-meJ"/>
+                            <constraint firstAttribute="trailing" secondItem="NxV-Jl-8yA" secondAttribute="trailing" constant="77" id="lbV-2I-Ju0"/>
+                            <constraint firstItem="nCx-b7-G46" firstAttribute="leading" secondItem="cLd-vh-ANh" secondAttribute="leading" constant="77" id="wPO-5P-IdI"/>
+                            <constraint firstAttribute="trailing" secondItem="hka-q6-sGP" secondAttribute="trailing" constant="77" id="xnN-T8-xUQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bodyLabel" destination="hka-q6-sGP" id="rdI-It-F4v"/>
+                        <outlet property="countdownLabel" destination="bLZ-pO-kgv" id="LAC-A9-1sU"/>
+                        <outlet property="footerMessageInfoLabel" destination="NxV-Jl-8yA" id="pai-sc-qEx"/>
+                        <outlet property="restartCloseButton" destination="czg-a3-YTd" id="xsh-ei-iux"/>
+                        <outlet property="subTitleInfoLabel" destination="rsP-vZ-Ycv" id="wbV-jr-Agv"/>
+                        <outlet property="titleInfoLabel" destination="8w7-9Q-Hcq" id="51U-oo-Y63"/>
+                        <outlet property="updateInfoButton" destination="8cG-eL-cfC" id="Mnb-fl-jEe"/>
+                        <segue destination="MOa-TS-gYn" kind="custom" identifier="goToFirstRegistrationPage" customClass="CrossfadeStoryBoardSegue" customModule="Mac_IBM_Enrollment" customModuleProvider="target" id="X2H-rW-exm"/>
+                        <segue destination="lWu-VU-5bY" kind="custom" identifier="goToInstallationPhase" customClass="CrossfadeStoryBoardSegue" customModule="Mac_IBM_Enrollment" customModuleProvider="target" id="2Ll-Q2-Eyj"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-668" y="995"/>
+        </scene>
+        <!--Installation-->
+        <scene sceneID="Q3u-W9-GXY">
+            <objects>
+                <controllerPlaceholder storyboardName="Installation" id="lWu-VU-5bY" sceneMemberID="viewController"/>
+                <customObject id="pnt-dl-o0m" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-248" y="1559"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="X2H-rW-exm"/>
+        <segue reference="8vj-gk-We9"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <namedColor name="laptop_screen_background">
+            <color red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,272 @@
+/*
+ Localizable.strings
+ enrollment
+ 
+ Created by Simone Martorelli on 2/5/20.
+ Copyright © 2020 IBM. All rights reserved.
+ SPDX-License-Identifier: GPL-3.0-only
+ */
+
+/// MARK: - Note to the translation
+///
+/// Pay attention to not modify, cancel or move the special characters:
+/// - %d - This special character is substituted with a number at runtime;
+/// - %@ - This special characted is substituted with a string at runtime;
+/// - \n - This special characted works like the "return" key;
+/// - \" - This special characted insert a ";
+
+// MARK: - Registration: page one
+
+// Header
+"registrationPageOneTitleSimple" = "欢迎您，新员工！";
+"registrationPageOneTitleComposed" = "欢迎您，%@！";
+"registrationPageOneSubtitleSimple" = "看不到您的姓名？";
+"registrationPageOneSubtitleComposed" = "不是 %@？";
+
+// Info popovers
+"registrationPageOneSubtitle_info" = "不用担心，您稍后可以使用 Mac@IBM App Store 并搜索\"分配用户\"来更新此项。";
+"registrationPageOneDisclaimerPolicies_infoElementOne" = "防火墙";
+"registrationPageOneDisclaimerPolicies_infoElementTwo" = "隐身方式";
+"registrationPageOneDisclaimerPolicies_infoElementThree" = "访客用户帐户";
+"registrationPageOneDisclaimerPolicies_infoElementFour" = "FileVault 磁盘加密";
+"registrationPageOneDisclaimerPolicies_infoElementFive" = "初始 macOS 密码更改";
+"registrationPageOneDisclaimerPolicies_infoElementSix" = "屏幕保护程序密码";
+"registrationPageOneDisclaimerPolicies_infoElementSeven_title" = "屏幕保护程序开始时间";
+"registrationPageOneDisclaimerPolicies_infoElementSeven_description" = "30 分钟没有活动";
+"registrationPageOneDisclaimerPolicies_infoElementEight_title" = "端点保护软件";
+
+// Field labels
+"registrationPageOneFieldRegion" = "区域";
+"registrationPageOneFieldComputer" = "计算机类型";
+"registrationPageOneFieldOwner" = "资产所有者";
+"registrationPageOneFieldUser" = "用户类型";
+
+// Region field options
+"registrationPageOneFieldRegionOptionOne" = "美国";
+"registrationPageOneFieldRegionOptionTwo" = "加拿大";
+"registrationPageOneFieldRegionOptionThree" = "EMEA（欧洲、中东和非洲）";
+"registrationPageOneFieldRegionOptionFour" = "LA（拉丁美洲）";
+"registrationPageOneFieldRegionOptionFive" = "AP（亚太地区）";
+
+// Computer Type options
+"registrationPageOneFieldComputerOptionOne" = "主要";
+"registrationPageOneFieldComputerOptionOne_info" = "适用于单用户，可用作办公生产力平台来处理日常办公事务（例如，电子邮件、Web 浏览/应用程序、即时消息传递、文档等）。";
+"registrationPageOneFieldComputerOptionTwo" = "次要";
+"registrationPageOneFieldComputerOptionTwo_info" = "用于处理各种任务（但办公生产力活动除外），包括客户演示活动和虚拟机";
+"registrationPageOneFieldComputerOptionThree" = "共享";
+"registrationPageOneFieldComputerOptionThree_info" = "供多个用户用于教育和培训";
+"registrationPageOneFieldComputerOptionFour" = "出借";
+"registrationPageOneFieldComputerOptionFour_info" = "用于测试和/或开发";
+"registrationPageOneFieldComputerOptionFive" = "教室";
+"registrationPageOneFieldComputerOptionFive_info" = "短期使用，作为替代或补充";
+"registrationPageOneFieldComputerOptionSix" = "实验室";
+"registrationPageOneFieldComputerOptionSix_info" = "供多个用户用于处理各种任务，包括办公室生产力活动";
+
+// Asset Owner options
+"registrationPageOneFieldOwnerOptionOne" = "IBM 提供";
+"registrationPageOneFieldOwnerOptionTwo" = "个人拥有";
+"registrationPageOneFieldOwnerOptionThree" = "第三方拥有：供应商提供";
+"registrationPageOneFieldOwnerOptionFour" = "第三方拥有：承包商代理提供";
+"registrationPageOneFieldOwnerOptionFive" = "第三方拥有：客户提供";
+
+// User Type options
+"registrationPageOneFieldUserOptionOne" = "标准";
+"registrationPageOneFieldUserOptionOne_info" = "常规使用，但“特权”或“呼叫中心”用例履行的职责除外";
+"registrationPageOneFieldUserOptionTwo" = "特权";
+"registrationPageOneFieldUserOptionTwo_info" = "由安全管理机构分配，具有对 IBM 或客户的网络设备、计算机系统、中间件组件或应用程序的系统权限";
+"registrationPageOneFieldUserOptionThree" = "服务/呼叫中心";
+"registrationPageOneFieldUserOptionThree_info" = "分配给服务中心、呼叫中心或帮助台";
+
+// Policies disclaimer
+"registrationPageOneDisclaimerPolicies" = "IBM 安全策略将自动应用。";
+
+// MARK: - Registration: page two
+
+// Header
+"registrationPageTwoTitle" = "您访问的信息";
+"registrationPageTwoSubtitle" = "选择在此计算机上存储的数据类型。";
+
+// Information options
+"registrationPageTwoFieldInformationOptionOne_title" = "敏感个人信息 (SPI)";
+"registrationPageTwoFieldInformationOptionOne_description" = "您的设备存储个人信息 (PI)";
+"registrationPageTwoFieldInformationOptionTwo_title" = "客户数据";
+"registrationPageTwoFieldInformationOptionTwo_description" = "设备存储或用于访问客户拥有或创建的数据";
+"registrationPageTwoFieldInformationOptionThree_title" = "政府监管数据";
+"registrationPageTwoFieldInformationOptionThree_description" = "管理层、数据所有者或数据管理人通知您，您的设备存储或访问的数据受到政府的限制或监管，例如某些医疗保健数据受到额外保护";
+"registrationPageTwoFieldInformationOptionFour_title" = "FFIEC（联邦金融机构审查委员会）数据";
+"registrationPageTwoFieldInformationOptionFour_description" = "您支持或有权访问客户的财务环境";
+"registrationPageTwoFieldInformationOptionFive_title" = "HIPAA（健康保险可移植性和责任法案）数据";
+"registrationPageTwoFieldInformationOptionFive_description" = "您支持受 HIPAA 监管的客户帐户或多租户产品";
+"registrationPageTwoFieldInformationOptionSix_title" = "PCI 数据";
+"registrationPageTwoFieldInformationOptionSix_description" = "设备存储或访问客户拥有或创建的敏感支付卡（例如，信用卡）数据";
+"registrationPageTwoFieldInformationOptionSeven_title" = "以上都不是";
+"registrationPageTwoFieldInformationOptionSeven_description" = "";
+
+// MARK: - Registration: loading page
+
+// State labels
+"registrationLoadingPageStateOne" = "正在测试网络速度";
+"registrationLoadingPageStateTwo" = "正在完成注册";
+"registrationLoadingPageStateForPhaseThree" = "正在更新注册";
+
+// MARK: - Registration: final page
+
+// Header
+"registrationFinalPageTitle" = "注册完成";
+"registrationFinalPageTitlePhaseThree" = "注册详细信息";
+"registrationFinalPageTitlePhaseFour" = "欢迎！";
+"registrationFinalPageSubtitleStandard" = "让我们来设置您的 Mac！";
+"registrationFinalPageSubtitlePhaseThree" = "";
+"registrationFinalPageInstructionalMessage" = "下次登录后，系统将提示您输入新的 macOS 登录密码，并启用 FileVault 磁盘加密。";
+"registrationFinalPageCountdownMessage" = "您的 Mac 将在 %d 秒后自动重新启动以继续设置过程，或者您可以选择\"重新启动\"立即继续。";
+
+// MARK: - Installation: bundle selection page
+
+// Header
+"installationBundleSelectionPageTitle" = "可帮助您开始使用的应用程序捆绑软件";
+"installationBundleSelectionPageSubtitle" = "其他应用程序可以通过 Mac@IBM App Store 随时安装。";
+
+// Labels
+"installationBundleSelectionPageRecommended" = "（建议）";
+
+// Bundle one
+"installationBundleSelectionPageBundleOneTitle" = "连接";
+"installationBundleSelectionPageBundleOneDescription" = "使用必需的软件和证书连接到 IBM 网络";
+"installationBundleSelectionPageBundleOnePopoverTitle" = "连接捆绑软件";
+"installationBundleSelectionPageBundleOnePopoverDescription" = "使用软件和证书连接到我们的网络";
+"installationBundleSelectionPageBundleOneAppOneTitle" = "AnyConnect";
+"installationBundleSelectionPageBundleOneAppOneDescription" = "Ipsum lorem 1";
+
+// Bundle two
+"installationBundleSelectionPageBundleTwoTitle" = "基本";
+"installationBundleSelectionPageBundleTwoDescription" = "启动并运行最常用的 IBM 工具。";
+"installationBundleSelectionPageBundleTwoPopoverTitle" = "基本捆绑软件";
+"installationBundleSelectionPageBundleTwoPopoverDescription" = "大多数员工使用的应用程序";
+"installationBundleSelectionPageBundleTwoAppOneTitle" = "IBM Notes";
+"installationBundleSelectionPageBundleTwoAppOneDescription" = "发送和接收 IBM 邮件并与数据库进行交互";
+"installationBundleSelectionPageBundleTwoAppTwoTitle" = "Webex Meetings";
+"installationBundleSelectionPageBundleTwoAppTwoDescription" = "组合使用视频和音频会议以及 Web 会议功能";
+"installationBundleSelectionPageBundleTwoAppThreeTitle" = "Code42 CrashPlan";
+"installationBundleSelectionPageBundleTwoAppThreeDescription" = "在 Mac 上安全地备份和复原文件";
+"installationBundleSelectionPageBundleTwoAppFourTitle" = "BluePages";
+"installationBundleSelectionPageBundleTwoAppFourDescription" = "快速便捷的员工目录搜索";
+"installationBundleSelectionPageBundleTwoAppFiveTitle" = "IBM Bookmarks";
+"installationBundleSelectionPageBundleTwoAppFiveDescription" = "常用 IBM 网站的链接";
+
+// Bundle three
+"installationBundleSelectionPageBundleThreeTitle" = "生产力";
+"installationBundleSelectionPageBundleThreeDescription" = "通过文字处理、电子表格等来提高生产力。";
+"installationBundleSelectionPageBundleThreePopoverTitle" = "生产力捆绑软件";
+"installationBundleSelectionPageBundleThreePopoverDescription" = "用于帮助创建和协作的工具。";
+"installationBundleSelectionPageBundleThreeAppOneTitle" = "Office 365";
+"installationBundleSelectionPageBundleThreeAppOneDescription" = "Microsoft Word、Excel、PowerPoint、OneNote 和 Outlook";
+"installationBundleSelectionPageBundleThreeAppTwoTitle" = "Slack";
+"installationBundleSelectionPageBundleThreeAppTwoDescription" = "与 IBM 的团队进行沟通和协作";
+"installationBundleSelectionPageBundleThreeAppThreeTitle" = "Box Drive";
+"installationBundleSelectionPageBundleThreeAppThreeDescription" = "存储、共享和同步文件";
+
+// MARK: - Installation: bundle installation page
+"installationBundleInstallationPageTitle" = "正在安装所选应用程序捆绑软件…";
+"installationBundleInstallationPageSubtitle" = "估计剩余时间：";
+"installationBundleInstallationPageHideAppLabel" = "隐藏应用程序";
+"installationBundleInstallationPageShowAppLabel" = "显示应用程序";
+
+// MARK: - Installation: final page
+
+// Header
+"installationFinalPageTitle" = "开始使用 Mac";
+
+// Elements
+"installationFinalPageElementOneTitle" = "从 Mac@IBM App Store \n获取应用程序";
+"installationFinalPageElementOneDescription" = "Microsoft Office、Slack、IBM Notes 等！";
+"installationFinalPageElementTwoTitle" = "从另一台计算机\n迁移数据";
+"installationFinalPageElementTwoDescription" = "将重要信息\n传输到新 Mac。";
+"installationFinalPageElementThreeTitle" = "使用 Code42 CrashPlan \n备份 Mac";
+"installationFinalPageElementThreeDescription" = "安装、设置帐户，\n随即放心使用。";
+"installationFinalPageElementThreeDescriptionAlternate" = "设置帐户，\n随即放心使用。";
+"installationFinalPageElementFourTitle" = "在 Help@IBM 上\n查看提示、教程和支持";
+"installationFinalPageElementFourDescription" = "访问 IBM 专用的 Apple 帮助台顾问。";
+"installationFinalPageElementFiveTitle" = "要使用 Notes？请安装 \nNotes 标识文件";
+"installationFinalPageElementFiveDescription" = "安装 Notes 并将其设置为电子邮件客户端。";
+"installationFinalPAgeElementSixTitle" = "转至 w3 主页";
+"installationFinalPageElementSixDescription" = "搜索 w3 位置和 BluePages";
+
+// Footer
+"installationFinalPageFooterLabel" = " 下次重新启动 Mac 时提醒我。";
+
+// MARK: - Installation: Notes wizard page
+
+// Header
+"filePickerPageTitle" = "安装 Notes 标识文件";
+"filePickerPageSubtitle" = "完成 Notes 设置需要 Notes 标识。您也可以稍后添加。";
+
+// Messages
+"filePickerPageMessageSuccess" = "Notes 标识已成功安装！";
+"filePickerPageMessageFailure" = "我们无法安装 Notes 标识文件。";
+"filePickerPageMessageAlreadyExist" = "Notes 标识文件已经存在。您可以安装新的标识文件。";
+
+// Labels
+"filePickerPageButtonBrowse" = "浏览以查找 Notes 标识文件";
+"filePickerPageButtonRemove" = "除去";
+"filePickerPageCenterLabel" = "拖放 Notes 标识文件";
+"filePickerPageAlertMessage" = "文件已存在";
+"filePickerPageAlertInformativeText" = "目标位置已存在该文件。要用所选文件替换现有文件吗？";
+"filePickerPageFileSelectionPanelTitle" = "选择要用于配置 Notes 的标识文件";
+"filePickerPageButtonInstall" = "安装 Notes 标识文件";
+
+// MARK: - Alert labels
+
+// Un-enrollment
+"unenrollmentAlertTitle" = "确定要退出注册过程吗？";
+"unenrollmentAlertMessage" = "立即取消将撤销所有安全设置，并从管理中除去此计算机。";
+"unenrollmentCancelled" = "除去框架操作已取消";
+
+// Bundle selection
+"bundleSelectionAlertTitle" = "确定要继续吗？";
+"bundleSelectionAlertMessage" = "似乎目前的网络速度很慢。我们建议减少安装的捆绑软件。";
+
+// Bundle installation
+"bundleInstallationalertMessage" = "安装某些应用程序时遇到了问题 - 请稍后使用自助服务来安装这些应用程序。";
+
+// Launch failure
+"launchFailureAlertTitle" = "此应用程序需要设备管理。";
+"launchFailureAlertMessage" = "请注册此设备。";
+
+// External network problem
+"externalNetworkAlertMessage" = "您尚未连接到因特网。请确保将 Mac 连接到具有因特网访问权的网络后再继续。";
+"externalNetworkJspMessage" = "目前自助服务不可用。请稍后重试。";
+
+// Internal network problem
+"internalNetworkProblemAlertMessage" = "\n\n您必须连接到内部网才能继续。";
+
+// Terms and conditions drop down
+"termsAndConditionsTitle" = "IBM 个人设备使用协议";
+"termsAndConditionsBody" = "您已选择将此设备注册为“个人拥有”。使用个人拥有的设备来处理 IBM 业务，受到某些条款和条件的约束。\n\n请查看 IBM 条款和条件，并表示是否接受这些条款和条件。";
+"termsAndConditionsButtonLink" = "阅读 IBM 条款和条件";
+"termsAndConditionsButtonAccept" = "接受";
+
+// MARK: - Common button labels
+"buttonLabelOk" = "确定";
+"buttonLabelCancel" = "取消";
+"buttonLabelNext" = "下一步";
+"buttonLabelRestart" = "重新启动";
+"buttonLabelClose" = "关闭";
+"buttonLabelBack" = "返回";
+"buttonLabelOkWithQuestionMark" = "确定？";
+"buttonLabelQuit" = "退出";
+"buttonLabelReplace" = "替换";
+"buttonLabelUpdateInfo" = "编辑详细信息";
+"buttonLabelUnenroll" = "取消注册";
+
+// MARK: - Common labels
+"labelEnabled" = "已启用";
+"labelDisabled" = "已禁用";
+"labelRequired" = "必需";
+"restartFailureMessage" = "计算机无法重新启动";
+"restartFailureComment" = "重新启动失败警报";
+"estimatedInstallTimeMessage" = "%@ \n \n 估计安装时间：%@";
+"labelChooseAnswer" = "选择您的回答。";
+"labelNo" = "否";
+"labelYes" = "是";
+"buttonLabelInstall" = "安装所选捆绑软件";
+"buttonLabelSkip" = "跳过";
