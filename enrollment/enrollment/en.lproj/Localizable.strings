@@ -1,0 +1,252 @@
+/*
+ Localizable.strings
+ enrollment
+ 
+ Created by Simone Martorelli on 2/5/20.
+ Copyright © 2020 IBM. All rights reserved.
+ SPDX-License-Identifier: GPL-3.0-only
+ */
+
+/// MARK: - Note to the translation
+///
+/// Pay attention to not modify, cancel or move the special characters:
+/// - %d - This special character is substituted with a number at runtime;
+/// - %@ - This special characted is substituted with a string at runtime;
+/// - \n - This special characted works like the "return" key;
+/// - \" - This special characted insert a ";
+
+// MARK: - Registration: page one
+
+// Header
+"registrationPageOneTitleSimple" = "Welcome, new employee!";
+"registrationPageOneTitleComposed" = "Welcome, %@!";
+"registrationPageOneSubtitleSimple" = "Don't see your name?";
+"registrationPageOneSubtitleComposed" = "Not %@?";
+
+// Info popovers
+"registrationPageOneSubtitle_info" = "Don't worry, you can update this later by using the Mac@IBM App Store and searching for \"Assign User\".";
+"registrationPageOneDisclaimerPolicies_infoElementOne" = "Firewall";
+"registrationPageOneDisclaimerPolicies_infoElementTwo" = "Stealth Mode";
+"registrationPageOneDisclaimerPolicies_infoElementThree" = "Guest User Account";
+"registrationPageOneDisclaimerPolicies_infoElementFour" = "FileVault Disk Encryption";
+"registrationPageOneDisclaimerPolicies_infoElementFive" = "Initial macOS Password Change";
+"registrationPageOneDisclaimerPolicies_infoElementSix" = "ScreenSaver Password";
+"registrationPageOneDisclaimerPolicies_infoElementSeven_title" = "ScreenSaver Start Time";
+"registrationPageOneDisclaimerPolicies_infoElementSeven_description" = "30 minutes of inactivity";
+"registrationPageOneDisclaimerPolicies_infoElementEight_title" = "Endpoint Protection Software";
+
+// Field labels
+"registrationPageOneFieldRegion" = "Region";
+"registrationPageOneFieldComputer" = "Computer Type";
+"registrationPageOneFieldOwner" = "Asset Owner";
+"registrationPageOneFieldUser" = "User Type";
+
+// Region field options
+"registrationPageOneFieldRegionOptionOne" = "USA";
+"registrationPageOneFieldRegionOptionTwo" = "Canada";
+"registrationPageOneFieldRegionOptionThree" = "EMEA (Europe, Middle East, Africa)";
+"registrationPageOneFieldRegionOptionFour" = "LA (Latin America)";
+"registrationPageOneFieldRegionOptionFive" = "AP (Asia Pacific)";
+
+// Computer Type options
+"registrationPageOneFieldComputerOptionOne" = "Primary";
+"registrationPageOneFieldComputerOptionOne_info" = "for a single user as an office productivity platform for normal office work (e.g., email, web browsing/applications, instant messaging, documentation, etc.)";
+"registrationPageOneFieldComputerOptionTwo" = "Secondary";
+"registrationPageOneFieldComputerOptionTwo_info" = "for various tasks excluding office productivity activities including customer demo activities and Virtual Machines";
+"registrationPageOneFieldComputerOptionThree" = "Shared";
+"registrationPageOneFieldComputerOptionThree_info" = "used by multiple users for education and training";
+"registrationPageOneFieldComputerOptionFour" = "Loaner";
+"registrationPageOneFieldComputerOptionFour_info" = "for the purpose of testing and/or development";
+"registrationPageOneFieldComputerOptionFive" = "Classroom";
+"registrationPageOneFieldComputerOptionFive_info" = "used on a short term basis, as a replacement or supplement";
+"registrationPageOneFieldComputerOptionSix" = "Lab";
+"registrationPageOneFieldComputerOptionSix_info" = "for use by multiple users for various tasks including office productivity activities";
+
+// Asset Owner options
+"registrationPageOneFieldOwnerOptionOne" = "IBM Provided";
+"registrationPageOneFieldOwnerOptionTwo" = "Personally Owned";
+"registrationPageOneFieldOwnerOptionThree" = "3rd Party Owned: Vendor Provided";
+"registrationPageOneFieldOwnerOptionFour" = "3rd Party Owned: Contractor Agency Provided";
+"registrationPageOneFieldOwnerOptionFive" = "3rd Party Owned: Client Provided";
+
+// User Type options
+"registrationPageOneFieldUserOptionOne" = "Standard";
+"registrationPageOneFieldUserOptionOne_info" = "general use outside of duties performed by Privileged or Call Center use cases";
+"registrationPageOneFieldUserOptionTwo" = "Privileged";
+"registrationPageOneFieldUserOptionTwo_info" = "under assignment of security administrative authorities, system authorities on network devices, computer systems, middleware components or applications for IBM or clients";
+"registrationPageOneFieldUserOptionThree" = "Service / Call Center";
+"registrationPageOneFieldUserOptionThree_info" = "assigned to a Service Center, Call Center or Help Desk";
+
+// Policies disclaimer
+"registrationPageOneDisclaimerPolicies" = "IBM security policies will automatically be applied.";
+
+// MARK: - Registration: page two
+
+// Header
+"registrationPageTwoTitle" = "Information you access";
+"registrationPageTwoSubtitle" = "Select the data type(s) stored on this computer.";
+
+// Information options
+"registrationPageTwoFieldInformationOptionOne_title" = "Sensitive Personal Information (SPI)";
+"registrationPageTwoFieldInformationOptionOne_description" = "your device stores Personal Information (PI)";
+"registrationPageTwoFieldInformationOptionTwo_title" = "Client data";
+"registrationPageTwoFieldInformationOptionTwo_description" = "device stores or is used to access data owned or created by a client";
+"registrationPageTwoFieldInformationOptionThree_title" = "Government Regulated data";
+"registrationPageTwoFieldInformationOptionThree_description" = "you have been informed by your management, the owner of the data, or custodian of the data that the data stored or accessed by your device is subject to governmental restrictions or regulation, e.g., some health care data is subject to additional protections";
+"registrationPageTwoFieldInformationOptionFour_title" = "FFIEC (Federal Financial Institutions Examination Council) data";
+"registrationPageTwoFieldInformationOptionFour_description" = "you support or have access to client’s financial environments";
+"registrationPageTwoFieldInformationOptionFive_title" = "HIPAA (Health Insurance Portability and Accountability Act) data";
+"registrationPageTwoFieldInformationOptionFive_description" = "you support a HIPAA regulated client account or multi-tenant offering";
+"registrationPageTwoFieldInformationOptionSix_title" = "PCI data";
+"registrationPageTwoFieldInformationOptionSix_description" = "device stores or accesses sensitive payment card (e.g., credit card) data owned or created by a client";
+"registrationPageTwoFieldInformationOptionSeven_title" = "None of the above";
+"registrationPageTwoFieldInformationOptionSeven_description" = "";
+
+// MARK: - Registration: loading page
+
+// State labels
+"registrationLoadingPageStateOne" = "Testing network speed";
+"registrationLoadingPageStateTwo" = "Completing enrollment";
+"registrationLoadingPageStateForPhaseThree" = "Updating Registration";
+
+// MARK: - Post registration page
+
+// Header
+"postRegistrationPageTitle" = "Registration complete";
+"postRegistrationPageTitlePhaseThree" = "Registration Details";
+"postRegistrationPageTitlePhaseFour" = "Welcome!";
+"postRegistrationPageSubtitleStandard" = "Let's get your Mac set up!";
+"postRegistrationPageSubtitlePhaseThree" = "";
+"postRegistrationPageInstructionalMessage" = "After your next log in, you'll be prompted for a new macOS login password and to enable FileVault disk encryption.";
+"postRegistrationPageCountdownMessage" = "Your Mac will be restarted automatically in %d seconds to continue the setup process or you can select \"Restart\" to continue now.";
+
+// MARK: - Installation: bundle selection page
+
+// Header
+"installationBundleSelectionPageTitle" = "App bundles to get you started";
+"installationBundleSelectionPageSubtitle" = "Additional apps can be installed from the Mac@IBM App Store at any time.";
+
+// Labels
+"installationBundleSelectionPageRecommended" = "(recommended)";
+
+// Bundle one
+"installationBundleSelectionPageBundleOneTitle" = "Connectivity";
+"installationBundleSelectionPageBundleOneDescription" = "Connect to IBM networks with the necessary software and certificates";
+"installationBundleSelectionPageBundleOnePopoverTitle" = "Connectivity bundle";
+"installationBundleSelectionPageBundleOnePopoverDescription" = "Get connected to our network with certificates and software";
+"installationBundleSelectionPageBundleOneAppOneTitle" = "AnyConnect";
+"installationBundleSelectionPageBundleOneAppOneDescription" = "Ipsum lorem 1";
+
+// Bundle two
+"installationBundleSelectionPageBundleTwoTitle" = "Essentials";
+"installationBundleSelectionPageBundleTwoDescription" = "Get up and running with the most common IBM tools.";
+"installationBundleSelectionPageBundleTwoPopoverTitle" = "Essentials bundle";
+"installationBundleSelectionPageBundleTwoPopoverDescription" = "The apps used by most employees";
+"installationBundleSelectionPageBundleTwoAppOneTitle" = "IBM Notes";
+"installationBundleSelectionPageBundleTwoAppOneDescription" = "Send and receive IBM mail and interact with databases";
+"installationBundleSelectionPageBundleTwoAppTwoTitle" = "Webex Meetings";
+"installationBundleSelectionPageBundleTwoAppTwoDescription" = "Combine video and audio conference and web meeting capabilities";
+"installationBundleSelectionPageBundleTwoAppThreeTitle" = "Code42 CrashPlan";
+"installationBundleSelectionPageBundleTwoAppThreeDescription" = "Safely backup and restore files on your Mac";
+"installationBundleSelectionPageBundleTwoAppFourTitle" = "BluePages";
+"installationBundleSelectionPageBundleTwoAppFourDescription" = "Fast and convenient employee directory searches";
+"installationBundleSelectionPageBundleTwoAppFiveTitle" = "IBM Bookmarks";
+"installationBundleSelectionPageBundleTwoAppFiveDescription" = "Links to commonly used IBM websites";
+
+// Bundle three
+"installationBundleSelectionPageBundleThreeTitle" = "Productivity";
+"installationBundleSelectionPageBundleThreeDescription" = "Boost your productivity with word processing, spreadsheets and more.";
+"installationBundleSelectionPageBundleThreePopoverTitle" = "Productivity bundle";
+"installationBundleSelectionPageBundleThreePopoverDescription" = "Tools to help you create and collaborate.";
+"installationBundleSelectionPageBundleThreeAppOneTitle" = "Office 365";
+"installationBundleSelectionPageBundleThreeAppOneDescription" = "Microsoft Word, Excel, PowerPoint, OneNote and Outlook";
+"installationBundleSelectionPageBundleThreeAppTwoTitle" = "Slack";
+"installationBundleSelectionPageBundleThreeAppTwoDescription" = "Communicate and collaborate with teams across IBM";
+"installationBundleSelectionPageBundleThreeAppThreeTitle" = "Box Drive";
+"installationBundleSelectionPageBundleThreeAppThreeDescription" = "Store, Share and Syncronize files";
+
+// MARK: - Installation: bundle installation page
+"installationBundleInstallationPageTitle" = "Installing selected app bundles…";
+"installationBundleInstallationPageSubtitle" = "Estimated time remaining: ";
+"installationBundleInstallationPageHideAppLabel" = "Hide App";
+"installationBundleInstallationPageShowAppLabel" = "Show App";
+
+// MARK: - Post installation page
+
+// Header
+"postInstallationPageTitle" = "Get started with your Mac";
+
+// Elements
+"postInstallationPageElementOneTitle" = "Get apps from the \nMac@IBM App Store";
+"postInstallationPageElementOneDescription" = "Microsoft Office, Slack, IBM Notes, and more!";
+"postInstallationPageElementTwoTitle" = "Migrate your data \nfrom another computer";
+"postInstallationPageElementTwoDescription" = "Transfer important information \nto your new Mac.";
+"postInstallationPageElementThreeTitle" = "Back up your Mac with \nCode42 CrashPlan";
+"postInstallationPageElementThreeDescription" = "Install, set up an account,\nand enjoy peace of mind.";
+"postInstallationPageElementThreeDescriptionAlternate" = "Set up an account,\nand enjoy peace of mind.";
+"postInstallationPageElementFourTitle" = "View tips, tutorials and \nsupport on Help@IBM";
+"postInstallationPageElementFourDescription" = "Access IBM's dedicated Apple Help Desk advisors.";
+"postInstallationPageElementFiveTitle" = "Use Notes? Install your \nNotes ID file";
+"postInstallationPageElementFiveDescription" = "Install and set up Notes as your email client.";
+"postInstallationPageElementSixTitle" = "Go to w3 Homepage";
+"postInstallationPageElementSixDescription" = "Search w3 places and BluePages";
+
+// Footer
+"postInstallationPageFooterLabel" = " Remind me the next time I restart my Mac.";
+
+// MARK: - Alert labels
+
+// Un-enrollment
+"unenrollmentAlertTitle" = "Are you sure you want to quit the enrollment process?";
+"unenrollmentAlertMessage" = "Cancelling now will undo all security settings and remove this computer from the management.";
+"unenrollmentCancelled" = "Remove Framework action cancelled";
+
+// Bundle selection
+"bundleSelectionAlertTitle" = "Are you sure you want to proceed?";
+"bundleSelectionAlertMessage" = "It looks like your network speeds are slow at this time. We recommend installing fewer bundles.";
+
+// Bundle installation
+"bundleInstallationalertMessage" = "We had trouble installing some applications - use Self Service to install them later.";
+
+// Launch failure
+"launchFailureAlertTitle" = "This application requires device management.";
+"launchFailureAlertMessage" = "Please enroll this device.";
+
+// External network problem
+"externalNetworkAlertMessage" = "You are not connected to the Internet.  Please make sure that your Mac is connected to a network with Internet access before continuing.";
+"externalNetworkJspMessage" = "Self Service is not available at this time.  Please try again later.";
+
+// Internal network problem
+"internalNetworkProblemAlertMessage" = "\n\nYou must connect to the intranet to proceed.";
+
+// Terms and conditions drop down
+"termsAndConditionsTitle" = "IBM Agreement for Personal Device Usage";
+"termsAndConditionsBody" = "You have chosen to register this device as “personally owned”. The use of a personally owned device to conduct IBM Business is governed by certain terms and conditions.\n\nPlease review the IBM terms and conditions and indicate whether you accept them.";
+"termsAndConditionsButtonLink" = "Read IBM Terms and Conditions";
+"termsAndConditionsButtonAccept" = "Accept";
+
+// MARK: - Common button labels
+"buttonLabelOk" = "OK";
+"buttonLabelCancel" = "Cancel";
+"buttonLabelNext" = "Next";
+"buttonLabelRestart" = "Restart";
+"buttonLabelClose" = "Close";
+"buttonLabelBack" = "Back";
+"buttonLabelOkWithQuestionMark" = "Ok?";
+"buttonLabelQuit" = "Quit";
+"buttonLabelReplace" = "Replace";
+"buttonLabelUpdateInfo" = "Edit Details";
+"buttonLabelUnenroll" = "Cancel Enrollment";
+
+// MARK: - Common labels
+"labelEnabled" = "Enabled";
+"labelDisabled" = "Disabled";
+"labelRequired" = "Required";
+"restartFailureMessage" = "Your computer could not be restarted";
+"restartFailureComment" = "Restart failure alert";
+"estimatedInstallTimeMessage" = "%@ \n \n Estimated install time: %@";
+"labelChooseAnswer" = "Choose your answer.";
+"labelNo" = "No";
+"labelYes" = "Yes";
+"buttonLabelInstall" = "Install Selected Bundles";
+"buttonLabelSkip" = "Skip";

@@ -29,4 +29,3 @@ class LoginHelperAppDelegate: NSObject, NSApplicationDelegate {
         }
     }
 }
-

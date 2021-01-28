@@ -1,4 +1,0 @@
-#!/bin/sh
-
-launchctl load -w /Library/LaunchDaemons/com.ibm.JAMFIntegrationHelper.plist
-exit 0

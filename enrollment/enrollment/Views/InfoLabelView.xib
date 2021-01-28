@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17156" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17156"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="InfoLabelView" customModule="Mac_IBM_Enrollment" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="c22-O7-iKe" id="VZp-Zq-35z"/>
+                <outlet property="infoButton" destination="189-p8-r1m" id="YFF-EB-Khc"/>
+                <outlet property="labelText" destination="ccM-4D-5kJ" id="pOc-wD-mi6"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView translatesAutoresizingMaskIntoConstraints="NO" id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="165" height="20"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ccM-4D-5kJ">
+                    <rect key="frame" x="-2" y="0.0" width="37" height="16"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingTail" alignment="left" placeholderString="Label" id="RNf-LO-wit">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="189-p8-r1m">
+                    <rect key="frame" x="35" y="6" width="14" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="width" priority="999" constant="14" id="YDb-nh-pCs"/>
+                        <constraint firstAttribute="height" priority="999" constant="14" id="bnK-jH-fgJ"/>
+                    </constraints>
+                    <buttonCell key="cell" type="roundRect" bezelStyle="roundedRect" image="infoBubble" imagePosition="overlaps" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="5X6-6u-hQe">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="cellTitle"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="infoButtonDidPressed:" target="-2" id="biO-ft-cEw"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ccM-4D-5kJ" secondAttribute="bottom" priority="999" id="HCx-FX-tr1"/>
+                <constraint firstItem="ccM-4D-5kJ" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" priority="999" id="Mgp-1A-Cn8"/>
+                <constraint firstItem="189-p8-r1m" firstAttribute="leading" secondItem="ccM-4D-5kJ" secondAttribute="trailing" priority="999" constant="2" id="niY-NC-2f9"/>
+                <constraint firstItem="ccM-4D-5kJ" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" priority="999" constant="4" id="yOT-2F-wNf"/>
+                <constraint firstItem="189-p8-r1m" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" priority="999" id="z7U-Sk-Dwz"/>
+            </constraints>
+            <point key="canvasLocation" x="-326.5" y="0.0"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="infoBubble" width="64" height="64"/>
+    </resources>
+</document>

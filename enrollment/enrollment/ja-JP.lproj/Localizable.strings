@@ -1,0 +1,272 @@
+/*
+ Localizable.strings
+ enrollment
+ 
+ Created by Simone Martorelli on 2/5/20.
+ Copyright © 2020 IBM. All rights reserved.
+ SPDX-License-Identifier: GPL-3.0-only
+ */
+
+/// MARK: - Note to the translation
+///
+/// Pay attention to not modify, cancel or move the special characters:
+/// - %d - This special character is substituted with a number at runtime;
+/// - %@ - This special characted is substituted with a string at runtime;
+/// - \n - This special characted works like the "return" key;
+/// - \" - This special characted insert a ";
+
+// MARK: - Registration: page one
+
+// Header
+"registrationPageOneTitleSimple" = "新入社員の方へ、ようこそ";
+"registrationPageOneTitleComposed" = "%@ さん、ようこそ";
+"registrationPageOneSubtitleSimple" = "ご自身の名前が表示されませんか?";
+"registrationPageOneSubtitleComposed" = "%@ さんではありませんか?";
+
+// Info popovers
+"registrationPageOneSubtitle_info" = "ご安心ください。Mac@IBM App Store にある「Assign User」で、いつでも情報を更新できます。";
+"registrationPageOneDisclaimerPolicies_infoElementOne" = "ファイアウォール";
+"registrationPageOneDisclaimerPolicies_infoElementTwo" = "ステルス・モード";
+"registrationPageOneDisclaimerPolicies_infoElementThree" = "ゲスト・ユーザー・アカウント";
+"registrationPageOneDisclaimerPolicies_infoElementFour" = "FileVault ディスク暗号化";
+"registrationPageOneDisclaimerPolicies_infoElementFive" = "macOS の初期パスワードの変更";
+"registrationPageOneDisclaimerPolicies_infoElementSix" = "スクリーン・セーバーのパスワード";
+"registrationPageOneDisclaimerPolicies_infoElementSeven_title" = "スクリーン・セーバーの開始時間";
+"registrationPageOneDisclaimerPolicies_infoElementSeven_description" = "30 分間の非アクティブ状態";
+"registrationPageOneDisclaimerPolicies_infoElementEight_title" = "エンドポイント保護ソフトウェア";
+
+// Field labels
+"registrationPageOneFieldRegion" = "地域";
+"registrationPageOneFieldComputer" = "コンピューター・タイプ";
+"registrationPageOneFieldOwner" = "資産所有者";
+"registrationPageOneFieldUser" = "ユーザー・タイプ";
+
+// Region field options
+"registrationPageOneFieldRegionOptionOne" = "米国";
+"registrationPageOneFieldRegionOptionTwo" = "カナダ";
+"registrationPageOneFieldRegionOptionThree" = "EMEA (ヨーロッパ、中東、アフリカ)";
+"registrationPageOneFieldRegionOptionFour" = "LA (ラテンアメリカ)";
+"registrationPageOneFieldRegionOptionFive" = "AP (アジア太平洋)";
+
+// Computer Type options
+"registrationPageOneFieldComputerOptionOne" = "プライマリー";
+"registrationPageOneFieldComputerOptionOne_info" = "単一ユーザーが通常の業務でオフィス生産性プラットフォームとして使用 (E メール、Web ブラウザー/Web アプリケーション、インスタント・メッセージ、ドキュメンテーションなど)。";
+"registrationPageOneFieldComputerOptionTwo" = "セカンダリー";
+"registrationPageOneFieldComputerOptionTwo_info" = "オフィス生産性業務以外の各種作業 (お客様へのデモ業務を含む) および仮想マシンに使用";
+"registrationPageOneFieldComputerOptionThree" = "共有";
+"registrationPageOneFieldComputerOptionThree_info" = "複数ユーザーへの教育と研修に使用";
+"registrationPageOneFieldComputerOptionFour" = "貸出";
+"registrationPageOneFieldComputerOptionFour_info" = "テストまたは開発に使用";
+"registrationPageOneFieldComputerOptionFive" = "クラスルーム";
+"registrationPageOneFieldComputerOptionFive_info" = "交換品や補充品として短期間使用";
+"registrationPageOneFieldComputerOptionSix" = "ラボ";
+"registrationPageOneFieldComputerOptionSix_info" = "複数ユーザーがオフィス生産性業務を含む各種作業に使用";
+
+// Asset Owner options
+"registrationPageOneFieldOwnerOptionOne" = "IBM 提供";
+"registrationPageOneFieldOwnerOptionTwo" = "個人所有";
+"registrationPageOneFieldOwnerOptionThree" = "第三者所有: ベンダー提供";
+"registrationPageOneFieldOwnerOptionFour" = "第三者所有: 契約業者提供";
+"registrationPageOneFieldOwnerOptionFive" = "第三者所有: お客様提供";
+
+// User Type options
+"registrationPageOneFieldUserOptionOne" = "標準";
+"registrationPageOneFieldUserOptionOne_info" = "特権またはコール・センターのユース・ケースにおける職務を除く、一般的な使用";
+"registrationPageOneFieldUserOptionTwo" = "特権";
+"registrationPageOneFieldUserOptionTwo_info" = "IBM またはお客様のネットワーク・デバイス、コンピューター・システム、ミドルウェア・コンポーネントまたはアプリケーションに対し、セキュリティー管理権限、システム権限を用いて行う業務に使用";
+"registrationPageOneFieldUserOptionThree" = "サービス/コール・センター";
+"registrationPageOneFieldUserOptionThree_info" = "サービス・センター、コール・センター、またはヘルプ・デスクの業務に使用";
+
+// Policies disclaimer
+"registrationPageOneDisclaimerPolicies" = "IBM のセキュリティー・ポリシーが自動的に適用されます。";
+
+// MARK: - Registration: page two
+
+// Header
+"registrationPageTwoTitle" = "あなたがアクセスする情報";
+"registrationPageTwoSubtitle" = "このコンピューターに保管されるデータのタイプを選択してください。";
+
+// Information options
+"registrationPageTwoFieldInformationOptionOne_title" = "機密個人情報 (SPI)";
+"registrationPageTwoFieldInformationOptionOne_description" = "このデバイスに個人情報 (PI) を保管する場合";
+"registrationPageTwoFieldInformationOptionTwo_title" = "お客様のデータ";
+"registrationPageTwoFieldInformationOptionTwo_description" = "このデバイスで、お客様所有またはお客様作成のデータを保管、またはそのようなデータにアクセスする場合";
+"registrationPageTwoFieldInformationOptionThree_title" = "政府による規制データ";
+"registrationPageTwoFieldInformationOptionThree_description" = "このデバイスで保管またはアクセスするデータは政府による規制の対象となるものであるという連絡を経営上層部、データ所有者、またはデータ管理人から受けている場合 (例えば、一部の医療データは追加的保護の対象となります)";
+"registrationPageTwoFieldInformationOptionFour_title" = "FFIEC (米国連邦金融機関検査協議会) データ";
+"registrationPageTwoFieldInformationOptionFour_description" = "お客様の金融環境を支援しているか、お客様の金融環境にアクセスできる場合";
+"registrationPageTwoFieldInformationOptionFive_title" = "HIPAA (医療保険の積算と責任に関する法律) データ";
+"registrationPageTwoFieldInformationOptionFive_description" = "HIPAA による規制の対象となる顧客アカウントまたはマルチテナント・オファリングをサポートする場合";
+"registrationPageTwoFieldInformationOptionSix_title" = "PCI データ";
+"registrationPageTwoFieldInformationOptionSix_description" = "このデバイスがお客様所有またはお客様作成の機密性の高い支払カード (クレジット・カードなど) データを保管するか、そのようなデータにアクセスする場合";
+"registrationPageTwoFieldInformationOptionSeven_title" = "上記のいずれにも該当しない";
+"registrationPageTwoFieldInformationOptionSeven_description" = "";
+
+// MARK: - Registration: loading page
+
+// State labels
+"registrationLoadingPageStateOne" = "ネットワークの速度をテストしています";
+"registrationLoadingPageStateTwo" = "登録を完了しています";
+"registrationLoadingPageStateForPhaseThree" = "登録を更新しています";
+
+// MARK: - Registration: final page
+
+// Header
+"registrationFinalPageTitle" = "登録が完了しました";
+"registrationFinalPageTitlePhaseThree" = "登録の詳細";
+"registrationFinalPageTitlePhaseFour" = "ようこそ";
+"registrationFinalPageSubtitleStandard" = "Mac をセットアップしましょう";
+"registrationFinalPageSubtitlePhaseThree" = "";
+"registrationFinalPageInstructionalMessage" = "次にログインしたときに、新しい macOS ログイン・パスワードを入力し、FileVault ディスク暗号化を有効にするよう求められます。";
+"registrationFinalPageCountdownMessage" = "セットアップ・プロセスを続行するために、%d 秒後に Mac が自動的に再起動されます。「再起動」を選択して、今すぐ続行することもできます。";
+
+// MARK: - Installation: bundle selection page
+
+// Header
+"installationBundleSelectionPageTitle" = "始めるためのアプリ・バンドル";
+"installationBundleSelectionPageSubtitle" = "追加のアプリを Mac@IBM App Store からいつでもインストールできます。";
+
+// Labels
+"installationBundleSelectionPageRecommended" = "(推奨)";
+
+// Bundle one
+"installationBundleSelectionPageBundleOneTitle" = "接続";
+"installationBundleSelectionPageBundleOneDescription" = "必要なソフトウェアおよび証明書を使用して IBM ネットワークに接続します";
+"installationBundleSelectionPageBundleOnePopoverTitle" = "接続バンドル";
+"installationBundleSelectionPageBundleOnePopoverDescription" = "証明書およびソフトウェアを使用して IBM ネットワークに接続します";
+"installationBundleSelectionPageBundleOneAppOneTitle" = "AnyConnect";
+"installationBundleSelectionPageBundleOneAppOneDescription" = "Ipsum lorem 1";
+
+// Bundle two
+"installationBundleSelectionPageBundleTwoTitle" = "基本";
+"installationBundleSelectionPageBundleTwoDescription" = "業務を始めるのに必要となる、最も一般的な IBM ツールです。";
+"installationBundleSelectionPageBundleTwoPopoverTitle" = "基本バンドル";
+"installationBundleSelectionPageBundleTwoPopoverDescription" = "多くの社員が使用するアプリ";
+"installationBundleSelectionPageBundleTwoAppOneTitle" = "IBM Notes";
+"installationBundleSelectionPageBundleTwoAppOneDescription" = "IBM メールを送受信し、データベースを操作します";
+"installationBundleSelectionPageBundleTwoAppTwoTitle" = "Webex Meetings";
+"installationBundleSelectionPageBundleTwoAppTwoDescription" = "ビデオ/オーディオ会議と Web ミーティングの機能を提供します";
+"installationBundleSelectionPageBundleTwoAppThreeTitle" = "Code42 CrashPlan";
+"installationBundleSelectionPageBundleTwoAppThreeDescription" = "この Mac のファイルを安全にバックアップおよびリストアします";
+"installationBundleSelectionPageBundleTwoAppFourTitle" = "BluePages";
+"installationBundleSelectionPageBundleTwoAppFourDescription" = "社員情報の検索を高速かつ簡単に行います";
+"installationBundleSelectionPageBundleTwoAppFiveTitle" = "IBM ブックマーク";
+"installationBundleSelectionPageBundleTwoAppFiveDescription" = "よく使われる IBM Web サイトへのリンクです";
+
+// Bundle three
+"installationBundleSelectionPageBundleThreeTitle" = "生産性";
+"installationBundleSelectionPageBundleThreeDescription" = "ワード・プロセッサー、スプレッドシートなどを使用して生産性を向上しましょう。";
+"installationBundleSelectionPageBundleThreePopoverTitle" = "生産性バンドル";
+"installationBundleSelectionPageBundleThreePopoverDescription" = "資料作成やコラボレーションに役立つツール。";
+"installationBundleSelectionPageBundleThreeAppOneTitle" = "Office 365";
+"installationBundleSelectionPageBundleThreeAppOneDescription" = "Microsoft Word、Excel、PowerPoint、OneNote、および Outlook";
+"installationBundleSelectionPageBundleThreeAppTwoTitle" = "Slack";
+"installationBundleSelectionPageBundleThreeAppTwoDescription" = "IBM 内のチームとのコミュニケーションおよびコラボレーションに使用します";
+"installationBundleSelectionPageBundleThreeAppThreeTitle" = "Box Drive";
+"installationBundleSelectionPageBundleThreeAppThreeDescription" = "ファイルの保管、共有、同期を行います";
+
+// MARK: - Installation: bundle installation page
+"installationBundleInstallationPageTitle" = "選択したアプリ・バンドルをインストールしています...";
+"installationBundleInstallationPageSubtitle" = "推定残り時間: ";
+"installationBundleInstallationPageHideAppLabel" = "アプリを非表示";
+"installationBundleInstallationPageShowAppLabel" = "アプリを表示";
+
+// MARK: - Installation: final page
+
+// Header
+"installationFinalPageTitle" = "Mac の使用を開始する";
+
+// Elements
+"installationFinalPageElementOneTitle" = "Mac@IBM App Store\nからアプリを入手";
+"installationFinalPageElementOneDescription" = "Microsoft Office、Slack、IBM Notes などがあります。";
+"installationFinalPageElementTwoTitle" = "他のコンピューターから\nデータを移行";
+"installationFinalPageElementTwoDescription" = "重要な情報をこの新しい Mac に\n転送します。";
+"installationFinalPageElementThreeTitle" = "Code42 CrashPlan で\nMac をバックアップ";
+"installationFinalPageElementThreeDescription" = "インストールしてアカウントをセットアップ\nすると安心です。";
+"installationFinalPageElementThreeDescriptionAlternate" = "アカウントをセットアップ\nすると安心です。";
+"installationFinalPageElementFourTitle" = "Help@IBM のヒント、チュートリアル、\nおよびサポートを表示";
+"installationFinalPageElementFourDescription" = "IBM の Apple 専用ヘルプ・デスクのアドバイザーにアクセスします。";
+"installationFinalPageElementFiveTitle" = "IBM Notes をご利用の場合、\nNotes ID ファイルをインストール";
+"installationFinalPageElementFiveDescription" = "IBM Notes をインストールし、E メール・クライアントとしてセットアップします。";
+"installationFinalPAgeElementSixTitle" = "w3 ホーム・ページに移動";
+"installationFinalPageElementSixDescription" = "w3 のコンテンツや BluePages を検索します。";
+
+// Footer
+"installationFinalPageFooterLabel" = " Mac の次回再起動時に通知する";
+
+// MARK: - Installation: Notes wizard page
+
+// Header
+"filePickerPageTitle" = "Notes ID ファイルのインストール";
+"filePickerPageSubtitle" = "IBM Notes のセットアップを完了するには、Notes ID が必要です。後で追加することもできます。";
+
+// Messages
+"filePickerPageMessageSuccess" = "Notes ID が正常にインストールされました。";
+"filePickerPageMessageFailure" = "Notes ID ファイルをインストールできませんでした。";
+"filePickerPageMessageAlreadyExist" = "Notes ID ファイルは既に存在します。新たにインストールすることができます。";
+
+// Labels
+"filePickerPageButtonBrowse" = "Notes ID ファイルを参照";
+"filePickerPageButtonRemove" = "削除";
+"filePickerPageCenterLabel" = "Notes ID ファイルをドラッグ & ドロップ";
+"filePickerPageAlertMessage" = "ファイルが存在します";
+"filePickerPageAlertInformativeText" = "宛先にはファイルが既に存在します。選択したファイルで既存のファイルを置き換えますか?";
+"filePickerPageFileSelectionPanelTitle" = "IBM Notes の構成に使用する ID ファイルを選択してください";
+"filePickerPageButtonInstall" = "Notes ID ファイルのインストール";
+
+// MARK: - Alert labels
+
+// Un-enrollment
+"unenrollmentAlertTitle" = "登録プロセスを終了しますか?";
+"unenrollmentAlertMessage" = "今キャンセルすると、すべてのセキュリティー設定が元に戻され、このコンピューターが管理対象から削除されます。";
+"unenrollmentCancelled" = "フレームワークの削除アクションがキャンセルされました";
+
+// Bundle selection
+"bundleSelectionAlertTitle" = "続行しますか?";
+"bundleSelectionAlertMessage" = "現在、ネットワークの速度が遅いようです。インストールするバンドルの数を減らすことをお勧めします。";
+
+// Bundle installation
+"bundleInstallationalertMessage" = "一部のアプリケーションのインストールで問題が発生しました。後で、セルフサービスを使用してインストールしてください。";
+
+// Launch failure
+"launchFailureAlertTitle" = "このアプリケーションはデバイス管理を必要とします。";
+"launchFailureAlertMessage" = "このデバイスを登録してください。";
+
+// External network problem
+"externalNetworkAlertMessage" = "インターネットに接続されていません。続行する前に、インターネット・アクセスのあるネットワークに Mac を接続してください。";
+"externalNetworkJspMessage" = "セルフサービスは現在ご利用になれません。後で再試行してください。";
+
+// Internal network problem
+"internalNetworkProblemAlertMessage" = "\n\n続行するには、イントラネットに接続する必要があります。";
+
+// Terms and conditions drop down
+"termsAndConditionsTitle" = "個人用デバイスの使用に関する IBM 契約";
+"termsAndConditionsBody" = "このデバイスを「個人所有」として登録することが選択されました。個人所有のデバイスを IBM の業務に使用するには、特定の規約事項に従う必要があります。\n\nIBM の規約事項を確認し、同意するかどうかを指定してください。";
+"termsAndConditionsButtonLink" = "IBM の規約事項を読む";
+"termsAndConditionsButtonAccept" = "同意する";
+
+// MARK: - Common button labels
+"buttonLabelOk" = "OK";
+"buttonLabelCancel" = "キャンセル";
+"buttonLabelNext" = "次へ";
+"buttonLabelRestart" = "再起動";
+"buttonLabelClose" = "閉じる";
+"buttonLabelBack" = "戻る";
+"buttonLabelOkWithQuestionMark" = "OK?";
+"buttonLabelQuit" = "終了";
+"buttonLabelReplace" = "置き換え";
+"buttonLabelUpdateInfo" = "詳細の編集";
+"buttonLabelUnenroll" = "登録のキャンセル";
+
+// MARK: - Common labels
+"labelEnabled" = "有効";
+"labelDisabled" = "無効";
+"labelRequired" = "必須";
+"restartFailureMessage" = "コンピューターを再起動できませんでした";
+"restartFailureComment" = "再起動失敗のアラート";
+"estimatedInstallTimeMessage" = "%@ \n \n 推定インストール時間: %@";
+"labelChooseAnswer" = "回答を選択してください。";
+"labelNo" = "いいえ";
+"labelYes" = "はい";
+"buttonLabelInstall" = "選択したバンドルのインストール";
+"buttonLabelSkip" = "スキップ";

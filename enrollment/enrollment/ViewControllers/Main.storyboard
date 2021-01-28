@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16096"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Application-->
+        <scene sceneID="JPo-4y-FX3">
+            <objects>
+                <application id="hnw-xV-0zn" sceneMemberID="viewController">
+                    <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
+                        <items>
+                            <menuItem title="Mac@IBM Enrollment" id="1Xt-HY-uBw">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Mac@IBM Enrollment" systemMenu="apple" id="uQy-DD-JDr">
+                                    <items>
+                                        <menuItem title="About Mac@IBM Enrollment" id="5kV-Vb-QxS" userLabel="About enrollment">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
+                                        <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW"/>
+                                        <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
+                                        <menuItem title="Services" id="NMo-om-nkz">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
+                                        <menuItem title="Hide Mac@IBM Enrollment" keyEquivalent="h" id="Olw-nP-bQN">
+                                            <connections>
+                                                <action selector="hide:" target="Ady-hI-5gd" id="PnN-Uc-m68"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Hide Others" keyEquivalent="h" id="Vdr-fp-XzO">
+                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="hideOtherApplications:" target="Ady-hI-5gd" id="VT4-aY-XCT"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Show All" id="Kd2-mp-pUS">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="unhideAllApplications:" target="Ady-hI-5gd" id="Dhg-Le-xox"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
+                                        <menuItem title="Quit Mac@IBM Enrollment" keyEquivalent="q" id="4sb-4s-VLi">
+                                            <connections>
+                                                <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Window" id="aUF-d1-5bR">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Window" systemMenu="window" id="Td7-aD-5lo">
+                                    <items>
+                                        <menuItem title="Minimize" keyEquivalent="m" id="OY7-WF-poV">
+                                            <connections>
+                                                <action selector="performMiniaturize:" target="Ady-hI-5gd" id="VwT-WD-YPe"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Zoom" id="R4o-n2-Eq4">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="performZoom:" target="Ady-hI-5gd" id="DIl-cC-cCs"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="eu3-7i-yIM"/>
+                                        <menuItem title="Bring All to Front" id="LE2-aR-0XJ">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="arrangeInFront:" target="Ady-hI-5gd" id="DRN-fu-gQh"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
+                    </connections>
+                </application>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Mac_IBM_Enrollment" customModuleProvider="target"/>
+                <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="-147"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="R2V-B0-nI4">
+            <objects>
+                <windowController storyboardIdentifier="mainWC" id="B8D-0N-5wS" customClass="EnrollmentWindowController" customModule="Mac_IBM_Enrollment" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" title="Mac@IBM Enrollment" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" tabbingMode="disallowed" id="IQv-IB-iLA">
+                        <windowStyleMask key="styleMask" titled="YES" miniaturizable="YES"/>
+                        <rect key="contentRect" x="196" y="297" width="396" height="234"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <connections>
+                            <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="lIl-gl-es8" kind="relationship" relationship="window.shadowedContentViewController" id="vYa-PA-QDT"/>
+                    </connections>
+                </windowController>
+                <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="74" y="73"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="dc7-cS-gbQ">
+            <objects>
+                <viewController id="lIl-gl-es8" customClass="MainViewController" customModule="Mac_IBM_Enrollment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" id="qg9-Oc-HwH" customClass="MainView" customModule="Mac_IBM_Enrollment" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="940" height="520"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gsw-sV-VQQ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="520"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Gsw-sV-VQQ" secondAttribute="height" multiplier="8:13" id="5WN-Dx-NgT"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="left-panel" id="JmM-b7-YS4"/>
+                            </imageView>
+                            <containerView identifier="contentContainerView" translatesAutoresizingMaskIntoConstraints="NO" id="b1O-uH-U2a">
+                                <rect key="frame" x="320" y="0.0" width="620" height="520"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="620" id="cV1-MX-8fT"/>
+                                    <constraint firstAttribute="height" constant="520" id="yfi-fq-xEo"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="6iB-OC-6qz" kind="embed" identifier="configurationContainerSegue" id="DgV-Sc-you"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Gsw-sV-VQQ" firstAttribute="leading" secondItem="qg9-Oc-HwH" secondAttribute="leading" id="ABP-E2-0WV"/>
+                            <constraint firstAttribute="trailing" secondItem="b1O-uH-U2a" secondAttribute="trailing" id="LHy-wu-Ul0"/>
+                            <constraint firstItem="b1O-uH-U2a" firstAttribute="leading" secondItem="Gsw-sV-VQQ" secondAttribute="trailing" id="Suq-ot-Dcs"/>
+                            <constraint firstItem="b1O-uH-U2a" firstAttribute="top" secondItem="Gsw-sV-VQQ" secondAttribute="top" id="UqT-4g-zTc"/>
+                            <constraint firstAttribute="bottom" secondItem="Gsw-sV-VQQ" secondAttribute="bottom" id="Utm-F5-IbK"/>
+                            <constraint firstItem="b1O-uH-U2a" firstAttribute="centerY" secondItem="Gsw-sV-VQQ" secondAttribute="centerY" id="YPA-0d-k6a"/>
+                            <constraint firstItem="b1O-uH-U2a" firstAttribute="bottom" secondItem="Gsw-sV-VQQ" secondAttribute="bottom" id="b65-Df-Qx4"/>
+                            <constraint firstItem="Gsw-sV-VQQ" firstAttribute="top" secondItem="qg9-Oc-HwH" secondAttribute="top" id="uGl-tA-2an"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentContainerHeightContraint" destination="yfi-fq-xEo" id="vwh-Ae-TvA"/>
+                        <outlet property="contentContainerView" destination="b1O-uH-U2a" id="GWK-iq-aGN"/>
+                        <outlet property="contentContainerWidthConstraint" destination="cV1-MX-8fT" id="o7u-RY-S5U"/>
+                        <outlet property="sidePanelImageView" destination="Gsw-sV-VQQ" id="BEu-ud-QkW"/>
+                    </connections>
+                </viewController>
+                <customObject id="xeQ-Qo-4Uv" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="74" y="807"/>
+        </scene>
+        <!--Sub View Controller Manager View Controller-->
+        <scene sceneID="Qwo-9N-eb0">
+            <objects>
+                <viewController id="6iB-OC-6qz" customClass="SubViewControllerManagerViewController" customModule="Mac_IBM_Enrollment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="Wux-ZC-sXh">
+                        <rect key="frame" x="0.0" y="0.0" width="620" height="520"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView translatesAutoresizingMaskIntoConstraints="NO" id="fIJ-4w-FrX" userLabel="Sub View Controller Manager">
+                                <rect key="frame" x="0.0" y="0.0" width="620" height="520"/>
+                            </containerView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fIJ-4w-FrX" secondAttribute="trailing" id="7OJ-Ll-Sha"/>
+                            <constraint firstItem="fIJ-4w-FrX" firstAttribute="leading" secondItem="Wux-ZC-sXh" secondAttribute="leading" id="eMN-jT-8bG"/>
+                            <constraint firstAttribute="bottom" secondItem="fIJ-4w-FrX" secondAttribute="bottom" id="lwO-d2-pzJ"/>
+                            <constraint firstItem="fIJ-4w-FrX" firstAttribute="top" secondItem="Wux-ZC-sXh" secondAttribute="top" id="nbX-Nw-Ytp"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="layer.backgroundColor">
+                                <color key="value" red="0.22730243210000001" green="0.54864096640000004" blue="0.14889234300000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </viewController>
+                <customObject id="hch-Ux-JoE" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="215" y="1482"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="left-panel" width="320" height="520"/>
+    </resources>
+</document>

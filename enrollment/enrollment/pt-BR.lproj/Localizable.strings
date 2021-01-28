@@ -1,0 +1,272 @@
+/*
+ Localizable.strings
+ enrollment
+ 
+ Created by Simone Martorelli on 2/5/20.
+ Copyright © 2020 IBM. All rights reserved.
+ SPDX-License-Identifier: GPL-3.0-only
+ */
+
+/// MARK: - Note to the translation
+///
+/// Pay attention to not modify, cancel or move the special characters:
+/// - %d - This special character is substituted with a number at runtime;
+/// - %@ - This special characted is substituted with a string at runtime;
+/// - \n - This special characted works like the "return" key;
+/// - \" - This special characted insert a ";
+
+// MARK: - Registration: page one
+
+// Header
+"registrationPageOneTitleSimple" = "Bem-vindo, novo funcionário!";
+"registrationPageOneTitleComposed" = "Bem-vindo, %@!";
+"registrationPageOneSubtitleSimple" = "Não está vendo o seu nome?";
+"registrationPageOneSubtitleComposed" = "Não é o %@?";
+
+// Info popovers
+"registrationPageOneSubtitle_info" = "Não se preocupe, será possível fazer essa atualização mais tarde usando a Mac@IBM App Store e procurando por \"Designar Usuário\".";
+"registrationPageOneDisclaimerPolicies_infoElementOne" = "Firewall";
+"registrationPageOneDisclaimerPolicies_infoElementTwo" = "Modo Stealth";
+"registrationPageOneDisclaimerPolicies_infoElementThree" = "Conta do Usuário Guest";
+"registrationPageOneDisclaimerPolicies_infoElementFour" = "Criptografia de disco FileVault";
+"registrationPageOneDisclaimerPolicies_infoElementFive" = "Mudança inicial de senha do macOS";
+"registrationPageOneDisclaimerPolicies_infoElementSix" = "Senha do ScreenSaver";
+"registrationPageOneDisclaimerPolicies_infoElementSeven_title" = "Horário de início do ScreenSaver";
+"registrationPageOneDisclaimerPolicies_infoElementSeven_description" = "30 minutos de inatividade";
+"registrationPageOneDisclaimerPolicies_infoElementEight_title" = "Software de proteção de terminal";
+
+// Field labels
+"registrationPageOneFieldRegion" = "Região";
+"registrationPageOneFieldComputer" = "Tipo de sistema computacional";
+"registrationPageOneFieldOwner" = "Proprietário do ativo";
+"registrationPageOneFieldUser" = "Tipo de usuário";
+
+// Region field options
+"registrationPageOneFieldRegionOptionOne" = "EUA";
+"registrationPageOneFieldRegionOptionTwo" = "Canadá";
+"registrationPageOneFieldRegionOptionThree" = "EOMA (Europa, Oriente Médio, África)";
+"registrationPageOneFieldRegionOptionFour" = "AL (América Latina)";
+"registrationPageOneFieldRegionOptionFive" = "AP (Ásia Pacífico)";
+
+// Computer Type options
+"registrationPageOneFieldComputerOptionOne" = "Primário";
+"registrationPageOneFieldComputerOptionOne_info" = "para um único usuário como uma plataforma de produtividade de escritório para o trabalho normal de escritório (por exemplo, e-mail, aplicativos/navegação na web, mensagens instantâneas, documentação etc.)";
+"registrationPageOneFieldComputerOptionTwo" = "Secundário";
+"registrationPageOneFieldComputerOptionTwo_info" = "para várias tarefas, excluindo atividades de produtividade de escritório, incluindo atividades de demonstração do cliente e máquinas virtuais";
+"registrationPageOneFieldComputerOptionThree" = "Compartilhado";
+"registrationPageOneFieldComputerOptionThree_info" = "usado por vários usuários para educação e treinamento";
+"registrationPageOneFieldComputerOptionFour" = "Empréstimo";
+"registrationPageOneFieldComputerOptionFour_info" = "para o propósito de teste e/ou desenvolvimento";
+"registrationPageOneFieldComputerOptionFive" = "Sala de aula";
+"registrationPageOneFieldComputerOptionFive_info" = "usado a curto prazo, como substituto ou suplemento";
+"registrationPageOneFieldComputerOptionSix" = "Laboratório";
+"registrationPageOneFieldComputerOptionSix_info" = "para uso de vários usuários em várias tarefas, incluindo atividades de produtividade no escritório";
+
+// Asset Owner options
+"registrationPageOneFieldOwnerOptionOne" = "Fornecido pela IBM";
+"registrationPageOneFieldOwnerOptionTwo" = "De propriedade pessoal";
+"registrationPageOneFieldOwnerOptionThree" = "De propriedade de terceiro: fornecido pelo fabricante";
+"registrationPageOneFieldOwnerOptionFour" = "De propriedade de terceiro: fornecido pela agência do contratado";
+"registrationPageOneFieldOwnerOptionFive" = "De propriedade de terceiro: fornecido pelo Cliente";
+
+// User Type options
+"registrationPageOneFieldUserOptionOne" = "Padrão";
+"registrationPageOneFieldUserOptionOne_info" = "uso geral fora das tarefas desempenhadas pelos casos de uso Privilegiado ou Central de atendimento";
+"registrationPageOneFieldUserOptionTwo" = "Privilegiado";
+"registrationPageOneFieldUserOptionTwo_info" = "sob a designação de autoridades administrativas de segurança, de autoridades de sistema em dispositivos de rede, sistemas computacionais, componentes de middleware ou aplicativos para IBM ou clientes ";
+"registrationPageOneFieldUserOptionThree" = "Serviço/Central de atendimento";
+"registrationPageOneFieldUserOptionThree_info" = "designado a um Centro de serviços, uma Central de atendimento ou um Help Desk";
+
+// Policies disclaimer
+"registrationPageOneDisclaimerPolicies" = "As políticas de segurança IBM serão aplicadas automaticamente.";
+
+// MARK: - Registration: page two
+
+// Header
+"registrationPageTwoTitle" = "Informações que você acessa";
+"registrationPageTwoSubtitle" = "Selecione os tipos de dados armazenados neste sistema computacional.";
+
+// Information options
+"registrationPageTwoFieldInformationOptionOne_title" = "Informações Pessoais Sensíveis (IPS)";
+"registrationPageTwoFieldInformationOptionOne_description" = "seu dispositivo armazena Informações Pessoais (IP)";
+"registrationPageTwoFieldInformationOptionTwo_title" = "Dados do cliente";
+"registrationPageTwoFieldInformationOptionTwo_description" = "o dispositivo armazena ou é usado para acessar dados pertencentes ou criados por um cliente";
+"registrationPageTwoFieldInformationOptionThree_title" = "Dados regulados pelo Governo";
+"registrationPageTwoFieldInformationOptionThree_description" = "você foi informado por sua gerência, pelo proprietário dos dados ou pelo guardião dos dados de que os dados armazenados ou acessados por seu dispositivo estão sujeitos a restrições ou regulamentações governamentais, por exemplo, alguns dados do segmento de saúde estão sujeitos a proteções adicionais";
+"registrationPageTwoFieldInformationOptionFour_title" = "Dados do FFIEC (Federal Financial Institutions Examination Council)";
+"registrationPageTwoFieldInformationOptionFour_description" = "você dá suporte ou tem acesso aos ambientes financeiros do cliente";
+"registrationPageTwoFieldInformationOptionFive_title" = "Dados do HIPAA (Health Insurance Portability and Accountability Act)";
+"registrationPageTwoFieldInformationOptionFive_description" = "você dá suporte a uma conta de cliente regulamentada por HIPAA ou a oferta de hospedagem múltipla";
+"registrationPageTwoFieldInformationOptionSix_title" = "Dados do PCI";
+"registrationPageTwoFieldInformationOptionSix_description" = "o dispositivo armazena ou acessa dados confidenciais de cartão de pagamento (por exemplo, cartão de crédito) pertencentes ou criados por um cliente";
+"registrationPageTwoFieldInformationOptionSeven_title" = "Nenhum dos acima";
+"registrationPageTwoFieldInformationOptionSeven_description" = "";
+
+// MARK: - Registration: loading page
+
+// State labels
+"registrationLoadingPageStateOne" = "Testando a velocidade da rede";
+"registrationLoadingPageStateTwo" = "Concluindo a inscrição";
+"registrationLoadingPageStateForPhaseThree" = "Atualizando o registro";
+
+// MARK: - Registration: final page
+
+// Header
+"registrationFinalPageTitle" = "Registro concluído";
+"registrationFinalPageTitlePhaseThree" = "Detalhes do registro";
+"registrationFinalPageTitlePhaseFour" = "Bem-vindo!";
+"registrationFinalPageSubtitleStandard" = "Vamos começar a configurar o seu Mac!";
+"registrationFinalPageSubtitlePhaseThree" = "";
+"registrationFinalPageInstructionalMessage" = "Após seu próximo login, você será solicitado a fornecer uma nova senha de login do macOS e a habilitar a criptografia de disco FileVault.";
+"registrationFinalPageCountdownMessage" = "O seu Mac será reiniciado automaticamente em %d segundos para continuar o processo de configuração ou selecione \"Reiniciar\" para continuar agora.";
+
+// MARK: - Installation: bundle selection page
+
+// Header
+"installationBundleSelectionPageTitle" = "Pacotes de aplicativos para você começar";
+"installationBundleSelectionPageSubtitle" = "Aplicativos adicionais podem ser instalados por meio da Mac@IBM App Store a qualquer momento.";
+
+// Labels
+"installationBundleSelectionPageRecommended" = "(recomendado)";
+
+// Bundle one
+"installationBundleSelectionPageBundleOneTitle" = "Conectividade";
+"installationBundleSelectionPageBundleOneDescription" = "Conecte-se às redes IBM com o software e os certificados necessários";
+"installationBundleSelectionPageBundleOnePopoverTitle" = "Pacote de conectividade";
+"installationBundleSelectionPageBundleOnePopoverDescription" = "Conecte-se à nossa rede com certificados e software";
+"installationBundleSelectionPageBundleOneAppOneTitle" = "AnyConnect";
+"installationBundleSelectionPageBundleOneAppOneDescription" = "Ipsum lorem 1";
+
+// Bundle two
+"installationBundleSelectionPageBundleTwoTitle" = "Essentials";
+"installationBundleSelectionPageBundleTwoDescription" = "Comece a operar com as ferramentas IBM mais comuns.";
+"installationBundleSelectionPageBundleTwoPopoverTitle" = "Pacote do Essentials";
+"installationBundleSelectionPageBundleTwoPopoverDescription" = "Os aplicativos usados pela maioria dos funcionários";
+"installationBundleSelectionPageBundleTwoAppOneTitle" = "IBM Notes";
+"installationBundleSelectionPageBundleTwoAppOneDescription" = "Envie e receba correio IBM e interaja com bancos de dados";
+"installationBundleSelectionPageBundleTwoAppTwoTitle" = "Webex Meetings";
+"installationBundleSelectionPageBundleTwoAppTwoDescription" = "Combine recursos de vídeo e audioconferência e reunião na web";
+"installationBundleSelectionPageBundleTwoAppThreeTitle" = "Code42 CrashPlan";
+"installationBundleSelectionPageBundleTwoAppThreeDescription" = "Faça backup e restaure arquivos com segurança no seu Mac";
+"installationBundleSelectionPageBundleTwoAppFourTitle" = "BluePages";
+"installationBundleSelectionPageBundleTwoAppFourDescription" = "Procuras rápidas e convenientes no diretório de funcionários";
+"installationBundleSelectionPageBundleTwoAppFiveTitle" = "IBM Bookmarks";
+"installationBundleSelectionPageBundleTwoAppFiveDescription" = "Links para sites IBM comumente usados";
+
+// Bundle three
+"installationBundleSelectionPageBundleThreeTitle" = "Produtividade";
+"installationBundleSelectionPageBundleThreeDescription" = "Aumente sua produtividade com processamento de texto, planilhas e muito mais.";
+"installationBundleSelectionPageBundleThreePopoverTitle" = "Pacote de produtividade";
+"installationBundleSelectionPageBundleThreePopoverDescription" = "Ferramentas para ajudar você a criar e colaborar.";
+"installationBundleSelectionPageBundleThreeAppOneTitle" = "Office 365";
+"installationBundleSelectionPageBundleThreeAppOneDescription" = "Microsoft Word, Excel, PowerPoint, OneNote e Outlook";
+"installationBundleSelectionPageBundleThreeAppTwoTitle" = "Slack";
+"installationBundleSelectionPageBundleThreeAppTwoDescription" = "Comunique-se e colabore com equipes da IBM";
+"installationBundleSelectionPageBundleThreeAppThreeTitle" = "Box Drive";
+"installationBundleSelectionPageBundleThreeAppThreeDescription" = "Armazene, compartilhe e sincronize arquivos";
+
+// MARK: - Installation: bundle installation page
+"installationBundleInstallationPageTitle" = "Instalando pacotes de aplicativos selecionados…";
+"installationBundleInstallationPageSubtitle" = "Tempo estimado restante: ";
+"installationBundleInstallationPageHideAppLabel" = "Ocultar aplicativo";
+"installationBundleInstallationPageShowAppLabel" = "Mostrar aplicativo";
+
+// MARK: - Installation: final page
+
+// Header
+"installationFinalPageTitle" = "Comece a usar o seu Mac";
+
+// Elements
+"installationFinalPageElementOneTitle" = "Obtenha aplicativos na \nMac@IBM App Store";
+"installationFinalPageElementOneDescription" = "Microsoft Office, Slack, IBM Notes e mais!";
+"installationFinalPageElementTwoTitle" = "Migre seus dados \nde outro sistema computacional";
+"installationFinalPageElementTwoDescription" = "Transfira informações importantes \npara o seu novo Mac.";
+"installationFinalPageElementThreeTitle" = "Faça backup do seu Mac com o \nCode42 CrashPlan";
+"installationFinalPageElementThreeDescription" = "Instale, configure uma conta \ne aproveite o Peace of Mind.";
+"installationFinalPageElementThreeDescriptionAlternate" = "Configure uma conta \ne aproveite o Peace of Mind.";
+"installationFinalPageElementFourTitle" = "Visualize dicas, tutoriais e \nsuporte no Help@IBM";
+"installationFinalPageElementFourDescription" = "Acesse os consultores Apple Help Desk dedicados da IBM.";
+"installationFinalPageElementFiveTitle" = "Usar o Notes? Instale o seu\narquivo de ID do Notes";
+"installationFinalPageElementFiveDescription" = "Instale e configure o Notes como seu cliente de e-mail.";
+"installationFinalPAgeElementSixTitle" = "Acesse a página inicial do w3";
+"installationFinalPageElementSixDescription" = "Procure lugares do w3 e BluePages";
+
+// Footer
+"installationFinalPageFooterLabel" = " Lembre-me da próxima vez que reiniciar meu Mac.";
+
+// MARK: - Installation: Notes wizard page
+
+// Header
+"filePickerPageTitle" = "Instale o seu arquivo de ID do Notes";
+"filePickerPageSubtitle" = "O seu ID do Notes é necessário para concluir a configuração do Notes. Também é possível adicioná-lo mais tarde.";
+
+// Messages
+"filePickerPageMessageSuccess" = "O seu ID do Notes foi instalado com sucesso!";
+"filePickerPageMessageFailure" = "Não foi possível instalar o seu arquivo de ID do Notes.";
+"filePickerPageMessageAlreadyExist" = "Um arquivo de ID do Notes já existe. Você pode instalar um novo.";
+
+// Labels
+"filePickerPageButtonBrowse" = "Procure seu arquivo de ID do Notes";
+"filePickerPageButtonRemove" = "Remover";
+"filePickerPageCenterLabel" = "Arraste e solte seu arquivo de ID do Notes";
+"filePickerPageAlertMessage" = "O arquivo já existe";
+"filePickerPageAlertInformativeText" = "O arquivo já existe no destino. Deseja substituir o arquivo existente pelo arquivo selecionado?";
+"filePickerPageFileSelectionPanelTitle" = "Selecione o arquivo de ID que você deseja usar para configurar o Notes";
+"filePickerPageButtonInstall" = "Instalar o arquivo de ID do Notes";
+
+// MARK: - Alert labels
+
+// Un-enrollment
+"unenrollmentAlertTitle" = "Tem certeza de que deseja sair do processo de inscrição?";
+"unenrollmentAlertMessage" = "O cancelamento agora desfará todas as configurações de segurança e removerá este sistema computacional do gerenciamento.";
+"unenrollmentCancelled" = "Ação Remover estrutura foi cancelada";
+
+// Bundle selection
+"bundleSelectionAlertTitle" = "Tem certeza de que deseja continuar?";
+"bundleSelectionAlertMessage" = "Parece que a velocidade da sua rede está lenta no momento. Recomendamos instalar menos pacotes configuráveis.";
+
+// Bundle installation
+"bundleInstallationalertMessage" = "Ocorreu um problema ao instalar alguns aplicativos. Use o Autoatendimento para instalá-los posteriormente.";
+
+// Launch failure
+"launchFailureAlertTitle" = "Este aplicativo requer gerenciamento de dispositivos.";
+"launchFailureAlertMessage" = "Registre este dispositivo.";
+
+// External network problem
+"externalNetworkAlertMessage" = "Você não está conectado à Internet.  Verifique se o seu Mac está conectado a uma rede com acesso à Internet antes de continuar.";
+"externalNetworkJspMessage" = "O autoatendimento não está disponível no momento.  Tente novamente mais tarde.";
+
+// Internal network problem
+"internalNetworkProblemAlertMessage" = "\n\nDeve-se estar conectado à intranet para continuar.";
+
+// Terms and conditions drop down
+"termsAndConditionsTitle" = "Contrato IBM para Uso de Dispositivo Pessoal";
+"termsAndConditionsBody" = "Você optou por registrar este dispositivo como sendo \"de propriedade pessoal\". O uso de um dispositivo de propriedade pessoal para conduzir negócios IBM é governado por certos termos e condições.\n\nRevise os termos e condições IBM e indique se você os aceita. ";
+"termsAndConditionsButtonLink" = "Leia os Termos e Condições IBM";
+"termsAndConditionsButtonAccept" = "Aceitar";
+
+// MARK: - Common button labels
+"buttonLabelOk" = "OK";
+"buttonLabelCancel" = "Cancelar";
+"buttonLabelNext" = "Avançar";
+"buttonLabelRestart" = "Reiniciar";
+"buttonLabelClose" = "Fechar";
+"buttonLabelBack" = "Voltar";
+"buttonLabelOkWithQuestionMark" = "Ok?";
+"buttonLabelQuit" = "Sair";
+"buttonLabelReplace" = "Substituir";
+"buttonLabelUpdateInfo" = "Editar detalhes";
+"buttonLabelUnenroll" = "Cancelar inscrição";
+
+// MARK: - Common labels
+"labelEnabled" = "Ativado";
+"labelDisabled" = "Desativado";
+"labelRequired" = "Obrigatório";
+"restartFailureMessage" = "Não foi possível reiniciar o seu sistema computacional";
+"restartFailureComment" = "Alerta de reinicialização com alerta";
+"estimatedInstallTimeMessage" = "%@ \n \n Tempo estimado de instalação: %@";
+"labelChooseAnswer" = "Escolha a sua resposta.";
+"labelNo" = "Não";
+"labelYes" = "Sim";
+"buttonLabelInstall" = "Instalar pacotes selecionados";
+"buttonLabelSkip" = "Ignorar";

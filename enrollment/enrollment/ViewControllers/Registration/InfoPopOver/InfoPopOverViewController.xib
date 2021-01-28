@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="16096" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16096"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="InfoPopOverViewController" customModule="Mac_IBM_Enrollment" customModuleProvider="target">
+            <connections>
+                <outlet property="mainStackView" destination="bZ8-BE-Xdu" id="zvd-Zp-MaZ"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="434" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="shP-4n-lLP">
+                    <rect key="frame" x="8" y="8" width="418" height="34"/>
+                    <view key="contentView" id="uYu-Ct-0ME">
+                        <rect key="frame" x="1" y="1" width="416" height="32"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView distribution="fill" orientation="vertical" alignment="centerX" spacing="4" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bZ8-BE-Xdu">
+                                <rect key="frame" x="8" y="4" width="400" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="P0d-qg-jau"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="bZ8-BE-Xdu" firstAttribute="top" secondItem="uYu-Ct-0ME" secondAttribute="top" constant="4" id="9Rh-bo-Cqw"/>
+                            <constraint firstItem="bZ8-BE-Xdu" firstAttribute="leading" secondItem="uYu-Ct-0ME" secondAttribute="leading" constant="8" id="FHI-Yv-jrk"/>
+                            <constraint firstAttribute="trailing" secondItem="bZ8-BE-Xdu" secondAttribute="trailing" constant="8" id="X6N-Mi-ZPF"/>
+                            <constraint firstAttribute="bottom" secondItem="bZ8-BE-Xdu" secondAttribute="bottom" constant="4" id="cVg-E9-0w2"/>
+                        </constraints>
+                    </view>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstItem="shP-4n-lLP" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="8" id="BiP-bs-zHa"/>
+                <constraint firstAttribute="trailing" secondItem="shP-4n-lLP" secondAttribute="trailing" constant="8" id="GV9-Ze-sHz"/>
+                <constraint firstAttribute="bottom" secondItem="shP-4n-lLP" secondAttribute="bottom" constant="8" id="f7U-ig-5kX"/>
+                <constraint firstItem="shP-4n-lLP" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="8" id="iu2-lZ-I8b"/>
+            </constraints>
+            <point key="canvasLocation" x="129.5" y="170"/>
+        </customView>
+    </objects>
+</document>
