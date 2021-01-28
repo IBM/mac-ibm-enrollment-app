@@ -15,16 +15,8 @@ public final class BundleInstallationPage: Codable {
     var bundleInstallationNeedsRestartBefore: Bool
     var bundleInstallationNeedsRestartAfter: Bool
     var automaticRestartCountdownSeconds: Int
-    var bundleInstallationStatus: Bool {
-        didSet {
-            UserDefaults.standard.set(bundleInstallationStatus, forKey: UserDefaultHelper.Bundles.AppInstallScreen.status)
-        }
-    }
-    var bundleInstallationWarning: Bool {
-        didSet {
-            UserDefaults.standard.set(bundleInstallationWarning, forKey: UserDefaultHelper.Bundles.AppInstallScreen.warning)
-        }
-    }
+    var bundleInstallationStatus: Bool
+    var bundleInstallationWarning: Bool 
     
     init(_ title: InfoLabel, subtitle: InfoLabel? = nil, bundleInstallationNeedsRestartBefore: Bool, bundleInstallationNeedsRestartAfter: Bool, automaticRestartCountdownSeconds: Int, bundleInstallationStatus: Bool, bundleInstallationWarning: Bool) {
         self.title = title
