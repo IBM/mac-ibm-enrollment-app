@@ -1,3 +1,4 @@
+[![CI](https://github.com/IBM/mac-ibm-enrollment-app/actions/workflows/main.yml/badge.svg)](https://github.com/IBM/mac-ibm-enrollment-app/actions/workflows/main.yml)
 ![License](https://img.shields.io/badge/license-GPL%203.0-blue)
 ![Swift version](https://img.shields.io/badge/swift-5-EA392B)
 ![Xcode version](https://img.shields.io/badge/xcode-12.4-1984E5)

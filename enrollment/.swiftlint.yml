@@ -4,6 +4,8 @@ disabled_rules: # rule identifiers to exclude from running
  - nesting
  - type_body_length
  - cyclomatic_complexity
+ - inclusive_language
+ - notification_center_detachment
 excluded: # paths to ignore during linting. Takes precedence over `included`.
  - Carthage
  - Pods
