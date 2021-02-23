@@ -14,7 +14,7 @@ jobs:
       - name: GitHub Action for SwiftLint
         uses: norio-nomura/action-swiftlint@3.2.1
         env:
-          WORKING_DIRECTORY: enrollment
+          WORKING_DIRECTORY: ./enrollment/
   test:
     runs-on: macos-latest
     steps:
@@ -24,4 +24,4 @@ jobs:
         shell: bash --noprofile --norc -eo pipefail {0}
         run: |
           cd enrollment
-          xcodebuild -project "enrollment.xcodeproj" -scheme "Mac@IBM Enrollment" -destination 'platform=OS X' clean test build | xcpretty
+          xcodebuild -project "enrollment.xcodeproj" -scheme "Mac@IBM Enrollment" -destination 'platform=OS X' clean test build CODE_SIGN_IDENTITY=- | xcpretty
