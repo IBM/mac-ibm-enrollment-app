@@ -39,6 +39,14 @@
                BlueprintName = "Mac@IBM EnrollmentTests"
                ReferencedContainer = "container:enrollment.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "EnrollmentDataSetTests">
+               </Test>
+               <Test
+                  Identifier = "EnrollmentDataSetTests/testEnrollmentDataSetInitializedCorrectly()">
+               </Test>
+            </SkippedTests>
             <LocationScenarioReference
                identifier = "New York, NY, USA"
                referenceType = "1">

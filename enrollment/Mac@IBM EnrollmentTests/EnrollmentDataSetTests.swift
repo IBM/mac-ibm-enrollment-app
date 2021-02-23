@@ -253,7 +253,6 @@ class EnrollmentDataSetTests: XCTestCase {
         XCTAssert((sut.selectedBundles as Any) is [String])
         XCTAssert((sut.bundleInstallationPage as Any) is BundleInstallationPage)
         XCTAssert((sut.bundleSelectionPage as Any) is BundleSelectionPage)
-        XCTAssert((sut.summaryScreen as Any) is SummaryPage)
         
     }
 
