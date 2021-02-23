@@ -1,0 +1,24 @@
+name: CI
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  SwiftLint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: GitHub Action for SwiftLint
+        uses: norio-nomura/action-swiftlint@3.2.1
+  test:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout project
+        uses: actions/checkout@v2
+      - name: Run Xcodebuild Test, Build
+        shell: bash --noprofile --norc -eo pipefail {0}
+        run: |
+          xcodebuild -project "enrollment.xcodeproj" -scheme "Mac@IBM Enrollment" -destination 'platform=OS X' clean test build | xcpretty
