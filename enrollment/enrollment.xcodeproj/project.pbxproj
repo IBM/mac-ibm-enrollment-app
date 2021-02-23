@@ -1206,7 +1206,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = Q7W47GFKL3;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = EnrollmentLoginHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1230,7 +1230,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = Q7W47GFKL3;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = EnrollmentLoginHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1277,9 +1277,9 @@
 		B99D1E2C2534637700661954 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = Q7W47GFKL3;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/PrivilegedCommandsHelper/PrivilegedCommandsHelper-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
