@@ -102,7 +102,6 @@
 		B9E3D2B4243344B20084BF46 /* SelectableBundleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E3D2B2243344B20084BF46 /* SelectableBundleCell.swift */; };
 		B9E3D2B5243344B20084BF46 /* SelectableBundleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9E3D2B3243344B20084BF46 /* SelectableBundleCell.xib */; };
 		F433F10A245F251800D61A57 /* InfoLabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433F109245F251800D61A57 /* InfoLabelTests.swift */; };
-		F4F1A81C246018AA0043EDCF /* SummaryPageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F1A81B246018AA0043EDCF /* SummaryPageTests.swift */; };
 		F4F1A81E246020B70043EDCF /* RegistrationDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F1A81D246020B70043EDCF /* RegistrationDataTests.swift */; };
 		F4F1A82024602E620043EDCF /* RegistrationFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F1A81F24602E620043EDCF /* RegistrationFieldTests.swift */; };
 		F4F1A822246039600043EDCF /* RegistrationPageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F1A821246039600043EDCF /* RegistrationPageTests.swift */; };
@@ -276,7 +275,6 @@
 		F433F109245F251800D61A57 /* InfoLabelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoLabelTests.swift; sourceTree = "<group>"; };
 		F46A1B602448339F009F2738 /* Mac@IBM EnrollmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mac@IBM EnrollmentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F46A1B642448339F009F2738 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F4F1A81B246018AA0043EDCF /* SummaryPageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryPageTests.swift; sourceTree = "<group>"; };
 		F4F1A81D246020B70043EDCF /* RegistrationDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationDataTests.swift; sourceTree = "<group>"; };
 		F4F1A81F24602E620043EDCF /* RegistrationFieldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFieldTests.swift; sourceTree = "<group>"; };
 		F4F1A821246039600043EDCF /* RegistrationPageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationPageTests.swift; sourceTree = "<group>"; };
@@ -664,7 +662,6 @@
 			children = (
 				F46A1B642448339F009F2738 /* Info.plist */,
 				F433F109245F251800D61A57 /* InfoLabelTests.swift */,
-				F4F1A81B246018AA0043EDCF /* SummaryPageTests.swift */,
 				F4F1A81D246020B70043EDCF /* RegistrationDataTests.swift */,
 				F4F1A81F24602E620043EDCF /* RegistrationFieldTests.swift */,
 				F4F1A821246039600043EDCF /* RegistrationPageTests.swift */,
@@ -993,7 +990,6 @@
 				F4F1A8282460422D0043EDCF /* EnrollmentBundleTests.swift in Sources */,
 				F4F1A826246041320043EDCF /* PoliciesTests.swift in Sources */,
 				F4F1A82424603D4A0043EDCF /* RegistrationChoiceTests.swift in Sources */,
-				F4F1A81C246018AA0043EDCF /* SummaryPageTests.swift in Sources */,
 				F4F1A81E246020B70043EDCF /* RegistrationDataTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1161,7 +1157,7 @@
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 76;
-				DEVELOPMENT_TEAM = Q7W47GFKL3;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = enrollment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1182,11 +1178,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = enrollment/enrollment.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 76;
-				DEVELOPMENT_TEAM = Q7W47GFKL3;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = enrollment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1210,7 +1206,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = Q7W47GFKL3;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = EnrollmentLoginHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1234,7 +1230,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = Q7W47GFKL3;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = EnrollmentLoginHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1281,9 +1277,9 @@
 		B99D1E2C2534637700661954 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = Q7W47GFKL3;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/PrivilegedCommandsHelper/PrivilegedCommandsHelper-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
@@ -1309,10 +1305,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = Q7W47GFKL3;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Mac@IBM EnrollmentTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1334,10 +1330,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = Q7W47GFKL3;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Mac@IBM EnrollmentTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
