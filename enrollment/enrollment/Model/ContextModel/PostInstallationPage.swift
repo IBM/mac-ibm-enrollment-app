@@ -20,7 +20,6 @@ public final class PostInstallationPage: Codable {
         var title: String
         var description: String
         var iconName: String
-        var iconURL: URL?
         var ctaType: CTAType
         var ctaPayload: String?
         
@@ -28,7 +27,6 @@ public final class PostInstallationPage: Codable {
             case title
             case description
             case iconName
-            case iconURL
             case alternateDescription
             case ctaType
             case ctaPayload
@@ -40,9 +38,6 @@ public final class PostInstallationPage: Codable {
             title = try values.decode(String.self, forKey: .title)
             description = try values.decode(String.self, forKey: .description)
             iconName = try values.decode(String.self, forKey: .iconName)
-            if let urlString = try values.decodeIfPresent(String.self, forKey: .iconURL) {
-                iconURL = URL(string: urlString)
-            }
             let ctaPayloadRawValue = try values.decode(String.self, forKey: .ctaType)
             ctaType = CTAType(rawValue: ctaPayloadRawValue) ?? .none
             ctaPayload = try values.decodeIfPresent(String.self, forKey: .ctaPayload)
@@ -54,7 +49,6 @@ public final class PostInstallationPage: Codable {
             try container.encode(title, forKey: .title)
             try container.encode(description, forKey: .description)
             try container.encode(iconName, forKey: .iconName)
-            try container.encodeIfPresent(iconURL?.absoluteString, forKey: .iconURL)
             try container.encode(ctaType.rawValue, forKey: .ctaType)
             try container.encodeIfPresent(ctaPayload, forKey: .ctaPayload)
         }
