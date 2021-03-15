@@ -51,7 +51,6 @@ class BundleSelectionViewController: NSViewController {
     
     private func setValuesToFactoryDefaults() {
         Context.main?.dataSet.bundleInstallationPage?.bundleInstallationStatus = false
-        Context.main?.dataSet.bundleInstallationPage?.bundleInstallationWarning = false
         Context.main?.dataSet.selectedBundles = []
         
         Context.main?.dataSet.bundleSelectionPage?.bundles.forEach({ bundle in

@@ -36,9 +36,6 @@ class BundleInstallationViewController: NSViewController {
     private var installationProcessController: InstallationProcessController?
     private var bundleStackViewItems: [BundleInstallationStackViewItem] = []
     private var appStackViewItems: [[AppInstallationStackViewItem]] = []
-    private var restartNeeded: Bool {
-        return Context.main?.dataSet.bundleInstallationPage?.bundleInstallationNeedsRestartAfter ?? true
-    }
 
     // MARK: - Instance methods
     
@@ -140,24 +137,6 @@ class BundleInstallationViewController: NSViewController {
     
     @IBAction func didSelectBottomRightButton(_ sender: NSButton) {
         Context.main?.dataSet.phase = "2"
-        guard !restartNeeded else {
-            var systemProcessPSN = ProcessSerialNumber(highLongOfPSN: 0, lowLongOfPSN: UInt32(kSystemProcess))
-            let systemProcessDescriptor = NSAppleEventDescriptor(descriptorType: DescType(typeProcessSerialNumber),
-                                                                 bytes: &systemProcessPSN,
-                                                                 length: MemoryLayout.size(ofValue: systemProcessPSN))
-            let rebootEvent = NSAppleEventDescriptor(eventClass: AEEventClass(kCoreEventClass),
-                                                     eventID: AEEventID(kAERestart),
-                                                     targetDescriptor: systemProcessDescriptor,
-                                                     returnID: AEReturnID(kAutoGenerateReturnID),
-                                                     transactionID: AETransactionID(kAnyTransactionID))
-            let err = AESendMessage(rebootEvent.aeDesc, nil, AESendMode(kAENoReply), kAEDefaultTimeout)
-            if err != noErr {
-                let failureAlert = NSAlert()
-                failureAlert.messageText = NSLocalizedString("restartFailureMessage".localized, comment: "restartFailureComment".localized)
-                failureAlert.runModal()
-            }
-            return
-        }
         self.performSegue(withIdentifier: "goToPostInstallationPage", sender: self)
     }
 }

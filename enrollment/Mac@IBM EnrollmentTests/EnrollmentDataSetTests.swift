@@ -180,8 +180,7 @@ class EnrollmentDataSetTests: XCTestCase {
                         ]
                     }
                 },
-                "bundleInstallationStatus": true,
-                "bundleInstallationWarning": true
+                "bundleInstallationStatus": true
             },
             "summaryScreen": {
                "title": {

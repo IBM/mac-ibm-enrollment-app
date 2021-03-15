@@ -41,17 +41,6 @@ struct AlertText {
     /**
      Structure definition containing reference assignments of stored values or property list key names for retrieving values.
      
-     String value used for displaying alert string to user if any bundle app installations experienced failures.
-     
-     •  message : string value to be displayed below the header string of the bundle installation view
-     */
-    struct BundleInstallationWarning {
-        static let message: String = "bundleInstallationalertMessage".localized
-    }
-    
-    /**
-     Structure definition containing reference assignments of stored values or property list key names for retrieving values.
-     
      String values used for displaying alert window to user in the event that the application is launched and can not locate the jamf binary.
      
      •  header : header message string

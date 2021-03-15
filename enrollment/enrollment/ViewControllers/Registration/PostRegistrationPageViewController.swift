@@ -33,7 +33,7 @@ class PostRegistrationPageViewController: NSViewController {
         return Context.main?.dataSet.phase == "4"
     }
     private var restartNeeded: Bool {
-        return Context.main?.dataSet.bundleInstallationPage?.bundleInstallationNeedsRestartBefore ?? true
+        return Context.main?.dataSet.postRegistrationPage.needsRestart ?? false
     }
     private var timer: Timer?
     private var postRegistrationPageData: PostRegistrationPage = (Context.main?.dataSet.postRegistrationPage)!

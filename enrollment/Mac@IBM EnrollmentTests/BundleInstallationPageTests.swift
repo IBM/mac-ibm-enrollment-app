@@ -39,8 +39,7 @@ class BundleInstallationPageTests: XCTestCase {
                     ]
                 }
             },
-            "bundleInstallationStatus": true,
-            "bundleInstallationWarning": true
+            "bundleInstallationStatus": true
         }
     """
 
