@@ -12,9 +12,8 @@ import Foundation
 struct UserDefaultHelper {
     struct Keys {
         static let phase = "phase"
-        static let registrationStatus = "registrationStatus"
-        static let hrFirstName = "hrFirstName"
+        static let registration = "registration"
         static let environment = "environment"
-        static let selectedBundles = "SelectedBundles"
+        static let selectedBundles = "selectedBundles"
     }
 }

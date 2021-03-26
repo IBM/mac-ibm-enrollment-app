@@ -16,7 +16,7 @@ public final class RegistrationData: Codable {
     /// True if the registration process has been completed, false if not. (Default: false).
     var registrationStatus: Bool? {
         didSet {
-            UserDefaults.standard.set(registrationStatus, forKey: UserDefaultHelper.Keys.registrationStatus)
+            UserDefaults.standard.set(self, forKey: UserDefaultHelper.Keys.registration)
         }
     }
     
